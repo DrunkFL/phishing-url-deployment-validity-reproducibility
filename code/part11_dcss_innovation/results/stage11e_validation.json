@@ -1,0 +1,28 @@
+{
+  "ablation_external_metric_rows": 360,
+  "ablation_feature_keys": 240,
+  "ablation_internal_metric_rows": 180,
+  "checks": {
+    "ablation_artifacts_and_metrics": "PASS",
+    "aggregate_and_analysis_outputs": "PASS",
+    "analysis_lock": "PASS",
+    "feature_set_reproduction": "PASS",
+    "held_domain_metrics": "PASS",
+    "random_run_completeness": "PASS",
+    "sampled_random_determinism": "PASS"
+  },
+  "completed_ablation_runs": 180,
+  "completed_held_domain_runs": 300,
+  "completed_random_runs": 1800,
+  "held_domain_metric_rows": 300,
+  "random_external_metric_rows": 3600,
+  "random_feature_sets": 30,
+  "random_internal_metric_rows": 1800,
+  "runtime_issue_records": 0,
+  "sampled_random_refits": 12,
+  "stage": "11E",
+  "status": "PASS",
+  "unique_random_keys": 1800,
+  "validated_ablation_predictions": 180,
+  "validated_held_predictions": 300
+}

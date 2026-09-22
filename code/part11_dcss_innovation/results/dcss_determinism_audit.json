@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-09-07T14:37:34.137947+00:00",
+  "command_stdout": "AGGREGATED folds=300 feature_sets=60",
+  "hashes_after": {
+    "dcss_feature_sets.csv": "74aaa526ca19681bf4e549fa8779eae53ea369b3895cb6c78e30262726eb96de",
+    "dcss_fold_shap_summary.csv": "5ea63325f81c5eef533faa6fa36cc13b0b008bf4fbe81b71808a6ee0f26fd92e",
+    "dcss_scores.csv": "233ae130c8cfd05491bebbb012204a4ca1041dde4502881c5bf32f54705530f7",
+    "dcss_timing.csv": "d7097cad9de0e05f5f7bb2e03a5e545f62370b2cd70df33e0978b43e125c202f"
+  },
+  "hashes_before": {
+    "dcss_feature_sets.csv": "74aaa526ca19681bf4e549fa8779eae53ea369b3895cb6c78e30262726eb96de",
+    "dcss_fold_shap_summary.csv": "5ea63325f81c5eef533faa6fa36cc13b0b008bf4fbe81b71808a6ee0f26fd92e",
+    "dcss_scores.csv": "233ae130c8cfd05491bebbb012204a4ca1041dde4502881c5bf32f54705530f7",
+    "dcss_timing.csv": "d7097cad9de0e05f5f7bb2e03a5e545f62370b2cd70df33e0978b43e125c202f"
+  },
+  "matches": {
+    "dcss_feature_sets.csv": true,
+    "dcss_fold_shap_summary.csv": true,
+    "dcss_scores.csv": true,
+    "dcss_timing.csv": true
+  },
+  "stage": "11C",
+  "status": "PASS"
+}

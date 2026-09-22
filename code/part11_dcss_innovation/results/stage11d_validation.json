@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "analysis_lock": "PASS",
+    "combined_baseline_table": "PASS",
+    "external_cohort_alignment": "PASS",
+    "feature_list_alignment": "PASS",
+    "float64_probability_persistence": "PASS",
+    "h1_h2_pairing": "PASS",
+    "internal_cohort_alignment": "PASS",
+    "metric_reproduction": "PASS",
+    "model_class_order": "PASS",
+    "run_completeness": "PASS"
+  },
+  "combined_external_metric_rows": 960,
+  "combined_internal_metric_rows": 480,
+  "completed_dcss_runs": 180,
+  "dcss_external_predictions": 180,
+  "dcss_internal_predictions": 180,
+  "runtime_warnings": 0,
+  "stage": "11D",
+  "status": "PASS"
+}

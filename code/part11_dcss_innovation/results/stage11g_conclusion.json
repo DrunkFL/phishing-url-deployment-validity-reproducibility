@@ -1,0 +1,9 @@
+{
+  "at_least_one_h2_interval_excludes_zero": true,
+  "bootstrap_replicates": 5000,
+  "h1_two_of_three_each_dataset": false,
+  "h2_interval_method": "linearized_paired_auc_domain_gaussian_multiplier_plus_outer_bootstrap",
+  "h2_positive_both_directions": false,
+  "protocol_execution_addendum": "1.0.1",
+  "strong_contribution_condition_met": false
+}

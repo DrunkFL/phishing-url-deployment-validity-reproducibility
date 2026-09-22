@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "analysis_outputs": "PASS",
+    "byte_identical_aggregation": "PASS",
+    "class_order_and_seeds": "PASS",
+    "dcss_formula_reproduction": "PASS",
+    "domain_disjointness": "PASS",
+    "exact_feature_counts": "PASS",
+    "fold_assignments": "PASS",
+    "shap_normalization_and_ranks": "PASS",
+    "source_outer_train_only": "PASS",
+    "subrun_artifacts": "PASS"
+  },
+  "completed_subruns": 300,
+  "dcss_feature_rows": 2100,
+  "feature_set_keys": 60,
+  "fold_assignment_files": 20,
+  "fold_feature_rows": 10500,
+  "reduced_shap_samples": 0,
+  "runtime_warnings": 0,
+  "stage": "11C",
+  "status": "PASS"
+}

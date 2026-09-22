@@ -1,0 +1,33 @@
+{
+  "stability_cohort_size": 200,
+  "class_balance": "100 benign and 100 phishing where available",
+  "lr_background_size": 200,
+  "sampling": "deterministic SHA-256 ordering of sample IDs under a declared tag",
+  "lr": "LinearExplainer on standardized features; raw log-odds scale",
+  "rf": "exact TreeExplainer; tree_path_dependent; positive-class output",
+  "xgb": "exact TreeExplainer; tree_path_dependent; raw-margin output",
+  "model_seeds": [
+    20261001,
+    20261002,
+    20261003,
+    20261004,
+    20261005,
+    20261006,
+    20261007,
+    20261008,
+    20261009,
+    20261010
+  ],
+  "outer_repetitions": [
+    "r00",
+    "r01",
+    "r02",
+    "r03",
+    "r04",
+    "r05",
+    "r06",
+    "r07",
+    "r08",
+    "r09"
+  ]
+}

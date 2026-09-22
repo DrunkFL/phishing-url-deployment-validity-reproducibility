@@ -1,0 +1,39 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Raw or restricted data must not be committed
+data/raw/
+raw_data/
+*.zip
+*.7z
+
+# Generated model and prediction artifacts
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+models/
+predictions/
+
+# Manuscript build intermediates
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+manuscript/tmp/
+
+# Repository-local validation output
+validation_report.json

@@ -1,0 +1,66 @@
+{
+  "stage": "11A",
+  "status": "PASS",
+  "validated_utc": "2026-09-07T10:20:58.053545+00:00",
+  "manifest_file_count": 8942,
+  "manifest_total_bytes": 4333724556,
+  "manifest_sha256": "5b6856dd8e1f8f3ed9449a8563d137f7cbff8e19a70ce2b50de1362cf6944568",
+  "environment_snapshot_sha256": "7f2294423be16ebf4261824fd32d61be48d785b513ed0a36eb4f51f5e2032292",
+  "protocol_sha256": "dc019976c5c19ed399c5a8666754bbe929aae5b84b2698177d12c3e0f7a218ba",
+  "protocol_version": "1.0.0",
+  "mismatch_count": 0,
+  "artifact_role_counts": {
+    "assignment": 20,
+    "data": 13,
+    "documentation": 97,
+    "feature_selection": 3360,
+    "model": 264,
+    "prediction": 900,
+    "publication_artifact": 19,
+    "result": 135,
+    "run_record": 4080,
+    "source": 54
+  },
+  "checks": [
+    {
+      "check": "Input manifest exists",
+      "passed": true
+    },
+    {
+      "check": "Environment snapshot exists",
+      "passed": true
+    },
+    {
+      "check": "Protocol lock exists",
+      "passed": true
+    },
+    {
+      "check": "Manifest is nonempty",
+      "passed": true
+    },
+    {
+      "check": "Manifest paths are unique",
+      "passed": true
+    },
+    {
+      "check": "Every manifest SHA-256 has 64 lowercase hexadecimal characters",
+      "passed": true
+    },
+    {
+      "check": "All required foundational inputs are represented",
+      "passed": true
+    },
+    {
+      "check": "Every frozen input exists and matches its SHA-256",
+      "passed": true
+    },
+    {
+      "check": "Protocol contains all locked design declarations",
+      "passed": true
+    },
+    {
+      "check": "Environment snapshot points to the shared experiment virtual environment",
+      "passed": true
+    }
+  ]
+}

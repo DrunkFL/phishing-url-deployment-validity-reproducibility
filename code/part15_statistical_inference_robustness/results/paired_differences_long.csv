@@ -1,0 +1,81 @@
+hypothesis,group_key,repetition,delta,reference_margin,endpoint
+H1_internal_noninferiority,iscx_url2016_binary/lr,r00,-0.0096632285852853,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r01,-0.0026305378645947,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r02,-0.0042131356489644,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r03,-0.1526602593687629,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r04,-0.0117108833719599,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r05,-0.0122627105378587,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r06,-0.0366459222376869,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r07,-0.0045230924898239,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r08,-0.0046075015591985,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/lr,r09,-0.1452031010874819,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r00,0.0010737483494538,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r01,0.0569191849489854,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r02,0.0739413521328321,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r03,-0.0008579539678319,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r04,-0.0759343608600274,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r05,-0.0002156956827989,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r06,-0.1059074197415309,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r07,-0.224366648421308,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r08,0.0002145405880263,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/rf,r09,-0.0002146450125157,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r00,0.0,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r01,0.2011528029629041,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r02,0.2463846923326145,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r03,0.0,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r04,0.2006446507846124,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r05,0.0002154846104593,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r06,0.0531965640659776,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r07,0.1830253347050743,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r08,0.0006429963785266,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,iscx_url2016_binary/xgb,r09,-0.0002146450125157,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r00,-0.0083153331192323,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r01,-0.005386278998305,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r02,-0.0080387837531882,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r03,-0.006372584597315,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r04,-0.0114254692549652,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r05,-0.0068469534688195,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r06,-0.0076809353527016,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r07,-0.0048710886598167,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r08,-0.0066649162942401,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/lr,r09,-0.0082849911215919,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r00,-0.0014484017352244,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r01,0.0001114142525396,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r02,0.0001419276528664,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r03,-0.0002000217863366,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r04,0.0002477294026016,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r05,0.000770717936589,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r06,0.0002298673399315,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r07,0.0019698107164143,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r08,0.0001132814747952,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/rf,r09,-0.0004802464065377,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r00,0.0001137611975764,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r01,0.0006816121192887,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r02,0.0004909440731367,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r03,-0.0001735478001114,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r04,0.0013748864753559,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r05,0.0001701185291331,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r06,0.000197386170617,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r07,-8.699723727711994e-05,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r08,-0.0008931483998005,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H1_internal_noninferiority,phiusiil/xgb,r09,0.000799283042827,-0.01,S3 Macro-F1: F-DCSS-15 minus F-All
+H2_external_improvement,iscx_url2016_binary->phiusiil,r00,-0.0202436707610877,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r01,0.011938829808164367,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r02,-0.03997842951557143,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r03,0.020357920448086934,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r04,0.04757490821289676,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r05,8.190364300953341e-05,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r06,0.026649742693745797,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r07,-0.05224755707509069,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r08,0.014155787102871131,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,iscx_url2016_binary->phiusiil,r09,-0.016927091611574366,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r00,0.008005271545388567,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r01,0.024641279339731398,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r02,0.021165978092594465,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r03,0.018553688333565067,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r04,0.0054620159953615,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r05,0.023990711941090367,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r06,0.0136141439308356,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r07,0.010151833166594267,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r08,0.015649115414558167,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"
+H2_external_improvement,phiusiil->iscx_url2016_binary,r09,0.005440972181621334,0.0,"External ROC-AUC: F-DCSS-15 minus F-Stable, averaged across models"

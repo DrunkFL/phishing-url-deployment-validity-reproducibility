@@ -1,0 +1,19 @@
+{
+  "audited_metric_rows": 600,
+  "audited_model_configurations": 300,
+  "checks": {
+    "analysis_outputs": "PASS",
+    "class_order_audit": "PASS",
+    "f_all_reconstruction": "PASS",
+    "fixed_role_artifacts": "PASS",
+    "fixed_role_assignments": "PASS",
+    "fixed_role_metric_rows": 120,
+    "probability_orientation_audit": "PASS",
+    "probability_summary": "PASS"
+  },
+  "fixed_role_model_runs": 120,
+  "maximum_metric_reproduction_error": 2.890109939901464e-05,
+  "reconstructed_f_all_models": 60,
+  "stage": "11B",
+  "status": "PASS"
+}

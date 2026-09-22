@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 18,
+  "uncertainty_rows": 120,
+  "adjacent_rows": 1080,
+  "holdout_rows": 4800,
+  "replay_rows": 120,
+  "model_selection_rows": 60,
+  "maximum_threshold_replay_difference": 2.220446049250313e-16,
+  "manifested_files": 28
+}

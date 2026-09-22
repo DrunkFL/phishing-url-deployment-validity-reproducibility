@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "bh_h1_reproduces": true,
+    "bh_h2_reproduces": true,
+    "conclusion_condition_reproduces": true,
+    "finite_outputs": true,
+    "h1_groups_and_replicates": true,
+    "h2_deterministic_rerun": true,
+    "h2_groups_and_replicates": true,
+    "stage11d_point_estimates_reproduce": true
+  },
+  "maximum_h2_distribution_rerun_error": 9.98821251402271e-17,
+  "maximum_stage11d_point_estimate_error": 0.0,
+  "status": "PASS"
+}

@@ -1,0 +1,9 @@
+hypothesis,group_key,mean_delta,reference_margin,repetitions_above_reference,rho_0_25_ci_low,rho_0_50_ci_low,verdict
+H1_internal_noninferiority,iscx_url2016_binary/lr,-0.038412037275161716,-0.01,5,-0.1146158825441346,-0.1375446496002326,fails_mean_noninferiority_margin
+H1_internal_noninferiority,iscx_url2016_binary/rf,-0.027534789766671525,-0.01,7,-0.14000328324773745,-0.17384362134452908,fails_mean_noninferiority_margin
+H1_internal_noninferiority,iscx_url2016_binary/xgb,0.08850478808276531,-0.01,10,-0.04704174838898563,-0.08782597586532646,mean_within_margin_but_dependence_sensitive
+H1_internal_noninferiority,phiusiil/lr,-0.007388733462017549,-0.01,9,-0.009769152263433703,-0.01048538998084781,robust_through_rho_0.25_only
+H1_internal_noninferiority,phiusiil/rf,0.00014560788476389,-0.01,10,-0.0009745680499152925,-0.0013116147301379167,robust_through_rho_0.50
+H1_internal_noninferiority,phiusiil/xgb,0.000267429817074578,-0.01,10,-0.0005293897275007117,-0.0007691425858876594,robust_through_rho_0.50
+H2_external_improvement,iscx_url2016_binary->phiusiil,-0.000863765705454966,0.0,6,-0.041070176407409974,-0.053167773607302,no_mean_external_improvement
+H2_external_improvement,phiusiil->iscx_url2016_binary,0.014667500994134072,0.0,10,0.005244969645387997,0.0024098499002936456,positive_domain_outer_and_rho_0.50_support

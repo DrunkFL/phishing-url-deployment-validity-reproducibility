@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 17,
+  "paired_difference_rows": 80,
+  "effect_groups": 8,
+  "dependence_rows": 48,
+  "bootstrap_rows": 160000,
+  "manifested_files": 22
+}
