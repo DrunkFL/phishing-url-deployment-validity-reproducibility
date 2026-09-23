@@ -102,7 +102,9 @@ def main() -> None:
     required = [
         ROOT / "README.md",
         ROOT / "DATA_AVAILABILITY.md",
-        ROOT / "LICENSE_NOT_INCLUDED.md",
+        ROOT / "LICENSE-CODE",
+        ROOT / "LICENSE-DOCUMENTATION",
+        ROOT / "LICENSE_SCOPE.md",
         ROOT / "manuscript" / "main.md",
         ROOT / "manuscript" / "main.tex",
         ROOT / "manuscript" / "paper.pdf",

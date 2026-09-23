@@ -1,0 +1,78 @@
+{
+  "selection": {
+    "candidate_order_breaks_exact_validation_ties": true,
+    "threshold_grid": {
+      "start": 0.05,
+      "stop": 0.95,
+      "step": 0.01
+    },
+    "primary_validation_metric": "macro_f1",
+    "secondary_validation_metric": "roc_auc"
+  },
+  "lr": [
+    {
+      "name": "lr_c01",
+      "C": 0.1,
+      "class_weight": null
+    },
+    {
+      "name": "lr_c1",
+      "C": 1.0,
+      "class_weight": null
+    },
+    {
+      "name": "lr_c1_balanced",
+      "C": 1.0,
+      "class_weight": "balanced"
+    }
+  ],
+  "rf": [
+    {
+      "name": "rf_depth16_leaf1",
+      "n_estimators": 200,
+      "max_depth": 16,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "class_weight": null
+    },
+    {
+      "name": "rf_depth24_leaf2",
+      "n_estimators": 200,
+      "max_depth": 24,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": null
+    },
+    {
+      "name": "rf_unlimited_leaf5_balanced",
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample"
+    }
+  ],
+  "xgb": [
+    {
+      "name": "xgb_d4_lr005",
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 1.0
+    },
+    {
+      "name": "xgb_d6_lr005",
+      "n_estimators": 250,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 1.0
+    },
+    {
+      "name": "xgb_d6_lr01_balanced",
+      "n_estimators": 200,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "scale_pos_weight": "n_benign/n_phishing_in_fit_scope"
+    }
+  ]
+}

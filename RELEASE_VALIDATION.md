@@ -1,21 +1,25 @@
 # Release Validation Record
 
-Validation date: 22 September 2026
+Validation date: 23 September 2026
 
 ## Repository checks
 
-The frozen Python 3.9 environment completed the following checks:
+An isolated Python 3.9 environment reconstructed from
+`environment/requirements.txt` completed the following checks on the
+`v1.0.0` release candidate:
 
-- every release file was matched to `MANIFEST.csv` by path, byte length, and SHA-256;
-- all Python files passed syntax parsing;
-- public text files contained no local user path;
+- all 212 release files were matched to `MANIFEST.csv` by path, byte length, and SHA-256;
+- all 82 Python files passed syntax parsing;
+- 180 public text files contained no local user path;
 - six public Parquet schemas contained no banned plaintext URL, host, domain, or source-file field;
 - representative command-line entry points from Parts 4, 11, 14, and 15 imported successfully and returned a zero exit status for `--help`.
+- the release contained no detected credential pattern, raw source archive, or plaintext URL/host/domain identifier field; and
+- the largest file was 39,867,801 bytes, below GitHub's 100 MB per-file limit.
 
 The command used was:
 
 ```powershell
-.venv\Scripts\python tools\validate_repository.py --smoke
+python tools\validate_repository.py --smoke
 ```
 
 ## Representative training rerun

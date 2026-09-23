@@ -14,6 +14,7 @@ This repository-ready package accompanies the manuscript on entity-aligned evalu
 - `environment/`: direct and fully locked Python dependencies.
 - `issues/`: experiment problems, resolutions, and retained limitations.
 - `resources/`: the frozen Public Suffix List snapshot.
+- `supplementary/`: submission-ready Supporting Information tables, protocol files, feature definitions, and Figure S1.
 - `tools/validate_repository.py`: integrity, size, local-path, and plaintext-identifier checks.
 - `REPRODUCE.md`: integrity, smoke-test, representative-rerun, and full-rerun guidance.
 - `RELEASE_VALIDATION.md`: the pre-upload integrity, entry-point, and representative-training checks.
@@ -75,8 +76,18 @@ python build_submission.py
 
 This regenerates `main.tex` from `main.md`. A LaTeX engine is then required to compile the PDF. The current compiled manuscript is `manuscript/paper.pdf`.
 
-## Before making the GitHub repository public
+## Licensing
 
-Complete `PUBLIC_UPLOAD_CHECKLIST.md`. In particular, choose a license only after confirming ownership and third-party compatibility, replace the manuscript's repository placeholder with the final GitHub or archived DOI link, and complete the CRediT statement after the author list is fixed.
+Author-created code is released under the MIT License in `LICENSE-CODE`.
+Author-created documentation, protocols, and aggregate results identified in
+`LICENSE_SCOPE.md` are released under CC BY 4.0 through
+`LICENSE-DOCUMENTATION`. Source datasets, record-level dataset derivatives,
+the manuscript, and third-party files are not covered by those grants. The
+frozen Public Suffix List retains its embedded MPL-2.0 notice.
 
-No software or derived-material license has been selected in this staging directory. Until a license is added, public access does not itself grant reuse permission; see `LICENSE_NOT_INCLUDED.md`.
+## Versioned release
+
+The manuscript-associated public snapshot is tagged `v1.0.0`. Run the checks
+in `PUBLIC_UPLOAD_CHECKLIST.md` and `RELEASE_VALIDATION.md` before any later
+release. The CRediT statement still needs to be completed after the author
+contributions are confirmed.

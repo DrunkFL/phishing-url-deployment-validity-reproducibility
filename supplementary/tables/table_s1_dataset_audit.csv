@@ -1,0 +1,3 @@
+dataset,input_rows,conflict_cleaned_master_rows,benign_rows,phishing_rows,unique_normalized_urls,unique_registrable_domains,conflicting_rows
+ISCX-URL2016,45343,45343,35378,9965,45224,4304,0
+PhiUSIIL,235795,235793,134850,100945,234657,175508,2
