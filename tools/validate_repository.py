@@ -15,6 +15,7 @@ MANIFEST = ROOT / "MANIFEST.csv"
 GITHUB_HARD_LIMIT = 100 * 1024 * 1024
 EXCLUDED_PARTS = {".git", ".venv", "__pycache__"}
 TEXT_SUFFIXES = {".csv", ".json", ".md", ".py", ".tex", ".txt", ".yaml", ".yml"}
+TEXT_NAMES = {"LICENSE-CODE", "LICENSE-DOCUMENTATION"}
 LOCAL_PATHS = ("C:" + "\\Users\\FL", "C:" + "/Users/FL")
 BANNED_IDENTIFIER_COLUMNS = {"raw_url", "url", "host", "registrable_domain", "source_file"}
 SMOKE_TESTS = (
@@ -25,12 +26,11 @@ SMOKE_TESTS = (
 )
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
+        return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return data
 
 
 def require(condition: bool, message: str) -> None:
@@ -128,8 +128,9 @@ def main() -> None:
 
     for row in rows:
         path = ROOT / row["relative_path"]
-        require(path.stat().st_size == int(row["bytes"]), f"Size mismatch: {row['relative_path']}")
-        require(sha256(path) == row["sha256"], f"SHA-256 mismatch: {row['relative_path']}")
+        data = canonical_bytes(path)
+        require(len(data) == int(row["bytes"]), f"Size mismatch: {row['relative_path']}")
+        require(hashlib.sha256(data).hexdigest() == row["sha256"], f"SHA-256 mismatch: {row['relative_path']}")
         require(path.stat().st_size < GITHUB_HARD_LIMIT, f"File reaches GitHub's 100 MB limit: {row['relative_path']}")
 
     scanned_text = 0

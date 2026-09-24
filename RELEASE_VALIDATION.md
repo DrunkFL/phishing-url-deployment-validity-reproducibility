@@ -8,7 +8,7 @@ An isolated Python 3.9 environment reconstructed from
 `environment/requirements.txt` completed the following checks on the
 `v1.0.0` release candidate:
 
-- all 212 release files were matched to `MANIFEST.csv` by path, byte length, and SHA-256;
+- all 212 release files were matched to `MANIFEST.csv` by path, canonical byte length, and SHA-256; text line endings are normalized to LF for this check, while binary files are compared byte for byte;
 - all 82 Python files passed syntax parsing;
 - 180 public text files contained no local user path;
 - six public Parquet schemas contained no banned plaintext URL, host, domain, or source-file field;

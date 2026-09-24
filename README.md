@@ -35,7 +35,7 @@ The repository validator uses only the Python standard library for file integrit
 python tools/validate_repository.py
 ```
 
-Expected result: `PASS` with all listed files matching `MANIFEST.csv`, no file at or above GitHub's 100 MB hard limit, no local user path, and no banned plaintext identifier column in the public Parquet schemas when `pyarrow` is available.
+Expected result: `PASS` with all listed files matching `MANIFEST.csv`, no file at or above GitHub's 100 MB hard limit, no local user path, and no banned plaintext identifier column in the public Parquet schemas when `pyarrow` is available. To make the manifest portable across operating systems, text-file byte lengths and SHA-256 values are calculated after canonicalizing line endings to LF; binary files are hashed byte for byte.
 
 After installing the frozen environment, also run the entry-point smoke test:
 

@@ -8,14 +8,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "MANIFEST.csv"
 EXCLUDED_PARTS = {".git", ".venv", "__pycache__"}
+TEXT_SUFFIXES = {".csv", ".json", ".md", ".py", ".tex", ".txt", ".yaml", ".yml"}
+TEXT_NAMES = {"LICENSE-CODE", "LICENSE-DOCUMENTATION"}
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
+        return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return data
 
 
 def included(path: Path) -> bool:
@@ -29,11 +30,12 @@ def main() -> None:
         writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(["relative_path", "bytes", "sha256"])
         for path in files:
+            data = canonical_bytes(path)
             writer.writerow(
                 [
                     path.relative_to(ROOT).as_posix(),
-                    path.stat().st_size,
-                    sha256(path),
+                    len(data),
+                    hashlib.sha256(data).hexdigest(),
                 ]
             )
     print(f"Wrote {len(files)} entries to {OUTPUT}")
