@@ -402,29 +402,73 @@ def figure_false_positive_structure(fp: pd.DataFrame) -> None:
     summary.to_csv(FIGURE_DATA / "fig6_false_positive_domain_structure.csv", index=False)
     fig, axes = plt.subplots(1, 2, figsize=(7.1, 3.45))
     x = np.arange(len(METHOD_ORDER))
-    width = 0.36
     directions = ["ISCX -> PhiUSIIL", "PhiUSIIL -> ISCX"]
     colors = ["#4C78A8", "#E45756"]
-    hatches = ["/", "x"]
-    for offset, direction, color, hatch in zip(
-        [-width / 2, width / 2], directions, colors, hatches,
-    ):
-        values = summary.loc[summary["direction"].eq(direction)].set_index("feature_set").loc[METHOD_ORDER]
-        axes[0].bar(x + offset, values["n_false_positive_domains_mean"], width, color=color,
-                    hatch=hatch, edgecolor="white", linewidth=0.6, label=direction)
-        axes[1].bar(x + offset, values["top10_domain_share_mean"], width, color=color,
-                    hatch=hatch, edgecolor="white", linewidth=0.6)
-    axes[0].set_yscale("log")
-    axes[0].set_title("Distinct domains among false positives", fontsize=10, fontweight="bold")
-    axes[0].set_ylabel("Domain count (log scale)")
-    axes[1].set_title("Concentration in top 10 domains", fontsize=10, fontweight="bold")
-    axes[1].set_ylabel("Share of false positives")
-    for axis in axes:
+    markers = ["o", "s"]
+    panels = [
+        (
+            "n_false_positive_domains",
+            "Distinct domains among false positives",
+            "Domain count (log scale)",
+            (200, 2e5),
+        ),
+        (
+            "top10_domain_share",
+            "Concentration in top 10 domains",
+            "Share of false positives (log scale)",
+            (3e-3, 0.4),
+        ),
+    ]
+    for axis, (metric, title, ylabel, ylim) in zip(axes, panels):
+        for offset, direction, color, marker in zip(
+            [-0.10, 0.10], directions, colors, markers,
+        ):
+            values = (
+                summary.loc[summary["direction"].eq(direction)]
+                .set_index("feature_set")
+                .loc[METHOD_ORDER]
+            )
+            means = values[f"{metric}_mean"].to_numpy()
+            errors = np.vstack([
+                means - values[f"{metric}_ci_low"].to_numpy(),
+                values[f"{metric}_ci_high"].to_numpy() - means,
+            ])
+            axis.errorbar(
+                x + offset,
+                means,
+                yerr=errors,
+                marker=marker,
+                linestyle="none",
+                color=color,
+                markerfacecolor=color,
+                markeredgecolor="black",
+                markeredgewidth=0.5,
+                markersize=6,
+                capsize=2.5,
+                linewidth=1,
+                label=direction,
+            )
+        axis.set_yscale("log")
+        axis.set_ylim(*ylim)
+        if metric == "n_false_positive_domains":
+            axis.set_yticks([300, 1e3, 1e4, 1e5])
+            axis.set_yticklabels(["300", "1,000", "10,000", "100,000"])
+        else:
+            axis.set_yticks([0.005, 0.01, 0.1, 0.3])
+            axis.set_yticklabels(["0.5%", "1%", "10%", "30%"])
+        axis.set_title(title, fontsize=10, fontweight="bold")
+        axis.set_ylabel(ylabel)
         axis.set_xticks(x, [METHOD_LABELS[key] for key in METHOD_ORDER], rotation=28, ha="right")
-        axis.grid(axis="y", alpha=0.25, linewidth=0.6)
-    handles, labels = axes[0].get_legend_handles_labels()
-    if axes[0].get_legend():
-        axes[0].get_legend().remove()
+        axis.grid(axis="y", which="both", alpha=0.25, linewidth=0.6)
+    handles = [
+        plt.Line2D(
+            [0], [0], marker=marker, linestyle="none", color=color,
+            markerfacecolor=color, markeredgecolor="black", markeredgewidth=0.5,
+            label=direction, markersize=6,
+        )
+        for direction, color, marker in zip(directions, colors, markers)
+    ]
+    labels = directions
     fig.legend(handles, labels, frameon=False, fontsize=8, loc="lower center", ncol=2,
                bbox_to_anchor=(0.5, -0.01))
     fig.tight_layout(rect=(0, 0.10, 1, 1))
