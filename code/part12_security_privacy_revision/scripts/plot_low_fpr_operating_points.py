@@ -13,6 +13,7 @@ OUTPUT = ROOT / "figures" / "fig5_low_fpr_threshold_transfer"
 
 
 def main() -> None:
+    plt.rcParams.update({"font.family": "DejaVu Sans", "pdf.fonttype": 42, "ps.fonttype": 42})
     data = pd.read_csv(INPUT)
     data = data[data["evaluation_scope"].isin(["source_s3_test", "external_primary"])].copy()
     data["direction"] = data["source_dataset"].map(
@@ -29,7 +30,7 @@ def main() -> None:
     markers = {0.001: "o", 0.01: "s"}
     budget_labels = {0.001: "0.1% source budget", 0.01: "1% source budget"}
 
-    fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.2), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(7.1, 3.2), sharey=True)
     scopes = [
         ("source_s3_test", "Frozen threshold on source S3 test"),
         ("external_primary", "Frozen threshold on external source"),
@@ -56,7 +57,7 @@ def main() -> None:
                     rows["fpr_mean"],
                     linestyle="none",
                     marker=markers[budget],
-                    markersize=7,
+                    markersize=6,
                     markerfacecolor=colors[direction],
                     markeredgecolor="white",
                     markeredgewidth=0.8,
@@ -69,17 +70,18 @@ def main() -> None:
         axis.set_yscale("log")
         axis.set_ylim(5e-4, 1.25)
         axis.set_xticks(x, [model_labels[name] for name in models])
-        axis.set_title(title, fontsize=10)
+        axis.set_title(title, fontsize=9)
         axis.grid(axis="y", which="both", linewidth=0.5, alpha=0.25)
-        axis.set_xlabel("Model")
+        axis.set_xlabel("Model", fontsize=8)
+        axis.tick_params(axis="both", labelsize=8)
 
-    axes[0].set_ylabel("Realized false-positive rate (log scale)")
+    axes[0].set_ylabel("Realized false-positive rate (log scale)", fontsize=8)
     handles, labels = axes[1].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=8)
-    fig.suptitle("Source-selected false-positive budgets do not transfer", fontsize=12)
+    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=7)
+    fig.suptitle("Source-selected false-positive budgets do not transfer", fontsize=10.5)
     fig.tight_layout(rect=(0, 0.16, 1, 0.94))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUTPUT.with_suffix(".png"), dpi=300, bbox_inches="tight")
+    fig.savefig(OUTPUT.with_suffix(".png"), dpi=600, bbox_inches="tight")
     fig.savefig(OUTPUT.with_suffix(".pdf"), bbox_inches="tight")
     plt.close(fig)
 

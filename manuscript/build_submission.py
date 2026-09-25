@@ -50,6 +50,19 @@ def main() -> None:
 
     latex = LATEX_OUTPUT.read_text(encoding="utf-8")
 
+    # Keep pending figures ahead of the following table title, then require
+    # enough vertical room for the title and the table's opening rows.
+    latex = latex.replace(
+        r"\usepackage{calc} % for calculating minipage widths",
+        "\\usepackage{calc} % for calculating minipage widths\n"
+        "\\usepackage{placeins}\n"
+        "\\usepackage{needspace}",
+    )
+    for table_number, required_lines in ((4, 18), (8, 20)):
+        pattern = rf"(?=\\textbf\{{Table {table_number}\.)"
+        prefix = rf"\FloatBarrier" + "\n" + rf"\Needspace{{{required_lines}\baselineskip}}" + "\n"
+        latex = re.sub(pattern, lambda match, value=prefix: value, latex, count=1)
+
     # Markdown captions already contain their figure number.  The LaTeX
     # figure counter supplies it again, so remove only the duplicated prefix.
     latex = re.sub(r"\\caption\{Figure \d+\.\s*", r"\\caption{", latex)

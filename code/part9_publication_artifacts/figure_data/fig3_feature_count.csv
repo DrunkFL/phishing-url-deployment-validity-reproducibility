@@ -1,0 +1,11 @@
+dataset,feature_set,n_features_mean,n_features_std,n_features_ci_low,n_features_ci_high,n_features_n
+iscx_url2016_binary,f_all,35.0,0.0,35.0,35.0,30
+iscx_url2016_binary,f_mi,15.0,0.0,15.0,15.0,30
+iscx_url2016_binary,f_permutation,15.0,0.0,15.0,15.0,30
+iscx_url2016_binary,f_single,15.0,0.0,15.0,15.0,30
+iscx_url2016_binary,f_stable,13.0,1.1141720290623112,12.6,13.4,30
+phiusiil,f_all,35.0,0.0,35.0,35.0,30
+phiusiil,f_mi,15.0,0.0,15.0,15.0,30
+phiusiil,f_permutation,15.0,0.0,15.0,15.0,30
+phiusiil,f_single,15.0,0.0,15.0,15.0,30
+phiusiil,f_stable,14.133333333333333,0.507416263404925,13.966666666666667,14.3,30

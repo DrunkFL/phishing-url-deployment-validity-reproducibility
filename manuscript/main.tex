@@ -40,6 +40,8 @@
 \makeatother
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
+\usepackage{placeins}
+\usepackage{needspace}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -876,21 +878,20 @@ explainers. CNN, LSTM, and Transformer models are not included, thereby
 reducing the possibility that architectural differences obscure the
 effects of leakage and explanation stability.
 
-For each candidate configuration, a decision threshold is first
-selected on the validation set from 0.05 to 0.95 in increments of 0.01
-by maximizing validation Macro-F1. The resulting candidate-threshold
-pairs are then compared by validation Macro-F1, with validation ROC-AUC
-and candidate order used as deterministic tie breakers. Logistic regression uses
-\texttt{StandardScaler}, the \texttt{lbfgs} solver, and a maximum of
-2,000 iterations; tree candidates fix their estimator counts, depth/leaf
-controls, subsampling, and class weighting. All nine exact candidate
-definitions and fixed parameters are provided in Supplementary Data S2
-(\texttt{supplementary\_model\_candidates.json}). Large-scale AutoML is
-not used. Ten prespecified partition and
-model seeds are evaluated for every internal regime. Data indices,
-entity assignments, selected hyperparameters, thresholds, predicted
-probabilities, metrics, and SHAP summaries are retained for
-reproducibility.
+For each candidate configuration, a decision threshold is first selected
+on the validation set from 0.05 to 0.95 in increments of 0.01 by
+maximizing validation Macro-F1. The resulting candidate-threshold pairs
+are then compared by validation Macro-F1, with validation ROC-AUC and
+candidate order used as deterministic tie breakers. Logistic regression
+uses \texttt{StandardScaler}, the \texttt{lbfgs} solver, and a maximum
+of 2,000 iterations; tree candidates fix their estimator counts,
+depth/leaf controls, subsampling, and class weighting. All nine exact
+candidate definitions and fixed parameters are provided in Supplementary
+Data S2 (\texttt{supplementary\_model\_candidates.json}). Large-scale
+AutoML is not used. Ten prespecified partition and model seeds are
+evaluated for every internal regime. Data indices, entity assignments,
+selected hyperparameters, thresholds, predicted probabilities, metrics,
+and SHAP summaries are retained for reproducibility.
 
 \subsection{4.7 Evaluation of SHAP
 Stability}\label{evaluation-of-shap-stability}
@@ -1079,25 +1080,24 @@ the two methods and sum those differences by target registrable domain.
 The three model-specific domain contributions are then averaged with
 equal weight, consistent with an estimand that gives the prespecified
 model families equal standing rather than weighting them by target
-sample size or observed performance. Domains absent after filtering in
-a repetition contribute zero to that repetition's covariance column.
-The resulting domain-by-repetition matrix defines the covariance of a
-joint Gaussian perturbation, so target domains that recur across
-repetitions induce cross-repetition covariance while the within-run
-pairing of the two feature methods is preserved. Each of 5,000
-replicates independently resamples the ten outer repetitions and
-averages the selected observed differences plus their jointly drawn
-domain perturbations. We call the resulting percentile interval the
-\emph{domain-plus-outer interval}. It is a linearized two-level
-approximation fixed in execution addendum 1.0.1 before interval
-calculation; it is not a literal nested cluster bootstrap and does not
-describe future collection processes. An outer-only bootstrap and a
-dependence-stress analysis are retained as sensitivities. The latter
-inflates standard errors under assumed positive pairwise correlations
-among repetitions; it does not estimate the true dependence or convert
-repeated partitions into independent datasets. Pairwise SHAP
-similarities and source-only diagnostic correlations share fitted runs
-and are treated descriptively.
+sample size or observed performance. Domains absent after filtering in a
+repetition contribute zero to that repetition's covariance column. The
+resulting domain-by-repetition matrix defines the covariance of a joint
+Gaussian perturbation, so target domains that recur across repetitions
+induce cross-repetition covariance while the within-run pairing of the
+two feature methods is preserved. Each of 5,000 replicates independently
+resamples the ten outer repetitions and averages the selected observed
+differences plus their jointly drawn domain perturbations. We call the
+resulting percentile interval the \emph{domain-plus-outer interval}. It
+is a linearized two-level approximation fixed in execution addendum
+1.0.1 before interval calculation; it is not a literal nested cluster
+bootstrap and does not describe future collection processes. An
+outer-only bootstrap and a dependence-stress analysis are retained as
+sensitivities. The latter inflates standard errors under assumed
+positive pairwise correlations among repetitions; it does not estimate
+the true dependence or convert repeated partitions into independent
+datasets. Pairwise SHAP similarities and source-only diagnostic
+correlations share fitted runs and are treated descriptively.
 
 One robustness evaluation changes the weighting unit. In the
 registrable-domain-equal analysis, every domain contributes total weight
@@ -1144,18 +1144,19 @@ selection, calibration, or feature selection. For each source-validation
 cohort, the audit retains integer false positives and one-sided 95\%
 Wilson and exact Clopper-Pearson upper bounds. Because the same
 validation labels determine both the threshold and these bounds, the
-bounds are post-selection descriptions of the frozen validation
-cohorts. They do not account for the threshold search and do not provide
+bounds are post-selection descriptions of the frozen validation cohorts.
+They do not account for the threshold search and do not provide
 selection-adjusted or population-level confidence guarantees. The audit
 also applies the immediately safer and more permissive adjacent score
 thresholds and repeats threshold selection on a
 registrable-domain-grouped audit holdout. This grouped holdout isolates
 threshold-selection reuse, although the model candidate was still
-selected using the full validation cohort. In addition to rates, we report false alerts per
-10,000 benign URLs as \(10{,}000\times\mathrm{FPR}\). These
-corpus-normalized counts do not estimate production prevalence. The
-deterministic replay reproduced the original 120 thresholds to a maximum
-absolute difference of \(2.22\times10^{-16}\).
+selected using the full validation cohort. In addition to rates, we
+report false alerts per 10,000 benign URLs as
+\(10{,}000\times\mathrm{FPR}\). These corpus-normalized counts do not
+estimate production prevalence. The deterministic replay reproduced the
+original 120 thresholds to a maximum absolute difference of
+\(2.22\times10^{-16}\).
 
 \section{5. Results}\label{results}
 
@@ -1278,6 +1279,8 @@ dispersion reflects movement of a small number of high-volume domain
 groups between partitions and is not ordinary independent-row
 uncertainty.
 
+\FloatBarrier
+\Needspace{18\baselineskip}
 \textbf{Table 4. Mean Macro-F1 and false-positive rate under S0 and S3
 (10 repetitions)}
 
@@ -1727,6 +1730,8 @@ families in each dataset was therefore not met. The positive ISCX
 XGBoost mean should be read as model-specific rather than evidence that
 feature removal generally improves unseen-domain prediction.
 
+\FloatBarrier
+\Needspace{20\baselineskip}
 \textbf{Table 8. F-DCSS-15 minus F-All S3 Macro-F1 and auxiliary
 non-inferiority decision}
 
@@ -2093,17 +2098,18 @@ depends on the chosen bins, and the target-oracle threshold uses target
 labels only for diagnosis.
 
 \textbf{External validity.} The primary design is limited to two public
-benchmark corpora, three conventional classifiers, and 35 offline URL features.
-The third source remains exploratory because the documented and observed
-row counts disagree, filtering is class dependent, and class is coupled
-with collection source. S4 identifies source-conditioned incompatibility
-between the evaluated public benchmark construction pipelines rather
-than universal, temporal, or live-deployment generalization. The
-analyzed ISCX artifact is a third-party preserved copy from a pinned
-public mirror and was not byte-verified against an official release.
-URL-only features are inexpensive and reproducible, but attacks visible
-only through HTML, certificates, redirects, DNS, or runtime behavior
-remain outside their scope.
+benchmark corpora, three conventional classifiers, and 35 offline URL
+features. The third source remains exploratory because the documented
+and observed row counts disagree, filtering is class dependent, and
+class is coupled with collection source. S4 identifies
+source-conditioned incompatibility between the evaluated public
+benchmark construction pipelines rather than universal, temporal, or
+live-deployment generalization. The analyzed ISCX artifact is a
+third-party preserved copy from a pinned public mirror and was not
+byte-verified against an official release. URL-only features are
+inexpensive and reproducible, but attacks visible only through HTML,
+certificates, redirects, DNS, or runtime behavior remain outside their
+scope.
 
 \textbf{Label validity.} Public benign and phishing labels may include
 annotation errors or obsolete records. Removing conflicting labels
@@ -2195,8 +2201,8 @@ available at
 \url{https://github.com/DrunkFL/phishing-url-deployment-validity-reproducibility}.
 The repository contains code, acquisition instructions, source hashes,
 sanitized derived features, frozen split roles, repetition-level
-results, protocols, issue logs, and the supporting-information files.
-It excludes raw URL strings, plaintext host/domain identifiers, original
+results, protocols, issue logs, and the supporting-information files. It
+excludes raw URL strings, plaintext host/domain identifiers, original
 archives, and trained binaries. Author-created code is released under
 the MIT License; author-created documentation, protocols, and aggregate
 results are released under CC BY 4.0. \texttt{LICENSE\_SCOPE.md}

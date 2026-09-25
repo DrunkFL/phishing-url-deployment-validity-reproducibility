@@ -300,6 +300,7 @@ def calibration_analysis() -> pd.DataFrame:
 
 def make_calibration_figures(metrics: pd.DataFrame, bins: pd.DataFrame) -> None:
     plt.style.use("seaborn-v0_8-whitegrid")
+    plt.rcParams.update({"font.family": "DejaVu Sans", "pdf.fonttype": 42, "ps.fonttype": 42})
     colors = {"f_all": "#1f77b4", "f_single": "#ff7f0e", "f_stable": "#2ca02c", "f_mi": "#d62728", "f_permutation": "#9467bd"}
     fig, axes = plt.subplots(2, 3, figsize=(13, 8), sharex=True, sharey=True)
     for row, source in enumerate(DATASETS):
@@ -325,7 +326,7 @@ def make_calibration_figures(metrics: pd.DataFrame, bins: pd.DataFrame) -> None:
     fig.savefig(FIGURES / "external_reliability_diagrams.pdf", bbox_inches="tight")
     plt.close(fig)
 
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.5), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(7.1, 3.25), sharey=True)
     for ax, source in zip(axes, DATASETS):
         subset = metrics.loc[metrics["source_dataset"] == source]
         positions, values = [], []
@@ -336,12 +337,13 @@ def make_calibration_figures(metrics: pd.DataFrame, bins: pd.DataFrame) -> None:
         bp = ax.boxplot(values, positions=positions, widths=0.7, patch_artist=True, showfliers=False)
         for patch, position in zip(bp["boxes"], positions): patch.set_facecolor(colors[FEATURE_SETS[position % 6]])
         ax.set_xticks([2, 8, 14]); ax.set_xticklabels([DISPLAY[model] for model in MODELS])
-        ax.set_title(f"{DISPLAY[source]} to {DISPLAY[TARGET[source]]}")
-        ax.set_ylabel("Oracle minus source-threshold Macro-F1")
+        ax.set_title(f"{DISPLAY[source]} to {DISPLAY[TARGET[source]]}", fontsize=9)
+        ax.set_ylabel("Oracle minus source-threshold Macro-F1", fontsize=8)
+        ax.tick_params(axis="both", labelsize=8)
     legend = [Patch(facecolor=colors[name], edgecolor="black", label=DISPLAY[name]) for name in FEATURE_SETS]
-    fig.legend(handles=legend, loc="lower center", ncol=5, frameon=False)
-    fig.tight_layout(rect=[0, 0.11, 1, 1])
-    fig.savefig(FIGURES / "external_threshold_regret.png", dpi=300, bbox_inches="tight")
+    fig.legend(handles=legend, loc="lower center", ncol=5, frameon=False, fontsize=7)
+    fig.tight_layout(rect=[0, 0.14, 1, 1])
+    fig.savefig(FIGURES / "external_threshold_regret.png", dpi=600, bbox_inches="tight")
     fig.savefig(FIGURES / "external_threshold_regret.pdf", bbox_inches="tight")
     plt.close(fig)
 
