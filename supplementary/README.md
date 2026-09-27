@@ -1,7 +1,7 @@
 # Supporting Information
 
 This directory contains the files cited as Supporting Information by the
-manuscript-associated `v1.0.0` release.
+manuscript-associated `v1.0.1` release.
 
 ## Data and protocol files
 

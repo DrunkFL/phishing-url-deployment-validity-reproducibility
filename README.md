@@ -87,7 +87,8 @@ frozen Public Suffix List retains its embedded MPL-2.0 notice.
 
 ## Versioned release
 
-The manuscript-associated public snapshot is tagged `v1.0.0`. Run the checks
-in `PUBLIC_UPLOAD_CHECKLIST.md` and `RELEASE_VALIDATION.md` before any later
-release. The CRediT statement still needs to be completed after the author
-contributions are confirmed.
+The current manuscript-associated public snapshot is tagged `v1.0.1`.
+Historical release `v1.0.0` remains immutable. Run the checks in
+`PUBLIC_UPLOAD_CHECKLIST.md` and `RELEASE_VALIDATION.md` before any later
+release. The manuscript includes the confirmed author metadata and CRediT
+statement.

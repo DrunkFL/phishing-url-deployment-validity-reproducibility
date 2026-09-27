@@ -9,12 +9,13 @@
 - [x] Review `DATA_AVAILABILITY.md` and keep the ISCX-URL2016 redistribution restriction explicit.
 - [x] Publish the repository under the corresponding author's GitHub account; the submission is not using an anonymous repository workflow.
 - [x] Replace the repository placeholder in `manuscript/main.md` and regenerate `main.tex` and `paper.pdf` before submission.
-- [ ] Complete the CRediT author-contribution statement after the author list is finalized.
+- [x] Complete the CRediT author-contribution statement after the author list is finalized.
 
 ## Recommended release steps
 
 - [ ] Use a concise repository name, for example `phishing-url-deployment-validity`.
 - [x] Create the first Git tag, `v1.0.0`, for the exact manuscript-associated snapshot.
+- [x] Preserve `v1.0.0` and create `v1.0.1` for the finalized manuscript-associated snapshot.
 - [ ] Archive the tagged release with Zenodo or another long-term repository if a DOI is desired.
 - [x] Add the final public repository URL to the manuscript's Data and Code Availability statement.
 - [x] Re-run `python tools/generate_manifest.py` after the release changes, then validate again.
@@ -28,4 +29,4 @@
 - Software license: MIT for author-created code.
 - Documentation and aggregate-result license: CC BY 4.0 within `LICENSE_SCOPE.md`.
 - Public repository URL: https://github.com/DrunkFL/phishing-url-deployment-validity-reproducibility
-- Archived DOI: not assigned; the release is identified by Git tag `v1.0.0`.
+- Archived DOI: not assigned; the current release is identified by Git tag `v1.0.1`, with `v1.0.0` retained as the historical initial snapshot.

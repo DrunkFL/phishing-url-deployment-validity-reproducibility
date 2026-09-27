@@ -18,6 +18,17 @@ def main() -> None:
     title = lines[0][2:].strip()
     body = "\n".join(markdown.splitlines()[1:]).lstrip()
 
+    # Author metadata is retained in the editable Markdown source, then
+    # rendered through the LaTeX title block below instead of being repeated
+    # in the manuscript body.
+    author_metadata = re.compile(
+        r"\*\*Authors:\*\*.*?\n\n(?=\*\*Short title:\*\*)",
+        flags=re.DOTALL,
+    )
+    if not author_metadata.search(body):
+        raise ValueError("Expected author metadata before the short title")
+    body = author_metadata.sub("", body, count=1)
+
     # The manuscript uses compact citation markers such as ^[1-10]^ in its
     # Markdown source.  Pandoc otherwise treats these as footnotes, whereas the
     # journal requires consecutive Arabic superscript citations.
@@ -50,6 +61,16 @@ def main() -> None:
 
     latex = LATEX_OUTPUT.read_text(encoding="utf-8")
 
+    author_latex = r"""\author{Dongze Li\textsuperscript{1,*} \quad Jiahui Liu\textsuperscript{1}\\[0.4em]
+\small \textsuperscript{1}School of Computer Science and Technology,\\
+\small Harbin University of Science and Technology, Harbin 150080, China\\
+\small Email addresses: \href{mailto:ldz0101fl@163.com}{ldz0101fl@163.com} (D.L.); \href{mailto:liujiahui@hrbust.edu.cn}{liujiahui@hrbust.edu.cn} (J.L.)\\
+\small \textsuperscript{*}Corresponding author: Dongze Li, \href{mailto:ldz0101fl@163.com}{ldz0101fl@163.com}\\
+\small ORCID: \href{https://orcid.org/0009-0002-1583-4326}{0009-0002-1583-4326}}"""
+    if r"\author{}" not in latex:
+        raise AssertionError("Expected an empty Pandoc author block")
+    latex = latex.replace(r"\author{}", author_latex, 1)
+
     # Keep pending figures ahead of the following table title, then require
     # enough vertical room for the title and the table's opening rows.
     latex = latex.replace(
@@ -78,7 +99,7 @@ def main() -> None:
         token = token.replace(r"\_", "_")
         return rf"\url{{{token}}}{trailing}"
 
-    latex = re.sub(r"(?<!\\url\{)https://[^\s}]+", wrap_url, latex)
+    latex = re.sub(r"(?<!\\url\{)(?<!\\href\{)https://[^\s}]+", wrap_url, latex)
 
     # Commit identifiers and SHA-256 values are emitted by Pandoc as
     # unbreakable \texttt spans.  Treat long hexadecimal identifiers like

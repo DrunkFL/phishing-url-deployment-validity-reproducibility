@@ -1,16 +1,16 @@
 # Release Validation Record
 
-Validation date: 23 September 2026
+Validation date: 27 September 2026
 
 ## Repository checks
 
 An isolated Python 3.9 environment reconstructed from
 `environment/requirements.txt` completed the following checks on the
-`v1.0.0` release candidate:
+`v1.0.1` release candidate:
 
-- all 212 release files were matched to `MANIFEST.csv` by path, canonical byte length, and SHA-256; text line endings are normalized to LF for this check, while binary files are compared byte for byte;
-- all 82 Python files passed syntax parsing;
-- 180 public text files contained no local user path;
+- all 221 release files were matched to `MANIFEST.csv` by path, canonical byte length, and SHA-256; text line endings are normalized to LF for this check, while binary files are compared byte for byte;
+- all 84 Python files passed syntax parsing;
+- 189 public text files contained no local user path;
 - six public Parquet schemas contained no banned plaintext URL, host, domain, or source-file field;
 - representative command-line entry points from Parts 4, 11, 14, and 15 imported successfully and returned a zero exit status for `--help`.
 - the release contained no detected credential pattern, raw source archive, or plaintext URL/host/domain identifier field; and
@@ -21,6 +21,13 @@ The command used was:
 ```powershell
 python tools\validate_repository.py --smoke
 ```
+
+Version `v1.0.1` synchronizes the finalized manuscript, author metadata,
+CRediT statement, figure presentation, and release reference. It does not
+change the retained experimental data, code paths, model results, or
+statistical conclusions. The representative training rerun below is retained
+from the initial release validation and remains applicable because those
+experimental artifacts are unchanged.
 
 ## Representative training rerun
 

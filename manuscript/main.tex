@@ -39,6 +39,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 \usepackage{placeins}
 \usepackage{needspace}
@@ -78,7 +79,12 @@
 
 \title{Leakage-Aware Evaluation of Prediction and Explanation Stability
 under Cross-Source Shift in Phishing Web Address Detection}
-\author{}
+\author{Dongze Li\textsuperscript{1,*} \quad Jiahui Liu\textsuperscript{1}\\[0.4em]
+\small \textsuperscript{1}School of Computer Science and Technology,\\
+\small Harbin University of Science and Technology, Harbin 150080, China\\
+\small Email addresses: \href{mailto:ldz0101fl@163.com}{ldz0101fl@163.com} (D.L.); \href{mailto:liujiahui@hrbust.edu.cn}{liujiahui@hrbust.edu.cn} (J.L.)\\
+\small \textsuperscript{*}Corresponding author: Dongze Li, \href{mailto:ldz0101fl@163.com}{ldz0101fl@163.com}\\
+\small ORCID: \href{https://orcid.org/0009-0002-1583-4326}{0009-0002-1583-4326}}
 \date{}
 
 \begin{document}
@@ -88,35 +94,32 @@ under Cross-Source Shift in Phishing Web Address Detection}
 
 \section{Abstract}\label{abstract}
 
-A machine-learning detector for phishing URLs may look accurate and
-explainable while depending on entity associations and decision
-thresholds that fail under deployment shift. We use a connected
-deployment-validity audit to evaluate logistic regression, random
-forest, and XGBoost on conflict-cleaned ISCX-URL2016 and PhiUSIIL
-corpora with 35 common offline URL features. The evaluation moves from
-row-random splits to normalized-URL-, host-, and
+Phishing URL detectors may appear accurate and explainable while relying
+on entity associations and decision thresholds that fail under
+deployment shift. We audit deployment validity using logistic
+regression, random forest, and XGBoost on conflict-cleaned ISCX-URL2016
+and PhiUSIIL corpora with 35 common offline URL features. Evaluation
+proceeds from row-random splits to normalized-URL-, host-, and
 registrable-domain-disjoint splits, followed by zero-target-feedback
 transfer. Registrable-domain separation reduced mean Macro-F1 by
-0.038-0.109 on ISCX-URL2016, compared with only 0.001-0.002 on PhiUSIIL.
-Thresholds selected under empirical source-validation
-false-positive-rate budgets of 0.1\% or 1\% did not transfer: mean
-external false-positive rates ranged from 0.532 to 1.000, or
-5,318-10,000 false alerts per 10,000 benign URLs. A mechanism audit
-excluded label-orientation and probability-column errors, identified
-feature-label direction reversals for 19-20 of 35 features, and found
-that collection source remained distinguishable within benign and
-phishing samples (grouped AUC 1.000 and 0.913). Source-level Top-15 SHAP
-agreement was 0.623-0.788, despite higher agreement across model seeds.
-As a bounded diagnostic instance within the audit, we also evaluate
-Domain-Conditioned SHAP Stability (DCSS), a protocol that uses
-source-corpus training data only. Against random-resampling stability,
-the mean external ROC-AUC effect was -0.00086 in one direction
-(domain-plus-outer 95\% interval: -0.02014 to 0.01847; 6/10 positive
-repetitions) and +0.01467 in the other (0.00254 to 0.02739; 10/10
-positive). Entity separation, explanation repeatability, score
-orientation, and frozen-threshold transfer are distinct validity
-requirements, and no single one certifies deployable cross-source
-performance.
+0.038-0.109 on ISCX-URL2016 and by 0.001-0.002 on PhiUSIIL. Thresholds
+selected under empirical source-validation false-positive-rate budgets
+of 0.1\% or 1\% did not transfer: mean external false-positive rates
+ranged from 0.532 to 1.000, equivalent to 5,318-10,000 false alerts per
+10,000 benign URLs. A mechanism audit excluded label-orientation and
+probability-column errors, found feature-label direction reversals for
+19-20 of 35 features, and showed that collection source remained
+distinguishable within benign and phishing samples (grouped AUC 1.000
+and 0.913). Source-level Top-15 SHAP agreement was 0.623-0.788 despite
+higher agreement across model seeds. We also evaluated
+Domain-Conditioned SHAP Stability (DCSS) as a bounded source-only
+diagnostic. Against random-resampling stability, the mean external
+ROC-AUC effect was -0.00086 in one direction (domain-plus-outer 95\%
+interval: -0.02014 to 0.01847; 6/10 positive repetitions) and +0.01467
+in the other (0.00254 to 0.02739; 10/10 positive). Entity separation,
+explanation repeatability, score orientation, and frozen-threshold
+transfer are distinct validity requirements; none alone certifies
+deployable cross-source performance.
 
 \textbf{Keywords:} phishing URL detection; data leakage; registrable
 domain; explainable artificial intelligence; explanation stability;
@@ -228,6 +231,7 @@ This study addresses three research questions:
 \textbf{Table 1. Research questions, evaluation scopes, prespecified
 comparisons, and result locations}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
@@ -262,6 +266,7 @@ target inspection & S3 Macro-F1 and external ROC-AUC difference &
 F-DCSS-15 versus F-All internally and F-Stable externally & Section
 5.4 \\
 \end{longtable}
+}
 
 \emph{Note.} RQ, research question; S0, row-random split; S1,
 normalized-uniform-resource-locator-disjoint split; S2, host-disjoint
@@ -458,6 +463,7 @@ claim.
 
 \textbf{Table 2. Comparison with the closest prior studies}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
@@ -500,6 +506,7 @@ frozen-threshold transfer failure & Seed, partition, regime, source, and
 held-domain diagnostics & Linked separation of entity, decision,
 ranking, and explanation validity on established corpora \\
 \end{longtable}
+}
 
 \emph{Note.} URL, uniform resource locator; FPR, false-positive rate;
 eTLD+1, effective top-level domain plus one label (the registrable
@@ -1204,6 +1211,7 @@ group.
 
 \textbf{Table 3. Corpus audit after normalization and conflict removal}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0968}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1290}}
@@ -1239,6 +1247,7 @@ ISCX-URL2016 & 45,343 & 45,343 & 35,378 & 9,965 & 45,224 & 4,304 & 0 \\
 PhiUSIIL & 235,795 & 235,793 & 134,849 & 100,944 & 234,656 & 175,507 &
 2 \\
 \end{longtable}
+}
 
 \emph{Note.} URL, uniform resource locator; eTLD+1, effective top-level
 domain plus one label (the registrable domain). ISCX-URL2016 and
@@ -1265,7 +1274,7 @@ a reduction in an aggregate score.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 1. Internal macro-averaged F1 score (Macro-F1) across row-random, normalized-uniform-resource-locator-disjoint, host-disjoint, and registrable-domain-disjoint regimes. Points are means over ten outer repetitions, and error bars are repetition-bootstrap 95\% intervals.}]{figures/Figure_1.pdf}}
 \caption{Internal macro-averaged F1 score (Macro-F1) across
 row-random, normalized-uniform-resource-locator-disjoint, host-disjoint,
 and registrable-domain-disjoint regimes. Points are means over ten outer
@@ -1284,6 +1293,7 @@ uncertainty.
 \textbf{Table 4. Mean Macro-F1 and false-positive rate under S0 and S3
 (10 repetitions)}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1154}}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1154}}
@@ -1319,6 +1329,7 @@ PhiUSIIL & LR & 0.9866 & 0.9857 & -0.0009 & 0.0110 & 0.0098 \\
 PhiUSIIL & RF & 0.9916 & 0.9902 & -0.0014 & 0.0082 & 0.0102 \\
 PhiUSIIL & XGBoost & 0.9954 & 0.9936 & -0.0018 & 0.0015 & 0.0037 \\
 \end{longtable}
+}
 
 \emph{Note.} Macro-F1, macro-averaged F1 score; FPR, false-positive
 rate; S0, row-random split; S3, registrable-domain-disjoint split; LR,
@@ -1347,7 +1358,7 @@ correlations remained 0.951-0.989.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_2.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 2. Top-15 Jaccard and full-ranking Spearman agreement for SHapley Additive exPlanations (SHAP) under seed, partition, deployment-regime, and explanation-source variation. For each model and estimand, boxes pool the declared pairwise comparisons from both corpora; boxes show the median and interquartile range, whiskers extend to 1.5 times the interquartile range, and outliers are omitted from display.}]{figures/Figure_2.pdf}}
 \caption{Top-15 Jaccard and full-ranking Spearman agreement
 for SHapley Additive exPlanations (SHAP) under seed, partition,
 deployment-regime, and explanation-source variation. For each model and
@@ -1366,6 +1377,7 @@ features describe a different deployment regime or source.
 
 \textbf{Table 5. Range of SHAP agreement across datasets and models}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}
@@ -1392,6 +1404,7 @@ matter \\
 Explanation source & 0.623-0.788 & 0.810-0.941 & Largest source
 sensitivity \\
 \end{longtable}
+}
 
 \emph{Note.} SHAP, SHapley Additive exPlanations; Top-15 Jaccard,
 Jaccard similarity between the sets of the 15 highest-ranked features;
@@ -1408,7 +1421,7 @@ RF, and -0.0002 for XGBoost. On ISCX, the differences were -0.0445,
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_3.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 3. Feature-set size and internal registrable-domain-disjoint macro-averaged F1 score (Macro-F1) relative to the full 35-feature model (F-All). Bars show mean retained features. Boxes pool paired differences over three models and ten outer repetitions within each corpus; the dashed line marks no change from F-All.}]{figures/Figure_3.pdf}}
 \caption{Feature-set size and internal
 registrable-domain-disjoint macro-averaged F1 score (Macro-F1) relative
 to the full 35-feature model (F-All). Bars show mean retained features.
@@ -1449,7 +1462,7 @@ external-minus-internal Macro-F1 gaps were -0.6150 and -0.7985.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_4.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 4. Zero-target-feedback transfer performance for five source-selected feature schemes. Points are descriptive means over three models and ten outer repetitions, and error bars are bootstrap 95\% intervals over those model-repetition values. Blue circles and red squares denote transfer from the ISCX-URL2016 corpus to the PhiUSIIL corpus and the reverse direction, respectively.}]{figures/Figure_4.pdf}}
 \caption{Zero-target-feedback transfer performance for five
 source-selected feature schemes. Points are descriptive means over three
 models and ten outer repetitions, and error bars are bootstrap 95\%
@@ -1516,6 +1529,7 @@ each grouped test partition.
 
 \textbf{Table 6. Mean paired Macro-F1 change after full deduplication}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}llrrr@{}}
 \toprule\noalign{}
 Dataset & Regime & LR & RF & XGBoost \\
@@ -1528,6 +1542,7 @@ ISCX-URL2016 & S3 & -0.0001 & +0.0187 & +0.0027 \\
 PhiUSIIL & S0 & -0.0002 & -0.0004 & -0.0001 \\
 PhiUSIIL & S3 & +0.0019 & -0.0002 & +0.0003 \\
 \end{longtable}
+}
 
 \emph{Note.} Macro-F1, macro-averaged F1 score; S0, row-random split;
 S3, registrable-domain-disjoint split; LR, logistic regression; RF,
@@ -1566,7 +1581,7 @@ substantial ranking failure remained for most configurations.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_5.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 5. Difference between the macro-averaged F1 score (Macro-F1) obtained by a post hoc target-oracle threshold and the Macro-F1 obtained by the frozen source-selected threshold. Boxes summarize ten outer repetitions; the oracle is diagnostic only and is never used for model fitting or a deployment claim.}]{figures/Figure_5.pdf}}
 \caption{Difference between the macro-averaged F1 score
 (Macro-F1) obtained by a post hoc target-oracle threshold and the
 Macro-F1 obtained by the frozen source-selected threshold. Boxes
@@ -1608,6 +1623,7 @@ phishing.
 \textbf{Table 7. Frozen source-validation operating points on the
 primary external cohort (10-repetition means)}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1000}}
@@ -1652,6 +1668,7 @@ PhiUSIIL to ISCX-URL2016 & RF & 0.9879 & 0.9993 & 9,993 & 0.9986 &
 PhiUSIIL to ISCX-URL2016 & XGBoost & 0.9987 & 1.0000 & 10,000 & 0.9999 &
 1.0000 & 10,000 \\
 \end{longtable}
+}
 
 \emph{Note.} TPR, true-positive rate; FPR, false-positive rate; LR,
 logistic regression; RF, random forest. The percentages in the column
@@ -1666,7 +1683,7 @@ source-validation FPR did not constrain source-test or target FPR.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_6.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 6. Realized false-positive rates (FPRs) after applying source-validation thresholds to unseen-domain source tests and primary external cohorts. Points are ten-repetition means for full-feature models. Circles and squares denote 0.1\% and 1\% source-validation FPR budgets; dotted and dashed lines mark those budgets.}]{figures/Figure_6.pdf}}
 \caption{Realized false-positive rates (FPRs) after applying
 source-validation thresholds to unseen-domain source tests and primary
 external cohorts. Points are ten-repetition means for full-feature
@@ -1690,7 +1707,7 @@ domain-equal FPRs remain operationally unacceptable.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_7.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 7. Registrable-domain structure of external false positives for five feature schemes. Points are descriptive means over three models and ten outer repetitions, and error bars are bootstrap 95\% intervals over those model-repetition values; intervals narrower than their markers may be obscured. Both panels use logarithmic y-axes. Blue circles and red squares denote transfer from the ISCX-URL2016 corpus to the PhiUSIIL corpus and the reverse direction, respectively.}]{figures/Figure_7.pdf}}
 \caption{Registrable-domain structure of external false
 positives for five feature schemes. Points are descriptive means over
 three models and ten outer repetitions, and error bars are bootstrap
@@ -1735,6 +1752,7 @@ feature removal generally improves unseen-domain prediction.
 \textbf{Table 8. F-DCSS-15 minus F-All S3 Macro-F1 and auxiliary
 non-inferiority decision}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
@@ -1771,6 +1789,7 @@ PhiUSIIL & RF & +0.0001 & -0.0004 to 0.0007 & 5.81e-11 & Supported \\
 PhiUSIIL & XGBoost & +0.0003 & -0.0001 to 0.0006 & 4.93e-12 &
 Supported \\
 \end{longtable}
+}
 
 \emph{Note.} DCSS, Domain-Conditioned SHAP Stability; SHAP, SHapley
 Additive exPlanations; F-DCSS-15, the 15-feature DCSS subset; F-All, the
@@ -1796,6 +1815,7 @@ external comparisons are retained in the anonymous artifact.
 
 \textbf{Table 9. Prespecified F-DCSS-15 minus F-Stable external ROC-AUC}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -1826,6 +1846,7 @@ ISCX-URL2016 to PhiUSIIL & -0.00086 & -0.02014 to 0.01847 & -0.01933 to
 PhiUSIIL to ISCX-URL2016 & +0.01467 & 0.00254 to 0.02739 & 0.01037 to
 0.01898 & 0.0336 & 10/10 \\
 \end{longtable}
+}
 
 \emph{Note.} DCSS, Domain-Conditioned SHAP Stability; SHAP, SHapley
 Additive exPlanations; F-DCSS-15, the 15-feature DCSS subset; F-Stable,
@@ -2196,9 +2217,9 @@ and
 \nolinkurl{d68b3cd0648dcf9c775347416ad1a8995e8a025921fbe3871ca6158d4db3c3a1},
 respectively. The downloaded CSV contained 116,600 rows rather than the
 111,660 described on its landing page, and this discrepancy is retained
-in the audit record. Version 1.0.0 of the reproducibility materials is
+in the audit record. Version 1.0.1 of the reproducibility materials is
 available at
-\url{https://github.com/DrunkFL/phishing-url-deployment-validity-reproducibility}.
+\url{https://github.com/DrunkFL/phishing-url-deployment-validity-reproducibility/releases/tag/v1.0.1}.
 The repository contains code, acquisition instructions, source hashes,
 sanitized derived features, frozen split roles, repetition-level
 results, protocols, issue logs, and the supporting-information files. It
@@ -2234,8 +2255,10 @@ or used to fabricate or alter research data or results.
 
 \subsection{Author Contributions}\label{author-contributions}
 
-A CRediT contribution statement will be completed after the author list
-is finalized.
+Dongze Li: Conceptualization, Methodology, Investigation, Formal
+analysis, Writing - original draft. Jiahui Liu: Supervision, Writing -
+review \& editing. Both authors reviewed and approved the final
+manuscript.
 
 \section{References}\label{references}
 
