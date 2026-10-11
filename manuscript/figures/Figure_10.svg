@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1600" viewBox="0 0 2400 1600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="80" y="72" font-size="42" font-weight="700" text-anchor="start" fill="#202124" font-style="normal">Directional transfer and disagreement among deployment-validity claims</text>
+<text x="80" y="116" font-size="25" font-weight="400" text-anchor="start" fill="#4B5563" font-style="normal">Three sources, all six directed transfers; source-selected rules remain frozen on each target</text>
+<text x="80" y="184" font-size="29" font-weight="700" text-anchor="start" fill="#202124" font-style="normal">A  Complete directed transfer landscape</text>
+<line x1="500.0" y1="220" x2="500.0" y2="740" stroke="#E2E8F0" stroke-width="2" opacity="1"/>
+<text x="500.0" y="780" font-size="21" font-weight="400" text-anchor="middle" fill="#4B5563" font-style="normal">0.0</text>
+<line x1="950.0" y1="220" x2="950.0" y2="740" stroke="#E2E8F0" stroke-width="2" opacity="1"/>
+<text x="950.0" y="780" font-size="21" font-weight="400" text-anchor="middle" fill="#4B5563" font-style="normal">0.2</text>
+<line x1="1400.0" y1="220" x2="1400.0" y2="740" stroke="#E2E8F0" stroke-width="2" opacity="1"/>
+<text x="1400.0" y="780" font-size="21" font-weight="400" text-anchor="middle" fill="#4B5563" font-style="normal">0.5</text>
+<line x1="1850.0" y1="220" x2="1850.0" y2="740" stroke="#E2E8F0" stroke-width="2" opacity="1"/>
+<text x="1850.0" y="780" font-size="21" font-weight="400" text-anchor="middle" fill="#4B5563" font-style="normal">0.8</text>
+<line x1="2300.0" y1="220" x2="2300.0" y2="740" stroke="#E2E8F0" stroke-width="2" opacity="1"/>
+<text x="2300.0" y="780" font-size="21" font-weight="400" text-anchor="middle" fill="#4B5563" font-style="normal">1.0</text>
+<line x1="500" y1="740" x2="2300" y2="740" stroke="#495057" stroke-width="2" opacity="1"/>
+<line x1="1400.0" y1="220" x2="1400.0" y2="740" stroke="#68788A" stroke-width="3" opacity="1" stroke-dasharray="10,8"/>
+<text x="1410.0" y="246" font-size="19" font-weight="400" text-anchor="start" fill="#68788A" font-style="normal">chance</text>
+<text x="470" y="277" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">ISCX-URL2016 → PhiUSIIL</text>
+<line x1="1151.2758288690159" y1="252" x2="1285.7662137847374" y2="252" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1151.2758288690159" y1="245" x2="1151.2758288690159" y2="259" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1285.7662137847374" y1="245" x2="1285.7662137847374" y2="259" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1218.5210213268765" cy="252" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1131.9371747581683" y1="270" x2="1265.4682349047614" y2="270" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="1131.9371747581683" y1="263" x2="1131.9371747581683" y2="277" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="1265.4682349047614" y1="263" x2="1265.4682349047614" y2="277" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="1189.7027048314649" y="261" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1151.027223434091" y1="288" x2="1332.6255784257612" y2="288" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="1151.027223434091" y1="281" x2="1151.027223434091" y2="295" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="1332.6255784257612" y1="281" x2="1332.6255784257612" y2="295" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="1241.826400929926,277 1230.826400929926,297 1252.826400929926,297" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="470" y="357" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhiUSIIL → ISCX-URL2016</text>
+<line x1="1485.063502249316" y1="332" x2="1497.1598363823782" y2="332" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1485.063502249316" y1="325" x2="1485.063502249316" y2="339" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1497.1598363823782" y1="325" x2="1497.1598363823782" y2="339" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1491.1116693158472" cy="332" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1292.5238631235434" y1="350" x2="1338.2024308565024" y2="350" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="1292.5238631235434" y1="343" x2="1292.5238631235434" y2="357" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="1338.2024308565024" y1="343" x2="1338.2024308565024" y2="357" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="1306.3631469900229" y="341" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="615.4762324710773" y1="368" x2="659.4482686765514" y2="368" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="615.4762324710773" y1="361" x2="615.4762324710773" y2="375" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="659.4482686765514" y1="361" x2="659.4482686765514" y2="375" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="637.4622505738143,357 626.4622505738143,377 648.4622505738143,377" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="470" y="437" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">ISCX-URL2016 → PhreshPhish</text>
+<line x1="1581.5278148580735" y1="412" x2="1721.298527940429" y2="412" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1581.5278148580735" y1="405" x2="1581.5278148580735" y2="419" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1721.298527940429" y1="405" x2="1721.298527940429" y2="419" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1651.4131713992513" cy="412" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1471.1677780823043" y1="430" x2="1544.8051112602752" y2="430" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="1471.1677780823043" y1="423" x2="1471.1677780823043" y2="437" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="1544.8051112602752" y1="423" x2="1544.8051112602752" y2="437" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="1498.9864446712897" y="421" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1433.3293860159147" y1="448" x2="1558.2415210778338" y2="448" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="1433.3293860159147" y1="441" x2="1433.3293860159147" y2="455" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="1558.2415210778338" y1="441" x2="1558.2415210778338" y2="455" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="1495.7854535468741,437 1484.7854535468741,457 1506.7854535468741,457" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="470" y="517" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhreshPhish → ISCX-URL2016</text>
+<line x1="1419.7751361400071" y1="492" x2="1457.1762803627425" y2="492" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1419.7751361400071" y1="485" x2="1419.7751361400071" y2="499" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1457.1762803627425" y1="485" x2="1457.1762803627425" y2="499" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1438.4757082513747" cy="492" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1470.6966267335938" y1="510" x2="1558.4635272552532" y2="510" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="1470.6966267335938" y1="503" x2="1470.6966267335938" y2="517" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="1558.4635272552532" y1="503" x2="1558.4635272552532" y2="517" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="1505.5800769944235" y="501" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1433.5916261058092" y1="528" x2="1493.3306501275738" y2="528" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="1433.5916261058092" y1="521" x2="1433.5916261058092" y2="535" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="1493.3306501275738" y1="521" x2="1493.3306501275738" y2="535" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="1463.4611381166915,517 1452.4611381166915,537 1474.4611381166915,537" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="470" y="597" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhiUSIIL → PhreshPhish</text>
+<line x1="1162.5314312327864" y1="572" x2="1173.9690443504196" y2="572" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1162.5314312327864" y1="565" x2="1162.5314312327864" y2="579" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1173.9690443504196" y1="565" x2="1173.9690443504196" y2="579" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1168.250237791603" cy="572" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1227.2668334981333" y1="590" x2="1262.3468209239825" y2="590" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="1227.2668334981333" y1="583" x2="1227.2668334981333" y2="597" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="1262.3468209239825" y1="583" x2="1262.3468209239825" y2="597" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="1235.806827211058" y="581" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1114.467768554441" y1="608" x2="1132.8280091479674" y2="608" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="1114.467768554441" y1="601" x2="1114.467768554441" y2="615" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="1132.8280091479674" y1="601" x2="1132.8280091479674" y2="615" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="1123.6478888512042,597 1112.6478888512042,617 1134.6478888512042,617" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="470" y="677" font-size="22" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhreshPhish → PhiUSIIL</text>
+<line x1="1779.2263113314038" y1="652" x2="1847.1625462206466" y2="652" stroke="#2878B5" stroke-width="3" opacity="1"/>
+<line x1="1779.2263113314038" y1="645" x2="1779.2263113314038" y2="659" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<line x1="1847.1625462206466" y1="645" x2="1847.1625462206466" y2="659" stroke="#2878B5" stroke-width="2" opacity="1"/>
+<circle cx="1813.1944287760252" cy="652" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="2047.3847488302797" y1="670" x2="2136.9994972111253" y2="670" stroke="#F2A104" stroke-width="3" opacity="1"/>
+<line x1="2047.3847488302797" y1="663" x2="2047.3847488302797" y2="677" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<line x1="2136.9994972111253" y1="663" x2="2136.9994972111253" y2="677" stroke="#F2A104" stroke-width="2" opacity="1"/>
+<rect x="2083.1921230207026" y="661" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="1919.531845137642" y1="688" x2="1980.470556585206" y2="688" stroke="#6F4E9C" stroke-width="3" opacity="1"/>
+<line x1="1919.531845137642" y1="681" x2="1919.531845137642" y2="695" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<line x1="1980.470556585206" y1="681" x2="1980.470556585206" y2="695" stroke="#6F4E9C" stroke-width="2" opacity="1"/>
+<polygon points="1950.001200861424,677 1939.001200861424,697 1961.001200861424,697" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<line x1="500" y1="388" x2="2300" y2="388" stroke="#CBD5E1" stroke-width="2" opacity="1"/>
+<line x1="500" y1="548" x2="2300" y2="548" stroke="#CBD5E1" stroke-width="2" opacity="1"/>
+<text x="1400.0" y="800" font-size="23" font-weight="600" text-anchor="middle" fill="#202124" font-style="normal">Target ROC-AUC (mean ± SD across 10 repetitions)</text>
+<circle cx="1720" cy="190" r="9" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="1740" y="197" font-size="21" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">LR</text>
+<rect x="1901" y="181" width="18" height="18" rx="0" fill="#F2A104" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="1930" y="197" font-size="21" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">RF</text>
+<polygon points="2100,179 2089,199 2111,199" fill="#6F4E9C" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="2120" y="197" font-size="21" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">XGBoost</text>
+<text x="80" y="890" font-size="29" font-weight="700" text-anchor="start" fill="#202124" font-style="normal">B  Target-FPR exceedance of nominal source budget</text>
+<text x="617.5" y="930" font-size="21" font-weight="600" text-anchor="middle" fill="#202124" font-style="normal">0.1% budget</text>
+<text x="852.5" y="930" font-size="21" font-weight="600" text-anchor="middle" fill="#202124" font-style="normal">1% budget</text>
+<text x="470" y="987" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">ISCX-URL2016 → PhiUSIIL</text>
+<rect x="500" y="945" width="231" height="64" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="986" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">532–1000×</text>
+<rect x="735" y="945" width="231" height="64" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="986" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">90.7–100.0×</text>
+<text x="470" y="1055" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhiUSIIL → ISCX-URL2016</text>
+<rect x="500" y="1013" width="231" height="64" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="1054" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">929–1000×</text>
+<rect x="735" y="1013" width="231" height="64" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="1054" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">94.1–100.0×</text>
+<text x="470" y="1123" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">ISCX-URL2016 → PhreshPhish</text>
+<rect x="500" y="1081" width="231" height="64" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="1122" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">403–966×</text>
+<rect x="735" y="1081" width="231" height="64" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="1122" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">45.8–97.0×</text>
+<text x="470" y="1191" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhreshPhish → ISCX-URL2016</text>
+<rect x="500" y="1149" width="231" height="64" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="1190" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">273–301×</text>
+<rect x="735" y="1149" width="231" height="64" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="1190" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">28.9–32.2×</text>
+<text x="470" y="1259" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhiUSIIL → PhreshPhish</text>
+<rect x="500" y="1217" width="231" height="64" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="1258" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">872–953×</text>
+<rect x="735" y="1217" width="231" height="64" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="1258" font-size="20" font-weight="700" text-anchor="middle" fill="#111827" font-style="normal">90.8–95.3×</text>
+<text x="470" y="1327" font-size="20" font-weight="400" text-anchor="end" fill="#202124" font-style="normal">PhreshPhish → PhiUSIIL</text>
+<rect x="500" y="1285" width="231" height="64" rx="0" fill="#2C7BB6" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="615.5" y="1326" font-size="20" font-weight="700" text-anchor="middle" fill="#FFFFFF" font-style="normal">0.05–0.64×</text>
+<rect x="735" y="1285" width="231" height="64" rx="0" fill="#2C7BB6" stroke="#FFFFFF" stroke-width="2" opacity="1"/>
+<text x="850.5" y="1326" font-size="20" font-weight="700" text-anchor="middle" fill="#FFFFFF" font-style="normal">0.28–2.25×</text>
+<text x="1035" y="980" font-size="20" font-weight="600" text-anchor="start" fill="#202124" font-style="normal">Target FPR / nominal budget</text>
+<rect x="1035" y="1005" width="40" height="30" rx="0" fill="#2C7BB6" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1090" y="1028" font-size="19" font-weight="400" text-anchor="start" fill="#374151" font-style="normal">&lt;1×</text>
+<rect x="1035" y="1057" width="40" height="30" rx="0" fill="#ABD9E9" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1090" y="1080" font-size="19" font-weight="400" text-anchor="start" fill="#374151" font-style="normal">1–10×</text>
+<rect x="1035" y="1109" width="40" height="30" rx="0" fill="#FFFFBF" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1090" y="1132" font-size="19" font-weight="400" text-anchor="start" fill="#374151" font-style="normal">10–100×</text>
+<rect x="1035" y="1161" width="40" height="30" rx="0" fill="#FDAE61" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1090" y="1184" font-size="19" font-weight="400" text-anchor="start" fill="#374151" font-style="normal">100–1000×</text>
+<rect x="1035" y="1213" width="40" height="30" rx="0" fill="#D7191C" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1090" y="1236" font-size="19" font-weight="400" text-anchor="start" fill="#374151" font-style="normal">≥1000×</text>
+<text x="1035" y="1305" font-size="18" font-weight="400" text-anchor="start" fill="#4B5563" font-style="normal">Cell text: range across</text>
+<text x="1035" y="1332" font-size="18" font-weight="400" text-anchor="start" fill="#4B5563" font-style="normal">three model-family means</text>
+<text x="1360" y="890" font-size="29" font-weight="700" text-anchor="start" fill="#202124" font-style="normal">C  Explanation agreement does not certify transfer</text>
+<rect x="1948.3333333333335" y="950.0" width="341.6666666666665" height="352.5" rx="0" fill="#FCE8EC" stroke="none" stroke-width="1" opacity="0.55"/>
+<line x1="1470.0" y1="950" x2="1470.0" y2="1420" stroke="#dfe3e8" stroke-width="2" opacity="1"/>
+<text x="1470.0" y="1462" font-size="23" font-weight="400" text-anchor="middle" fill="#4b5563" font-style="normal">0.4</text>
+<line x1="1743.3333333333333" y1="950" x2="1743.3333333333333" y2="1420" stroke="#dfe3e8" stroke-width="2" opacity="1"/>
+<text x="1743.3333333333333" y="1462" font-size="23" font-weight="400" text-anchor="middle" fill="#4b5563" font-style="normal">0.6</text>
+<line x1="2016.6666666666667" y1="950" x2="2016.6666666666667" y2="1420" stroke="#dfe3e8" stroke-width="2" opacity="1"/>
+<text x="2016.6666666666667" y="1462" font-size="23" font-weight="400" text-anchor="middle" fill="#4b5563" font-style="normal">0.8</text>
+<line x1="2290.0" y1="950" x2="2290.0" y2="1420" stroke="#dfe3e8" stroke-width="2" opacity="1"/>
+<text x="2290.0" y="1462" font-size="23" font-weight="400" text-anchor="middle" fill="#4b5563" font-style="normal">1.0</text>
+<line x1="1470" y1="1420.0" x2="2290" y2="1420.0" stroke="#eef0f2" stroke-width="2" opacity="1"/>
+<text x="1456" y="1428.0" font-size="22" font-weight="400" text-anchor="end" fill="#4b5563" font-style="normal">0.10</text>
+<line x1="1470" y1="1263.3333333333333" x2="2290" y2="1263.3333333333333" stroke="#eef0f2" stroke-width="2" opacity="1"/>
+<text x="1456" y="1271.3333333333333" font-size="22" font-weight="400" text-anchor="end" fill="#4b5563" font-style="normal">0.30</text>
+<line x1="1470" y1="1106.6666666666665" x2="2290" y2="1106.6666666666665" stroke="#eef0f2" stroke-width="2" opacity="1"/>
+<text x="1456" y="1114.6666666666665" font-size="22" font-weight="400" text-anchor="end" fill="#4b5563" font-style="normal">0.50</text>
+<line x1="1470" y1="950.0" x2="2290" y2="950.0" stroke="#eef0f2" stroke-width="2" opacity="1"/>
+<text x="1456" y="958.0" font-size="22" font-weight="400" text-anchor="end" fill="#4b5563" font-style="normal">0.70</text>
+<line x1="1470" y1="1420" x2="2290" y2="1420" stroke="#495057" stroke-width="2" opacity="1"/>
+<line x1="1470" y1="950" x2="1470" y2="1420" stroke="#495057" stroke-width="2" opacity="1"/>
+<circle cx="2119.1666666666665" cy="1189.221886217042" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1961.4313725490197" y="1127.0094154221115" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1834.4444444444443,1163.8913916794017 1825.4444444444443,1179.8913916794017 1843.4444444444443,1179.8913916794017" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1834.4444444444443" cy="1403.0280644920012" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1827.4444444444443" y="1121.4987623309462" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1606.6666666666665,1158.3734747711537 1597.6666666666665,1174.3734747711537 1615.6666666666665,1174.3734747711537" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1968.4313725490197" cy="1402.0612800120857" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="2112.1666666666665" y="1168.04882561001" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1714.561403508772,1154.0899677039415 1705.561403508772,1170.0899677039415 1723.561403508772,1170.0899677039415" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1191.6680964962788" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1827.4444444444443" y="1157.5083017588058" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1834.4444444444443,1124.3272620693403 1825.4444444444443,1140.3272620693403 1843.4444444444443,1140.3272620693403" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1968.4313725490197" cy="1408.9521853394635" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1961.4313725490197" y="1150.2033204692648" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1834.4444444444443,1143.351439055656 1825.4444444444443,1159.351439055656 1843.4444444444443,1159.351439055656" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1193.789728191465" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1169.2333319869103" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,1105.9773955889718 1959.4313725490197,1121.9773955889718 1977.4313725490197,1121.9773955889718" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1398.4032738370397" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1961.4313725490197" y="1142.8689834833763" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1714.561403508772,1190.3850017808586 1705.561403508772,1206.3850017808586 1723.561403508772,1206.3850017808586" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1834.4444444444443" cy="1400.1527497171653" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1961.4313725490197" y="1156.493144110119" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1714.561403508772,1135.1987066763058 1705.561403508772,1151.1987066763058 1723.561403508772,1151.1987066763058" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1190.08324389437" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1827.4444444444443" y="1141.0391399437467" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1834.4444444444443,1116.4417223390083 1825.4444444444443,1132.4417223390083 1843.4444444444443,1132.4417223390083" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1191.46347677089" r="7" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1827.4444444444443" y="1137.4190943581766" width="14" height="14" rx="0" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1834.4444444444443,1106.5174485072966 1825.4444444444443,1122.5174485072966 1843.4444444444443,1122.5174485072966" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1012.4749398103422" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1028.6686299028593" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,981.4695183969703 1959.4313725490197,997.4695183969703 1977.4313725490197,997.4695183969703" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1834.4444444444443" cy="1015.1984764386839" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1026.6696674907894" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,974.0662704613463 1959.4313725490197,990.0662704613463 1977.4313725490197,990.0662704613463" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1012.3430026026753" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1030.8715817921359" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,979.8834410342506 1959.4313725490197,995.8834410342506 1977.4313725490197,995.8834410342506" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1009.9798042009669" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1040.0234450975552" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,977.2847726295502 1959.4313725490197,993.2847726295502 1977.4313725490197,993.2847726295502" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1006.4804362388727" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1038.0000831474263" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,980.0886744030113 1959.4313725490197,996.0886744030113 1977.4313725490197,996.0886744030113" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1011.4871804233735" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1827.4444444444443" y="1035.6843477153552" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,971.0468497022775 1959.4313725490197,987.0468497022775 1977.4313725490197,987.0468497022775" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1008.892134468248" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1028.6822819931926" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,979.794641155193 1959.4313725490197,995.794641155193 1977.4313725490197,995.794641155193" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2119.1666666666665" cy="1009.9364575750469" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1023.6388594272687" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,974.9120071028071 1959.4313725490197,990.9120071028071 1977.4313725490197,990.9120071028071" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="1968.4313725490197" cy="1010.0301981570896" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1048.193246068866" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,975.1778211644837 1959.4313725490197,991.1778211644837 1977.4313725490197,991.1778211644837" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<circle cx="2290.0" cy="1006.9361438014139" r="7" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<rect x="1707.561403508772" y="1027.6195197127772" width="14" height="14" rx="0" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<polygon points="1968.4313725490197,984.3676728087077 1959.4313725490197,1000.3676728087077 1977.4313725490197,1000.3676728087077" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+<text x="2275" y="978" font-size="18" font-weight="700" text-anchor="end" fill="#8B1E3F" font-style="normal">high agreement with large loss</text>
+<text x="1488" y="988" font-size="20" font-weight="700" text-anchor="start" fill="#374151" font-style="normal">Spearman ρ = 0.140</text>
+<text x="1488" y="1015" font-size="17" font-weight="400" text-anchor="start" fill="#4B5563" font-style="normal">n = 60 dependent comparisons; descriptive</text>
+<text x="1880.0" y="1472" font-size="21" font-weight="600" text-anchor="middle" fill="#202124" font-style="normal">Source-to-PhreshPhish Top-15 SHAP Jaccard</text>
+<text x="1368" y="1185.0" font-size="21" font-weight="600" text-anchor="middle" fill="#202124" font-style="normal">ROC-AUC loss</text>
+<circle cx="1500" cy="1502" r="8" fill="#2878B5" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="1518" y="1510" font-size="18" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">ISCX source</text>
+<circle cx="1665" cy="1502" r="8" fill="#C23B75" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="1683" y="1510" font-size="18" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">PhiUSIIL source</text>
+<circle cx="1890" cy="1502" r="7" fill="#6B7280" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="1907" y="1510" font-size="18" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">LR</text>
+<rect x="2013" y="1495" width="14" height="14" rx="0" fill="#6B7280" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="2037" y="1510" font-size="18" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">RF</text>
+<polygon points="2150,1493 2141,1509 2159,1509" fill="#6B7280" stroke="#ffffff" stroke-width="3" opacity="1"/>
+<text x="2167" y="1510" font-size="18" font-weight="400" text-anchor="start" fill="#202124" font-style="normal">XGBoost</text>
+<text x="80" y="1570" font-size="19" font-weight="400" text-anchor="start" fill="#4B5563" font-style="normal">Panel B uses nominal budgets, not achieved source FPRs. E3 supplies reciprocal directionality only and is not another independent source.</text>
+</svg>

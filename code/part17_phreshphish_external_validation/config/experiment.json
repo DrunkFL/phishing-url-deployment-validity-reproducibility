@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "repository": "phreshphish/phreshphish",
+    "revision": "eabec4b7a66324b79cc8a0ad856d1731dc26fe1a",
+    "release": "v1.0.1",
+    "license": "CC BY 4.0",
+    "expected_rows": {
+      "train": 498255,
+      "test": 168060
+    },
+    "label_mapping": {
+      "benign": 0,
+      "phish": 1
+    },
+    "selected_columns": [
+      "sha256",
+      "url",
+      "label",
+      "date"
+    ],
+    "forbidden_columns": [
+      "html",
+      "target",
+      "lang",
+      "lang_score"
+    ]
+  },
+  "source_experiment_relative_path": "code",
+  "feature_count": 35,
+  "primary_split": "test",
+  "outer_repetitions": [
+    "r00",
+    "r01",
+    "r02",
+    "r03",
+    "r04",
+    "r05",
+    "r06",
+    "r07",
+    "r08",
+    "r09"
+  ],
+  "source_datasets": [
+    "iscx_url2016_binary",
+    "phiusiil"
+  ],
+  "models": [
+    "lr",
+    "rf",
+    "xgb"
+  ],
+  "fpr_budgets": [
+    0.001,
+    0.01
+  ],
+  "ece_bins": 15,
+  "association_deadzone": 0.02,
+  "shap_cohort_per_class": 100
+}

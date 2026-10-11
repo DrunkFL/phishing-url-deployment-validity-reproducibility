@@ -18,7 +18,7 @@ This checks the release manifest, file sizes and hashes, Python syntax, local-pa
 .venv\Scripts\python tools\validate_repository.py --smoke
 ```
 
-This additionally imports representative entry points from Parts 4, 11, 14, and 15 and runs each command's `--help` path. It detects broken package imports and directory-layout errors without changing experiment results.
+This additionally imports representative entry points from Parts 4, 11, 14, 15, and 17 and runs each command's `--help` path. It detects broken package imports and directory-layout errors without changing experiment results.
 
 ## 3. Representative deterministic rerun
 
@@ -38,7 +38,7 @@ Use the frozen source hashes, assignments, feature definitions, random seeds, an
 
 The reference Part 4 results were produced on the frozen Windows environment with the numerical libraries' default thread settings. Do not impose `OMP_NUM_THREADS`, `MKL_NUM_THREADS`, or `OPENBLAS_NUM_THREADS` when checking exact reference values. A single-thread BLAS sensitivity run completed successfully but produced small logistic-regression differences (approximately 0.00009 in Macro-F1 and 0.00015 in ROC-AUC for the representative PhiUSIIL/S3/r00 run). This is numerical-environment sensitivity, not a different split or model selection. Exact equality outside the frozen platform is therefore not guaranteed; conclusions should be checked against reported tolerances and effect sizes.
 
-## Full experiment
+## Full original experiment
 
 The full experiment proceeds from Parts 2 through 15. Scripts are located under `code/part*/scripts/`, while each part reads and writes data relative to its own part directory. Run Parts 4-15 in numerical order after preparing the feature tables and frozen assignments from Parts 2-3. Within a part, use the numbered stage scripts and then the corresponding `validate_*.py` script.
 
@@ -52,3 +52,25 @@ The retained validation records include:
 - `code/part15_statistical_inference_robustness/results/validation_summary.json`.
 
 The low-FPR experiment is a threshold-transfer failure diagnostic. It does not establish a population-wide false-positive-rate guarantee.
+
+## Third-source validation and directional synthesis
+
+Part 17 pins PhreshPhish v1.0.1 to commit `eabec4b7a66324b79cc8a0ad856d1731dc26fe1a`. From `code/part17_phreshphish_external_validation/`, first run the unit tests and reconstruct the URL-only feature tables from the public shards:
+
+```powershell
+python -m unittest discover -s tests -v
+python src\build_manifest.py
+python src\prepare_dataset.py --split test
+python src\prepare_dataset.py --split train
+```
+
+The protocol files in that directory give the commands for frozen external evaluation, source-to-target SHAP comparison, and the reciprocal-transfer diagnostic. Raw URLs, large feature tables, fitted models, and row-level predictions are intentionally excluded from the release. Compact run metadata, aggregate metrics, validation summaries, and input hashes are retained under `results/`.
+
+After the Part 17 outputs are present, rebuild and audit the six-edge synthesis from the repository root:
+
+```powershell
+python code\part18_directional_synthesis\scripts\build_directional_synthesis.py
+python code\part18_directional_synthesis\scripts\audit_directional_synthesis.py
+```
+
+The audit checks 98 frozen-input, cardinality, direction-model, budget-ratio, evidence-boundary, and explanation-association conditions. It does not fit models or select thresholds.

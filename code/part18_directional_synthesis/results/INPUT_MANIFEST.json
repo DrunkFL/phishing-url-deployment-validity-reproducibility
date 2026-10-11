@@ -1,0 +1,50 @@
+{
+  "purpose": "Derived synthesis of frozen results; no model fitting or threshold reselection",
+  "input_files": [
+    {
+      "path": "code/part11_dcss_innovation/results/main_external_metrics_all.csv",
+      "sha256": "8aa350fde1be2aaa957f7a921f8718b6fdecea102319829189d84e3dd566fa9b",
+      "bytes": 1032165
+    },
+    {
+      "path": "code/part12_security_privacy_revision/results/low_fpr_operating_point_runs.csv",
+      "sha256": "b0cc954795d4f5c7de6ed3c48e3adfc47d7cf0d79a54ce6d50abd68244134157",
+      "bytes": 106371
+    },
+    {
+      "path": "code/part17_phreshphish_external_validation/results/full_split/external_metrics.csv",
+      "sha256": "669bd57e6ce05ef80ab62ce0c98a6cc143db1db547f4c93a57ef0d50232010cc",
+      "bytes": 370908
+    },
+    {
+      "path": "code/part17_phreshphish_external_validation/results/reverse_transfer/server_full/external_metrics.csv",
+      "sha256": "b566d75aa7dc1343379dc90a6544283a11f58dcf6c3884e8c568ebf41b3b6fd5",
+      "bytes": 869882
+    },
+    {
+      "path": "code/part17_phreshphish_external_validation/results/shap_external/comparison_metrics.csv",
+      "sha256": "9acbd3806126dc3b819205b53e42ccc22e86d4d869e946e5e1ed5a1f4594fe90",
+      "bytes": 29810
+    },
+    {
+      "path": "code/part17_phreshphish_external_validation/results/shap_external/stability_performance_association.csv",
+      "sha256": "f6f8e04ac85d3f1270319c203fd691969bbf982adcb831004774df3f10b92637",
+      "bytes": 1300
+    }
+  ],
+  "design_counts": {
+    "macro_threshold_rows": 180,
+    "low_fpr_rows": 360,
+    "directed_edges": 6,
+    "models": 3,
+    "repetitions_per_edge_model": 10,
+    "explanation_comparisons": 60
+  },
+  "evidence_boundaries": [
+    "Original ISCX/PhiUSIIL edges remain user-authoritative.",
+    "E1 and E2 are primary verified additions.",
+    "E3 is a secondary reciprocal-transfer diagnostic, not another independent source.",
+    "Budget exceedance is relative to the nominal source-validation budget, not the achieved source FPR.",
+    "Explanation-performance associations are descriptive and non-causal."
+  ]
+}

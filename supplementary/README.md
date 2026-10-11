@@ -1,43 +1,32 @@
-# Supporting Information
+# Supporting Information for the JISA Manuscript
 
-This directory contains the files cited as Supporting Information by the
-manuscript-associated `v1.0.1` release.
+This directory is the Codex-accepted supporting-information package for the current manuscript. It contains the six items cited in the text and the frozen Public Suffix List (PSL) snapshot used for registrable-domain extraction. The files are evidence-bound to archived project outputs; building this package does not train a model, regenerate a prediction, or recompute a SHAP value.
 
-## Data and protocol files
+## Contents
 
-| Citation in manuscript | File | Contents |
+| Manuscript label | File | Role |
 |---|---|---|
-| Supplementary Data S1 | `supplementary_feature_dictionary.csv` | Ordered definitions for the 35 offline web-address features |
-| Supplementary Data S2 | `supplementary_model_candidates.json` | The nine prespecified model candidates and fixed parameters |
-| Supplementary Protocol S3 | `supplementary_shap_protocol.md` | Backgrounds, cohorts, explainers, scales, and SHAP stability estimands |
-| Supplementary Section S6 | `supplementary_section_s6.md` | Third-source sensitivity analysis and interpretation boundary |
+| Supplementary Data S1 | `supplementary_feature_dictionary.csv` | Ordered definitions of the 35 frozen URL features |
+| Supplementary Data S2 | `supplementary_model_candidates.json` | Nine prespecified model candidates and fixed parameters |
+| Supplementary Protocol S3 | `supplementary_shap_protocol.md` | Original two-source and PhreshPhish SHAP protocols |
+| Supplementary Table S4 | `tables/table_s4_s3_feature_methods.csv` | S3 internal results for five feature methods |
+| Supplementary Table S5 | `tables/table_s5_external_transfer.csv` | Primary domain-filtered bidirectional transfer results |
+| Supplementary Figure S1 | `figures/Figure_S1.pdf` | Complete external reliability diagrams |
+| Supplementary Section S6 | `supplementary_section_s6.md` | URL-Phish sensitivity analysis and interpretation boundary |
+| Frozen PSL resource | `resources/public_suffix_list_tldextract_5.1.3.dat` | Exact suffix snapshot used by the parser |
 
-## Supplementary tables
+`SUPPLEMENT_BINDING_MATRIX.csv` records each file's source and acceptance basis. `SUPPLEMENT_PACKAGE_MANIFEST.csv` records portable package-relative paths, byte sizes, and SHA-256 values. `SUPPLEMENT_EVIDENCE_INDEX.md` maps manuscript claims to their supporting files and evidence classes.
 
-| Table | File | Contents |
-|---|---|---|
-| S1 | `tables/table_s1_dataset_audit.csv` | Dataset cleaning and entity audit |
-| S2 | `tables/table_s2_internal_regime_performance.csv` | Internal S0-S3 performance by model and repetition summary |
-| S3 | `tables/table_s3_shap_stability.csv` | Seed, partition, regime, and source SHAP stability |
-| S4 | `tables/table_s4_s3_feature_methods.csv` | S3 feature-method comparison and retained feature counts |
-| S5 | `tables/table_s5_external_transfer.csv` | Zero-target-feedback transfer results |
-| S6 | `tables/table_s6_false_positive_domains.csv` | External false-positive domain concentration |
-| S7 | `tables/table_s7_low_fpr_operating_points.csv` | Low-FPR operating-point summary |
-| S8 | `tables/table_s8_low_fpr_run_level.csv` | All 360 low-FPR run-level records |
+## Validation and manifest refresh
 
-## Supplementary figure
+From this directory, run:
 
-`figures/Figure_S1.pdf` is the submission copy of Supplementary Figure S1. The
-PNG beside it is an accessible preview of the same fifteen-bin external
-reliability diagrams.
+```text
+python scripts/build_supporting_information.py
+```
 
-All thresholds in Tables S7-S8 were selected on source-validation data and
-applied unchanged to source-test and external cohorts. The Wilson and exact
-Clopper-Pearson bounds are post-selection descriptions of the frozen
-validation cohorts; they are not selection-adjusted or population-level
-confidence guarantees.
+The release package already contains the accepted files. The script verifies their structure, row counts, model grid, and frozen PSL hash, then refreshes the binding matrix and package manifest. Paths in both inventories are repository-relative; no server path or user-specific absolute path is embedded.
 
-Author-created documentation and aggregate result tables in this directory
-are licensed under CC BY 4.0 as defined in the repository-level
-`LICENSE-DOCUMENTATION` and `LICENSE_SCOPE.md`. Those notices do not license
-underlying source datasets or record-level dataset derivatives.
+## Interpretation boundary
+
+The package preserves negative and directionally inconsistent results. Supplementary Table S5 does not establish external portability; Supplementary Protocol S3 does not treat explanation agreement as evidence of predictive transfer; and Supplementary Section S6 is a sensitivity analysis rather than a fourth independent source or prospective deployment validation.

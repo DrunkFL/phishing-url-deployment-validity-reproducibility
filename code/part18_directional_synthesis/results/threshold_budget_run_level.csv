@@ -1,0 +1,361 @@
+source,target,repetition,model,budget,fpr,alerts_per_10000_benign,n_samples,n_benign,n_phishing,evidence_state,evidence_role,nominal_budget_exceedance,exceeds_nominal_budget
+phiusiil,iscx,r00,lr,0.001,0.9240906856721554,9240.906856721553,41108,32552,8556,user_authoritative,original two-source primary analysis,924.0906856721554,True
+phiusiil,iscx,r00,lr,0.01,0.93379823052347,9337.982305234702,41108,32552,8556,user_authoritative,original two-source primary analysis,93.37982305234699,True
+phiusiil,iscx,r00,rf,0.001,0.9998156795281395,9998.156795281397,41108,32552,8556,user_authoritative,original two-source primary analysis,999.8156795281395,True
+phiusiil,iscx,r00,rf,0.01,1.0,10000.0,41108,32552,8556,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r00,xgb,0.001,1.0,10000.0,41108,32552,8556,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r00,xgb,0.01,1.0,10000.0,41108,32552,8556,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r01,lr,0.001,0.9221855317067204,9221.855317067204,41159,32706,8453,user_authoritative,original two-source primary analysis,922.1855317067203,True
+phiusiil,iscx,r01,lr,0.01,0.9334678652235064,9334.678652235065,41159,32706,8453,user_authoritative,original two-source primary analysis,93.34678652235064,True
+phiusiil,iscx,r01,rf,0.001,0.9999694245704152,9999.694245704151,41159,32706,8453,user_authoritative,original two-source primary analysis,999.9694245704152,True
+phiusiil,iscx,r01,rf,0.01,1.0,10000.0,41159,32706,8453,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r01,xgb,0.001,1.0,10000.0,41159,32706,8453,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r01,xgb,0.01,1.0,10000.0,41159,32706,8453,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r02,lr,0.001,0.9236447942405662,9236.447942405664,41236,32781,8455,user_authoritative,original two-source primary analysis,923.6447942405662,True
+phiusiil,iscx,r02,lr,0.01,0.9339556450382844,9339.556450382845,41236,32781,8455,user_authoritative,original two-source primary analysis,93.39556450382844,True
+phiusiil,iscx,r02,rf,0.001,0.9999694945242672,9999.69494524267,41236,32781,8455,user_authoritative,original two-source primary analysis,999.9694945242671,True
+phiusiil,iscx,r02,rf,0.01,1.0,10000.0,41236,32781,8455,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r02,xgb,0.001,1.0,10000.0,41236,32781,8455,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r02,xgb,0.01,1.0,10000.0,41236,32781,8455,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r03,lr,0.001,0.928479892597791,9284.79892597791,41332,32774,8558,user_authoritative,original two-source primary analysis,928.4798925977909,True
+phiusiil,iscx,r03,lr,0.01,0.9388539696100568,9388.539696100568,41332,32774,8558,user_authoritative,original two-source primary analysis,93.88539696100568,True
+phiusiil,iscx,r03,rf,0.001,0.9999389760175748,9999.389760175747,41332,32774,8558,user_authoritative,original two-source primary analysis,999.9389760175748,True
+phiusiil,iscx,r03,rf,0.01,1.0,10000.0,41332,32774,8558,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r03,xgb,0.001,1.0,10000.0,41332,32774,8558,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r03,xgb,0.01,1.0,10000.0,41332,32774,8558,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r04,lr,0.001,0.9409986257443884,9409.986257443885,41209,32745,8464,user_authoritative,original two-source primary analysis,940.9986257443884,True
+phiusiil,iscx,r04,lr,0.01,0.9574286150557336,9574.286150557336,41209,32745,8464,user_authoritative,original two-source primary analysis,95.74286150557336,True
+phiusiil,iscx,r04,rf,0.001,0.9999694609864102,9999.694609864102,41209,32745,8464,user_authoritative,original two-source primary analysis,999.9694609864101,True
+phiusiil,iscx,r04,rf,0.01,1.0,10000.0,41209,32745,8464,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r04,xgb,0.001,1.0,10000.0,41209,32745,8464,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r04,xgb,0.01,1.0,10000.0,41209,32745,8464,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r05,lr,0.001,0.924777281157834,9247.77281157834,41352,32889,8463,user_authoritative,original two-source primary analysis,924.777281157834,True
+phiusiil,iscx,r05,lr,0.01,0.9365745385995318,9365.745385995318,41352,32889,8463,user_authoritative,original two-source primary analysis,93.65745385995318,True
+phiusiil,iscx,r05,rf,0.001,0.9951047462677493,9951.047462677492,41352,32889,8463,user_authoritative,original two-source primary analysis,995.1047462677492,True
+phiusiil,iscx,r05,rf,0.01,1.0,10000.0,41352,32889,8463,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r05,xgb,0.001,1.0,10000.0,41352,32889,8463,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r05,xgb,0.01,1.0,10000.0,41352,32889,8463,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r06,lr,0.001,0.9293229026166712,9293.229026166711,41919,33363,8556,user_authoritative,original two-source primary analysis,929.3229026166712,True
+phiusiil,iscx,r06,lr,0.01,0.9395438060126488,9395.438060126487,41919,33363,8556,user_authoritative,original two-source primary analysis,93.95438060126487,True
+phiusiil,iscx,r06,rf,0.001,0.999970026676258,9999.700266762582,41919,33363,8556,user_authoritative,original two-source primary analysis,999.9700266762579,True
+phiusiil,iscx,r06,rf,0.01,1.0,10000.0,41919,33363,8556,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r06,xgb,0.001,1.0,10000.0,41919,33363,8556,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r06,xgb,0.01,1.0,10000.0,41919,33363,8556,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r07,lr,0.001,0.9284777103103165,9284.777103103164,41233,32773,8460,user_authoritative,original two-source primary analysis,928.4777103103164,True
+phiusiil,iscx,r07,lr,0.01,0.939767491532664,9397.67491532664,41233,32773,8460,user_authoritative,original two-source primary analysis,93.9767491532664,True
+phiusiil,iscx,r07,rf,0.001,0.9998169224666646,9998.169224666646,41233,32773,8460,user_authoritative,original two-source primary analysis,999.8169224666647,True
+phiusiil,iscx,r07,rf,0.01,1.0,10000.0,41233,32773,8460,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r07,xgb,0.001,1.0,10000.0,41233,32773,8460,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r07,xgb,0.01,1.0,10000.0,41233,32773,8460,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r08,lr,0.001,0.9374078420751708,9374.078420751708,41850,33231,8619,user_authoritative,original two-source primary analysis,937.4078420751708,True
+phiusiil,iscx,r08,lr,0.01,0.946917035298366,9469.17035298366,41850,33231,8619,user_authoritative,original two-source primary analysis,94.6917035298366,True
+phiusiil,iscx,r08,rf,0.001,0.9984351960518792,9984.351960518792,41850,33231,8619,user_authoritative,original two-source primary analysis,998.4351960518792,True
+phiusiil,iscx,r08,rf,0.01,1.0,10000.0,41850,33231,8619,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r08,xgb,0.001,1.0,10000.0,41850,33231,8619,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r08,xgb,0.01,1.0,10000.0,41850,33231,8619,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r09,lr,0.001,0.9318416418726092,9318.41641872609,41501,32938,8563,user_authoritative,original two-source primary analysis,931.8416418726092,True
+phiusiil,iscx,r09,lr,0.01,0.9469305968789848,9469.305968789848,41501,32938,8563,user_authoritative,original two-source primary analysis,94.69305968789848,True
+phiusiil,iscx,r09,rf,0.001,0.9997874795069523,9997.874795069523,41501,32938,8563,user_authoritative,original two-source primary analysis,999.7874795069523,True
+phiusiil,iscx,r09,rf,0.01,1.0,10000.0,41501,32938,8563,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,iscx,r09,xgb,0.001,1.0,10000.0,41501,32938,8563,user_authoritative,original two-source primary analysis,1000.0,True
+phiusiil,iscx,r09,xgb,0.01,1.0,10000.0,41501,32938,8563,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r00,lr,0.001,0.0562494897542656,562.4948975426565,234382,134739,99643,user_authoritative,original two-source primary analysis,56.2494897542656,True
+iscx,phiusiil,r00,lr,0.01,0.7764715486978528,7764.715486978528,234382,134739,99643,user_authoritative,original two-source primary analysis,77.64715486978528,True
+iscx,phiusiil,r00,rf,0.001,1.0,10000.0,234382,134739,99643,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r00,rf,0.01,1.0,10000.0,234382,134739,99643,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r00,xgb,0.001,1.0,10000.0,234382,134739,99643,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r00,xgb,0.01,1.0,10000.0,234382,134739,99643,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r01,lr,0.001,0.9999554697936768,9999.554697936766,233296,134740,98556,user_authoritative,original two-source primary analysis,999.9554697936768,True
+iscx,phiusiil,r01,lr,0.01,0.9999703131957844,9999.703131957844,233296,134740,98556,user_authoritative,original two-source primary analysis,99.99703131957844,True
+iscx,phiusiil,r01,rf,0.001,1.0,10000.0,233296,134740,98556,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r01,rf,0.01,1.0,10000.0,233296,134740,98556,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r01,xgb,0.001,1.0,10000.0,233296,134740,98556,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r01,xgb,0.01,1.0,10000.0,233296,134740,98556,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r02,lr,0.001,0.9999628912193204,9999.628912193204,233305,134739,98566,user_authoritative,original two-source primary analysis,999.9628912193203,True
+iscx,phiusiil,r02,lr,0.01,0.9999777347315922,9999.777347315923,233305,134739,98566,user_authoritative,original two-source primary analysis,99.99777347315923,True
+iscx,phiusiil,r02,rf,0.001,1.0,10000.0,233305,134739,98566,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r02,rf,0.01,1.0,10000.0,233305,134739,98566,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r02,xgb,0.001,1.0,10000.0,233305,134739,98566,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r02,xgb,0.01,1.0,10000.0,233305,134739,98566,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r03,lr,0.001,0.0631048506798076,631.0485067980763,234331,134744,99587,user_authoritative,original two-source primary analysis,63.104850679807605,True
+iscx,phiusiil,r03,lr,0.01,0.8424790714243305,8424.790714243305,234331,134744,99587,user_authoritative,original two-source primary analysis,84.24790714243305,True
+iscx,phiusiil,r03,rf,0.001,1.0,10000.0,234331,134744,99587,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r03,rf,0.01,1.0,10000.0,234331,134744,99587,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r03,xgb,0.001,1.0,10000.0,234331,134744,99587,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r03,xgb,0.01,1.0,10000.0,234331,134744,99587,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r04,lr,0.001,0.9999628912193204,9999.628912193204,233299,134739,98560,user_authoritative,original two-source primary analysis,999.9628912193203,True
+iscx,phiusiil,r04,lr,0.01,0.9999777347315922,9999.777347315923,233299,134739,98560,user_authoritative,original two-source primary analysis,99.99777347315923,True
+iscx,phiusiil,r04,rf,0.001,1.0,10000.0,233299,134739,98560,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r04,rf,0.01,1.0,10000.0,233299,134739,98560,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r04,xgb,0.001,1.0,10000.0,233299,134739,98560,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r04,xgb,0.01,1.0,10000.0,233299,134739,98560,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r05,lr,0.001,0.0601974172480332,601.9741724803325,234478,134740,99738,user_authoritative,original two-source primary analysis,60.1974172480332,True
+iscx,phiusiil,r05,lr,0.01,0.8215451981594182,8215.451981594182,234478,134740,99738,user_authoritative,original two-source primary analysis,82.15451981594181,True
+iscx,phiusiil,r05,rf,0.001,1.0,10000.0,234478,134740,99738,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r05,rf,0.01,1.0,10000.0,234478,134740,99738,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r05,xgb,0.001,1.0,10000.0,234478,134740,99738,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r05,xgb,0.01,1.0,10000.0,234478,134740,99738,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r06,lr,0.001,0.9999406259509124,9999.406259509124,233448,134739,98709,user_authoritative,original two-source primary analysis,999.9406259509124,True
+iscx,phiusiil,r06,lr,0.01,0.9999554694631844,9999.554694631845,233448,134739,98709,user_authoritative,original two-source primary analysis,99.99554694631844,True
+iscx,phiusiil,r06,rf,0.001,1.0,10000.0,233448,134739,98709,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r06,rf,0.01,1.0,10000.0,233448,134739,98709,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r06,xgb,0.001,1.0,10000.0,233448,134739,98709,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r06,xgb,0.01,1.0,10000.0,233448,134739,98709,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r07,lr,0.001,0.9999332041947766,9999.332041947766,233297,134739,98558,user_authoritative,original two-source primary analysis,999.9332041947766,True
+iscx,phiusiil,r07,lr,0.01,0.9999406259509124,9999.406259509124,233297,134739,98558,user_authoritative,original two-source primary analysis,99.99406259509124,True
+iscx,phiusiil,r07,rf,0.001,1.0,10000.0,233297,134739,98558,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r07,rf,0.01,1.0,10000.0,233297,134739,98558,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r07,xgb,0.001,1.0,10000.0,233297,134739,98558,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r07,xgb,0.01,1.0,10000.0,233297,134739,98558,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r08,lr,0.001,0.0492730389864849,492.7303898648498,234378,134739,99639,user_authoritative,original two-source primary analysis,49.2730389864849,True
+iscx,phiusiil,r08,lr,0.01,0.6951810537409362,6951.810537409362,234378,134739,99639,user_authoritative,original two-source primary analysis,69.51810537409362,True
+iscx,phiusiil,r08,rf,0.001,1.0,10000.0,234378,134739,99639,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r08,rf,0.01,1.0,10000.0,234378,134739,99639,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r08,xgb,0.001,1.0,10000.0,234378,134739,99639,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r08,xgb,0.01,1.0,10000.0,234378,134739,99639,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r09,lr,0.001,0.0899064865667211,899.0648656672109,234325,134740,99585,user_authoritative,original two-source primary analysis,89.9064865667211,True
+iscx,phiusiil,r09,lr,0.01,0.9329300875760724,9329.300875760724,234325,134740,99585,user_authoritative,original two-source primary analysis,93.29300875760724,True
+iscx,phiusiil,r09,rf,0.001,1.0,10000.0,234325,134740,99585,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r09,rf,0.01,1.0,10000.0,234325,134740,99585,user_authoritative,original two-source primary analysis,100.0,True
+iscx,phiusiil,r09,xgb,0.001,1.0,10000.0,234325,134740,99585,user_authoritative,original two-source primary analysis,1000.0,True
+iscx,phiusiil,r09,xgb,0.01,1.0,10000.0,234325,134740,99585,user_authoritative,original two-source primary analysis,100.0,True
+phiusiil,phreshphish,r00,lr,0.001,0.8725578130483953,8725.578130483953,124146,76929,47217,verified,independent third-source evaluation,872.5578130483952,True
+phiusiil,phreshphish,r00,lr,0.01,0.9056792626967723,9056.792626967725,124146,76929,47217,verified,independent third-source evaluation,90.56792626967723,True
+phiusiil,phreshphish,r00,rf,0.001,0.914037619103329,9140.37619103329,124146,76929,47217,verified,independent third-source evaluation,914.037619103329,True
+phiusiil,phreshphish,r00,rf,0.01,0.9524756593742282,9524.756593742282,124146,76929,47217,verified,independent third-source evaluation,95.24756593742282,True
+phiusiil,phreshphish,r00,xgb,0.001,0.9527226403566924,9527.226403566923,124146,76929,47217,verified,independent third-source evaluation,952.7226403566924,True
+phiusiil,phreshphish,r00,xgb,0.01,0.9536455692911646,9536.455692911646,124146,76929,47217,verified,independent third-source evaluation,95.36455692911646,True
+phiusiil,phreshphish,r01,lr,0.001,0.8678266059450132,8678.266059450132,124390,77073,47317,verified,independent third-source evaluation,867.8266059450132,True
+phiusiil,phreshphish,r01,lr,0.01,0.9049213083699869,9049.213083699868,124390,77073,47317,verified,independent third-source evaluation,90.49213083699868,True
+phiusiil,phreshphish,r01,rf,0.001,0.9297159835480648,9297.159835480648,124390,77073,47317,verified,independent third-source evaluation,929.7159835480649,True
+phiusiil,phreshphish,r01,rf,0.01,0.9518638174198488,9518.638174198488,124390,77073,47317,verified,independent third-source evaluation,95.18638174198487,True
+phiusiil,phreshphish,r01,xgb,0.001,0.9528369208412804,9528.369208412803,124390,77073,47317,verified,independent third-source evaluation,952.8369208412803,True
+phiusiil,phreshphish,r01,xgb,0.01,0.953485656455568,9534.85656455568,124390,77073,47317,verified,independent third-source evaluation,95.3485656455568,True
+phiusiil,phreshphish,r02,lr,0.001,0.8715021995470755,8715.021995470755,123651,76834,46817,verified,independent third-source evaluation,871.5021995470755,True
+phiusiil,phreshphish,r02,lr,0.01,0.9076060077569826,9076.060077569826,123651,76834,46817,verified,independent third-source evaluation,90.76060077569826,True
+phiusiil,phreshphish,r02,rf,0.001,0.9374886118124788,9374.886118124788,123651,76834,46817,verified,independent third-source evaluation,937.4886118124788,True
+phiusiil,phreshphish,r02,rf,0.01,0.9527552906265456,9527.552906265457,123651,76834,46817,verified,independent third-source evaluation,95.27552906265456,True
+phiusiil,phreshphish,r02,xgb,0.001,0.952625139912018,9526.25139912018,123651,76834,46817,verified,independent third-source evaluation,952.625139912018,True
+phiusiil,phreshphish,r02,xgb,0.01,0.9532498633417498,9532.498633417496,123651,76834,46817,verified,independent third-source evaluation,95.32498633417498,True
+phiusiil,phreshphish,r03,lr,0.001,0.8733335929488427,8733.335929488427,123361,77037,46324,verified,independent third-source evaluation,873.3335929488427,True
+phiusiil,phreshphish,r03,lr,0.01,0.9076937056219738,9076.937056219738,123361,77037,46324,verified,independent third-source evaluation,90.76937056219738,True
+phiusiil,phreshphish,r03,rf,0.001,0.9167542869010996,9167.542869010997,123361,77037,46324,verified,independent third-source evaluation,916.7542869010996,True
+phiusiil,phreshphish,r03,rf,0.01,0.9520360346327088,9520.360346327088,123361,77037,46324,verified,independent third-source evaluation,95.20360346327088,True
+phiusiil,phreshphish,r03,xgb,0.001,0.9529187273647728,9529.187273647727,123361,77037,46324,verified,independent third-source evaluation,952.9187273647727,True
+phiusiil,phreshphish,r03,xgb,0.01,0.9536456507911782,9536.456507911782,123361,77037,46324,verified,independent third-source evaluation,95.36456507911782,True
+phiusiil,phreshphish,r04,lr,0.001,0.875759393007066,8757.59393007066,123521,76706,46815,verified,independent third-source evaluation,875.7593930070659,True
+phiusiil,phreshphish,r04,lr,0.01,0.9121189998174848,9121.189998174848,123521,76706,46815,verified,independent third-source evaluation,91.21189998174847,True
+phiusiil,phreshphish,r04,rf,0.001,0.9320261778739604,9320.261778739605,123521,76706,46815,verified,independent third-source evaluation,932.0261778739604,True
+phiusiil,phreshphish,r04,rf,0.01,0.9524417907334498,9524.4179073345,123521,76706,46815,verified,independent third-source evaluation,95.24417907334498,True
+phiusiil,phreshphish,r04,xgb,0.001,0.9524026803639872,9524.026803639872,123521,76706,46815,verified,independent third-source evaluation,952.4026803639872,True
+phiusiil,phreshphish,r04,xgb,0.01,0.9532239981227024,9532.239981227023,123521,76706,46815,verified,independent third-source evaluation,95.32239981227023,True
+phiusiil,phreshphish,r05,lr,0.001,0.8682020338630394,8682.020338630395,123356,76898,46458,verified,independent third-source evaluation,868.2020338630393,True
+phiusiil,phreshphish,r05,lr,0.01,0.9070456968971884,9070.456968971885,123356,76898,46458,verified,independent third-source evaluation,90.70456968971884,True
+phiusiil,phreshphish,r05,rf,0.001,0.915017295638378,9150.172956383782,123356,76898,46458,verified,independent third-source evaluation,915.017295638378,True
+phiusiil,phreshphish,r05,rf,0.01,0.9528596322401104,9528.596322401105,123356,76898,46458,verified,independent third-source evaluation,95.28596322401104,True
+phiusiil,phreshphish,r05,xgb,0.001,0.952768602564436,9527.68602564436,123356,76898,46458,verified,independent third-source evaluation,952.7686025644359,True
+phiusiil,phreshphish,r05,xgb,0.01,0.953405810294156,9534.05810294156,123356,76898,46458,verified,independent third-source evaluation,95.3405810294156,True
+phiusiil,phreshphish,r06,lr,0.001,0.8735685968674856,8735.685968674856,123800,76935,46865,verified,independent third-source evaluation,873.5685968674856,True
+phiusiil,phreshphish,r06,lr,0.01,0.9075453304737766,9075.453304737766,123800,76935,46865,verified,independent third-source evaluation,90.75453304737766,True
+phiusiil,phreshphish,r06,rf,0.001,0.9175927731201664,9175.927731201664,123800,76935,46865,verified,independent third-source evaluation,917.5927731201664,True
+phiusiil,phreshphish,r06,rf,0.01,0.9528953012283096,9528.953012283097,123800,76935,46865,verified,independent third-source evaluation,95.28953012283095,True
+phiusiil,phreshphish,r06,xgb,0.001,0.9527003314486254,9527.003314486254,123800,76935,46865,verified,independent third-source evaluation,952.7003314486254,True
+phiusiil,phreshphish,r06,xgb,0.01,0.9535322025086111,9535.322025086112,123800,76935,46865,verified,independent third-source evaluation,95.35322025086111,True
+phiusiil,phreshphish,r07,lr,0.001,0.8720677020172385,8720.677020172385,123246,76689,46557,verified,independent third-source evaluation,872.0677020172385,True
+phiusiil,phreshphish,r07,lr,0.01,0.908135456193196,9081.35456193196,123246,76689,46557,verified,independent third-source evaluation,90.8135456193196,True
+phiusiil,phreshphish,r07,rf,0.001,0.9270690711836116,9270.690711836118,123246,76689,46557,verified,independent third-source evaluation,927.0690711836115,True
+phiusiil,phreshphish,r07,rf,0.01,0.9524964466872694,9524.964466872694,123246,76689,46557,verified,independent third-source evaluation,95.24964466872694,True
+phiusiil,phreshphish,r07,xgb,0.001,0.9527181212429424,9527.181212429425,123246,76689,46557,verified,independent third-source evaluation,952.7181212429424,True
+phiusiil,phreshphish,r07,xgb,0.01,0.95335706555047,9533.5706555047,123246,76689,46557,verified,independent third-source evaluation,95.335706555047,True
+phiusiil,phreshphish,r08,lr,0.001,0.8765675292905883,8765.675292905884,123997,77670,46327,verified,independent third-source evaluation,876.5675292905884,True
+phiusiil,phreshphish,r08,lr,0.01,0.9091798635251706,9091.798635251704,123997,77670,46327,verified,independent third-source evaluation,90.91798635251705,True
+phiusiil,phreshphish,r08,rf,0.001,0.9168404789494012,9168.404789494014,123997,77670,46327,verified,independent third-source evaluation,916.8404789494012,True
+phiusiil,phreshphish,r08,rf,0.01,0.9530578086777391,9530.578086777392,123997,77670,46327,verified,independent third-source evaluation,95.30578086777392,True
+phiusiil,phreshphish,r08,xgb,0.001,0.9523883095146132,9523.883095146131,123997,77670,46327,verified,independent third-source evaluation,952.3883095146132,True
+phiusiil,phreshphish,r08,xgb,0.01,0.9538689326638342,9538.68932663834,123997,77670,46327,verified,independent third-source evaluation,95.38689326638342,True
+phiusiil,phreshphish,r09,lr,0.001,0.8714859437751004,8714.859437751003,124024,77190,46834,verified,independent third-source evaluation,871.4859437751004,True
+phiusiil,phreshphish,r09,lr,0.01,0.9076693872263246,9076.693872263246,124024,77190,46834,verified,independent third-source evaluation,90.76693872263246,True
+phiusiil,phreshphish,r09,rf,0.001,0.9118409120352378,9118.409120352377,124024,77190,46834,verified,independent third-source evaluation,911.8409120352377,True
+phiusiil,phreshphish,r09,rf,0.01,0.9513278922140174,9513.278922140174,124024,77190,46834,verified,independent third-source evaluation,95.13278922140174,True
+phiusiil,phreshphish,r09,xgb,0.001,0.9527788573649436,9527.788573649435,124024,77190,46834,verified,independent third-source evaluation,952.7788573649436,True
+phiusiil,phreshphish,r09,xgb,0.01,0.9533877445264932,9533.87744526493,124024,77190,46834,verified,independent third-source evaluation,95.33877445264932,True
+iscx,phreshphish,r00,lr,0.001,0.0106868181005186,106.86818100518693,164597,89456,75141,verified,independent third-source evaluation,10.686818100518598,True
+iscx,phreshphish,r00,lr,0.01,0.097288052226793,972.8805222679306,164597,89456,75141,verified,independent third-source evaluation,9.7288052226793,True
+iscx,phreshphish,r00,rf,0.001,0.8979274727240207,8979.274727240207,164597,89456,75141,verified,independent third-source evaluation,897.9274727240207,True
+iscx,phreshphish,r00,rf,0.01,0.9213132713289216,9213.132713289217,164597,89456,75141,verified,independent third-source evaluation,92.13132713289215,True
+iscx,phreshphish,r00,xgb,0.001,0.9495282597030944,9495.282597030942,164597,89456,75141,verified,independent third-source evaluation,949.5282597030944,True
+iscx,phreshphish,r00,xgb,0.01,0.956861473797174,9568.61473797174,164597,89456,75141,verified,independent third-source evaluation,95.6861473797174,True
+iscx,phreshphish,r01,lr,0.001,0.7939886234867779,7939.886234867779,163853,89131,74722,verified,independent third-source evaluation,793.9886234867779,True
+iscx,phreshphish,r01,lr,0.01,0.8082821913812254,8082.821913812254,163853,89131,74722,verified,independent third-source evaluation,80.82821913812253,True
+iscx,phreshphish,r01,rf,0.001,0.9557168661857266,9557.168661857266,163853,89131,74722,verified,independent third-source evaluation,955.7168661857265,True
+iscx,phreshphish,r01,rf,0.01,0.9750816214336202,9750.816214336202,163853,89131,74722,verified,independent third-source evaluation,97.50816214336201,True
+iscx,phreshphish,r01,xgb,0.001,0.9779762372238616,9779.762372238614,163853,89131,74722,verified,independent third-source evaluation,977.9762372238616,True
+iscx,phreshphish,r01,xgb,0.01,0.9791879368569858,9791.879368569858,163853,89131,74722,verified,independent third-source evaluation,97.91879368569857,True
+iscx,phreshphish,r02,lr,0.001,0.794147676910476,7941.476769104761,164116,89127,74989,verified,independent third-source evaluation,794.147676910476,True
+iscx,phreshphish,r02,lr,0.01,0.8084755461308021,8084.755461308021,164116,89127,74989,verified,independent third-source evaluation,80.8475546130802,True
+iscx,phreshphish,r02,rf,0.001,0.9732292122476917,9732.292122476916,164116,89127,74989,verified,independent third-source evaluation,973.2292122476916,True
+iscx,phreshphish,r02,rf,0.01,0.9769766737352318,9769.766737352318,164116,89127,74989,verified,independent third-source evaluation,97.69766737352317,True
+iscx,phreshphish,r02,xgb,0.001,0.9753273418829312,9753.27341882931,164116,89127,74989,verified,independent third-source evaluation,975.3273418829313,True
+iscx,phreshphish,r02,xgb,0.01,0.9780201285805648,9780.201285805648,164116,89127,74989,verified,independent third-source evaluation,97.80201285805647,True
+iscx,phreshphish,r03,lr,0.001,0.0122285190525692,122.2851905256922,164604,89463,75141,verified,independent third-source evaluation,12.2285190525692,True
+iscx,phreshphish,r03,lr,0.01,0.112124565462817,1121.2456546281703,164604,89463,75141,verified,independent third-source evaluation,11.2124565462817,True
+iscx,phreshphish,r03,rf,0.001,0.9470507360584822,9470.507360584825,164604,89463,75141,verified,independent third-source evaluation,947.0507360584822,True
+iscx,phreshphish,r03,rf,0.01,0.9621631288912736,9621.631288912737,164604,89463,75141,verified,independent third-source evaluation,96.21631288912737,True
+iscx,phreshphish,r03,xgb,0.001,0.9628896862390038,9628.896862390038,164604,89463,75141,verified,independent third-source evaluation,962.8896862390038,True
+iscx,phreshphish,r03,xgb,0.01,0.9670813632451404,9670.813632451403,164604,89463,75141,verified,independent third-source evaluation,96.70813632451403,True
+iscx,phreshphish,r04,lr,0.001,0.7948611500701263,7948.611500701262,163847,89125,74722,verified,independent third-source evaluation,794.8611500701262,True
+iscx,phreshphish,r04,lr,0.01,0.8087405329593268,8087.405329593268,163847,89125,74722,verified,independent third-source evaluation,80.87405329593268,True
+iscx,phreshphish,r04,rf,0.001,0.9701542776998596,9701.542776998598,163847,89125,74722,verified,independent third-source evaluation,970.1542776998596,True
+iscx,phreshphish,r04,rf,0.01,0.9754614305750352,9754.61430575035,163847,89125,74722,verified,independent third-source evaluation,97.54614305750351,True
+iscx,phreshphish,r04,xgb,0.001,0.9750911640953716,9750.911640953716,163847,89125,74722,verified,independent third-source evaluation,975.0911640953715,True
+iscx,phreshphish,r04,xgb,0.01,0.9785582047685836,9785.582047685835,163847,89125,74722,verified,independent third-source evaluation,97.85582047685836,True
+iscx,phreshphish,r05,lr,0.001,0.011369225953584,113.69225953584044,164857,89452,75405,verified,independent third-source evaluation,11.369225953584,True
+iscx,phreshphish,r05,lr,0.01,0.1120600992711174,1120.6009927111747,164857,89452,75405,verified,independent third-source evaluation,11.20600992711174,True
+iscx,phreshphish,r05,rf,0.001,0.9420918481420204,9420.918481420204,164857,89452,75405,verified,independent third-source evaluation,942.0918481420204,True
+iscx,phreshphish,r05,rf,0.01,0.9582345839109244,9582.345839109244,164857,89452,75405,verified,independent third-source evaluation,95.82345839109244,True
+iscx,phreshphish,r05,xgb,0.001,0.9523990520055448,9523.99052005545,164857,89452,75405,verified,independent third-source evaluation,952.3990520055447,True
+iscx,phreshphish,r05,xgb,0.01,0.9551714886195948,9551.714886195949,164857,89452,75405,verified,independent third-source evaluation,95.51714886195947,True
+iscx,phreshphish,r06,lr,0.001,0.7926244029331958,7926.244029331958,163917,89186,74731,verified,independent third-source evaluation,792.6244029331958,True
+iscx,phreshphish,r06,lr,0.01,0.8069315811898728,8069.315811898728,163917,89186,74731,verified,independent third-source evaluation,80.69315811898728,True
+iscx,phreshphish,r06,rf,0.001,0.9622698629829792,9622.698629829794,163917,89186,74731,verified,independent third-source evaluation,962.2698629829792,True
+iscx,phreshphish,r06,rf,0.01,0.9756912519902228,9756.912519902227,163917,89186,74731,verified,independent third-source evaluation,97.56912519902228,True
+iscx,phreshphish,r06,xgb,0.001,0.9742672616778418,9742.672616778418,163917,89186,74731,verified,independent third-source evaluation,974.2672616778418,True
+iscx,phreshphish,r06,xgb,0.01,0.97788890633059,9778.8890633059,163917,89186,74731,verified,independent third-source evaluation,97.788890633059,True
+iscx,phreshphish,r07,lr,0.001,0.7900379368614241,7900.379368614241,164083,89359,74724,verified,independent third-source evaluation,790.0379368614241,True
+iscx,phreshphish,r07,lr,0.01,0.8033326245817433,8033.326245817432,164083,89359,74724,verified,independent third-source evaluation,80.33326245817432,True
+iscx,phreshphish,r07,rf,0.001,0.9677368815676092,9677.368815676093,164083,89359,74724,verified,independent third-source evaluation,967.7368815676092,True
+iscx,phreshphish,r07,rf,0.01,0.974585660090198,9745.85660090198,164083,89359,74724,verified,independent third-source evaluation,97.45856600901979,True
+iscx,phreshphish,r07,xgb,0.001,0.9764992893832742,9764.992893832745,164083,89359,74724,verified,independent third-source evaluation,976.4992893832742,True
+iscx,phreshphish,r07,xgb,0.01,0.9791627032531698,9791.627032531698,164083,89359,74724,verified,independent third-source evaluation,97.91627032531697,True
+iscx,phreshphish,r08,lr,0.001,0.0097364126182118,97.36412618211898,164600,89458,75142,verified,independent third-source evaluation,9.7364126182118,True
+iscx,phreshphish,r08,lr,0.01,0.0932057501844441,932.057501844441,164600,89458,75142,verified,independent third-source evaluation,9.32057501844441,True
+iscx,phreshphish,r08,rf,0.001,0.9440743142033132,9440.743142033134,164600,89458,75142,verified,independent third-source evaluation,944.0743142033132,True
+iscx,phreshphish,r08,rf,0.01,0.9586062733349728,9586.062733349729,164600,89458,75142,verified,independent third-source evaluation,95.86062733349728,True
+iscx,phreshphish,r08,xgb,0.001,0.9603836437210758,9603.836437210755,164600,89458,75142,verified,independent third-source evaluation,960.3836437210757,True
+iscx,phreshphish,r08,xgb,0.01,0.965603970578372,9656.03970578372,164600,89458,75142,verified,independent third-source evaluation,96.56039705783719,True
+iscx,phreshphish,r09,lr,0.001,0.0153913218429347,153.91321842934747,164607,89466,75141,verified,independent third-source evaluation,15.391321842934701,True
+iscx,phreshphish,r09,lr,0.01,0.1266514653611427,1266.5146536114278,164607,89466,75141,verified,independent third-source evaluation,12.66514653611427,True
+iscx,phreshphish,r09,rf,0.001,0.9609572351507836,9609.572351507835,164607,89466,75141,verified,independent third-source evaluation,960.9572351507835,True
+iscx,phreshphish,r09,rf,0.01,0.9677754677754676,9677.754677754678,164607,89466,75141,verified,independent third-source evaluation,96.77754677754676,True
+iscx,phreshphish,r09,xgb,0.001,0.954083115373438,9540.83115373438,164607,89466,75141,verified,independent third-source evaluation,954.083115373438,True
+iscx,phreshphish,r09,xgb,0.01,0.9589117653633784,9589.117653633784,164607,89466,75141,verified,independent third-source evaluation,95.89117653633784,True
+phreshphish,iscx,r00,lr,0.001,0.305446465481604,3054.46465481604,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,305.446465481604,True
+phreshphish,iscx,r00,lr,0.01,0.3223956180239768,3223.956180239769,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,32.23956180239768,True
+phreshphish,phiusiil,r00,lr,0.001,9.766737746813602e-05,0.9766737746813604,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,0.09766737746813602,False
+phreshphish,phiusiil,r00,lr,0.01,0.0013347874920645,13.347874920645255,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,0.13347874920645,False
+phreshphish,iscx,r00,rf,0.001,0.2648821827201323,2648.8218272013232,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,264.8821827201323,True
+phreshphish,iscx,r00,rf,0.01,0.2995039272426623,2995.039272426623,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,29.950392724266226,True
+phreshphish,phiusiil,r00,rf,0.001,0.0004069474061172,4.069474061172334,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,0.4069474061172,False
+phreshphish,phiusiil,r00,rf,0.01,0.0207380398157342,207.38039815734217,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,2.0738039815734197,True
+phreshphish,iscx,r00,xgb,0.001,0.2834849111202976,2834.8491112029765,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,283.4849111202976,True
+phreshphish,iscx,r00,xgb,0.01,0.3109239355105415,3109.239355105416,28836,19352,9484,verified,secondary reciprocal-transfer diagnostic,31.092393551054148,True
+phreshphish,phiusiil,r00,xgb,0.001,8.138948122344669e-06,0.0813894812234466,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,0.00813894812234467,False
+phreshphish,phiusiil,r00,xgb,0.01,0.0018719580681392,18.71958068139274,183867,122866,61001,verified,secondary reciprocal-transfer diagnostic,0.18719580681391998,False
+phreshphish,iscx,r01,lr,0.001,0.3086450707050446,3086.4507070504465,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,308.6450707050446,True
+phreshphish,iscx,r01,lr,0.01,0.3226356433657607,3226.356433657608,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,32.263564336576074,True
+phreshphish,phiusiil,r01,lr,0.001,8.957654723127036e-05,0.8957654723127036,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,0.08957654723127036,False
+phreshphish,phiusiil,r01,lr,0.01,0.0005944625407166,5.944625407166123,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,0.05944625407166,False
+phreshphish,iscx,r01,rf,0.001,0.2751479289940828,2751.4792899408285,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,275.1479289940828,True
+phreshphish,iscx,r01,rf,0.01,0.2903419917761508,2903.4199177615083,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,29.034199177615076,True
+phreshphish,phiusiil,r01,rf,0.001,0.0005048859934853,5.04885993485342,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,0.5048859934853,False
+phreshphish,phiusiil,r01,rf,0.01,0.0225570032573289,225.5700325732899,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,2.25570032573289,True
+phreshphish,iscx,r01,xgb,0.001,0.2802627620098285,2802.627620098285,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,280.2627620098285,True
+phreshphish,iscx,r01,xgb,0.01,0.302176311302778,3021.7631130277805,29425,19942,9483,verified,secondary reciprocal-transfer diagnostic,30.2176311302778,True
+phreshphish,phiusiil,r01,xgb,0.001,3.257328990228013e-05,0.3257328990228013,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,0.032573289902280124,False
+phreshphish,phiusiil,r01,xgb,0.01,0.0024592833876221,24.592833876221498,183795,122800,60995,verified,secondary reciprocal-transfer diagnostic,0.24592833876220999,False
+phreshphish,iscx,r02,lr,0.001,0.3003442340791738,3003.4423407917384,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,300.3442340791738,True
+phreshphish,iscx,r02,lr,0.01,0.3161694396634155,3161.6943966341555,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,31.616943966341548,True
+phreshphish,phiusiil,r02,lr,0.001,9.771827820393804e-05,0.9771827820393804,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,0.09771827820393804,False
+phreshphish,phiusiil,r02,lr,0.01,0.0010993306297943,10.99330629794303,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,0.10993306297943,False
+phreshphish,iscx,r02,rf,0.001,0.2810288774144195,2810.2887741441955,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,281.0288774144195,True
+phreshphish,iscx,r02,rf,0.01,0.2918818129661503,2918.818129661503,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,29.188181296615028,True
+phreshphish,phiusiil,r02,rf,0.001,0.0005618800996726,5.618800996726438,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,0.5618800996726,False
+phreshphish,phiusiil,r02,rf,0.01,0.0247634403348479,247.63440334847965,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,2.47634403348479,True
+phreshphish,iscx,r02,xgb,0.001,0.28184165232358,2818.4165232358005,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,281.84165232358,True
+phreshphish,iscx,r02,xgb,0.01,0.3062248995983935,3062.2489959839354,30400,20916,9484,verified,secondary reciprocal-transfer diagnostic,30.62248995983935,True
+phreshphish,phiusiil,r02,xgb,0.001,4.071594925164085e-05,0.4071594925164085,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,0.04071594925164085,False
+phreshphish,phiusiil,r02,xgb,0.01,0.0065308382599631,65.30838259963193,183802,122802,61000,verified,secondary reciprocal-transfer diagnostic,0.65308382599631,False
+phreshphish,iscx,r03,lr,0.001,0.2900414033558509,2900.4140335585093,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,290.0414033558509,True
+phreshphish,iscx,r03,lr,0.01,0.3171170189583787,3171.170189583788,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,31.71170189583787,True
+phreshphish,phiusiil,r03,lr,0.001,0.0005947919043118,5.947919043118339,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,0.5947919043118001,False
+phreshphish,phiusiil,r03,lr,0.01,0.0080826516311964,80.82651631196428,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,0.80826516311964,False
+phreshphish,iscx,r03,rf,0.001,0.2502179123992155,2502.1791239921554,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,250.21791239921546,True
+phreshphish,iscx,r03,rf,0.01,0.2657986489431249,2657.9864894312486,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,26.579864894312486,True
+phreshphish,phiusiil,r03,rf,0.001,0.0004481308868102,4.481308868102858,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,0.4481308868102,False
+phreshphish,phiusiil,r03,rf,0.01,0.0218036046018968,218.0360460189681,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,2.18036046018968,True
+phreshphish,iscx,r03,xgb,0.001,0.2613314447592068,2613.314447592068,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,261.33144475920676,True
+phreshphish,iscx,r03,xgb,0.01,0.279200261494879,2792.0026149487903,27880,18356,9524,verified,secondary reciprocal-transfer diagnostic,27.920026149487896,True
+phreshphish,phiusiil,r03,xgb,0.001,4.07391715282078e-05,0.407391715282078,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,0.0407391715282078,False
+phreshphish,phiusiil,r03,xgb,0.01,0.0025339764690545,25.33976469054525,191848,122732,69116,verified,secondary reciprocal-transfer diagnostic,0.25339764690544997,False
+phreshphish,iscx,r04,lr,0.001,0.2938351465255317,2938.351465255317,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,293.83514652553174,True
+phreshphish,iscx,r04,lr,0.01,0.3112319905910026,3112.3199059100266,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,31.12319905910026,True
+phreshphish,phiusiil,r04,lr,0.001,9.775330324703889e-05,0.9775330324703888,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,0.09775330324703889,False
+phreshphish,phiusiil,r04,lr,0.01,0.0021668648886426,21.66864888642696,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,0.21668648886426,False
+phreshphish,iscx,r04,rf,0.001,0.2725668920905616,2725.668920905616,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,272.5668920905616,True
+phreshphish,iscx,r04,rf,0.01,0.2888366166813682,2888.3661668136824,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,28.883661668136817,True
+phreshphish,phiusiil,r04,rf,0.001,0.0007820264259763,7.820264259763111,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,0.7820264259763,False
+phreshphish,phiusiil,r04,rf,0.01,0.0284136268104726,284.13626810472635,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,2.84136268104726,True
+phreshphish,iscx,r04,xgb,0.001,0.2818288738606292,2818.288738606292,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,281.8288738606292,True
+phreshphish,iscx,r04,xgb,0.01,0.3025090659609918,3025.0906596099185,29901,20406,9495,verified,secondary reciprocal-transfer diagnostic,30.25090659609918,True
+phreshphish,phiusiil,r04,xgb,0.001,3.258443441567963e-05,0.3258443441567963,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,0.032584434415679625,False
+phreshphish,phiusiil,r04,xgb,0.01,0.0024112481467602,24.11248146760293,183766,122758,61008,verified,secondary reciprocal-transfer diagnostic,0.24112481467601998,False
+phreshphish,iscx,r05,lr,0.001,0.3332313653512797,3332.313653512797,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,333.2313653512797,True
+phreshphish,iscx,r05,lr,0.01,0.3486285306413786,3486.285306413786,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,34.86285306413786,True
+phreshphish,phiusiil,r05,lr,0.001,4.070136593784088e-05,0.4070136593784088,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,0.04070136593784088,False
+phreshphish,phiusiil,r05,lr,0.01,0.0004721358448789,4.721358448789541,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,0.04721358448789,False
+phreshphish,iscx,r05,rf,0.001,0.302386050780055,3023.8605078005503,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,302.386050780055,True
+phreshphish,iscx,r05,rf,0.01,0.3145712246354644,3145.7122463546443,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,31.457122463546437,True
+phreshphish,phiusiil,r05,rf,0.001,0.0007407648600687,7.40764860068704,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,0.7407648600687,False
+phreshphish,phiusiil,r05,rf,0.01,0.0200739136805431,200.7391368054312,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,2.00739136805431,True
+phreshphish,iscx,r05,xgb,0.001,0.3024370347710818,3024.370347710819,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,302.4370347710818,True
+phreshphish,iscx,r05,xgb,0.01,0.3273172223921688,3273.172223921689,29097,19614,9483,verified,secondary reciprocal-transfer diagnostic,32.73172223921688,True
+phreshphish,phiusiil,r05,xgb,0.001,3.25610927502727e-05,0.325610927502727,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,0.0325610927502727,False
+phreshphish,phiusiil,r05,xgb,0.01,0.0022467153997688,22.467153997688165,183862,122846,61016,verified,secondary reciprocal-transfer diagnostic,0.22467153997688,False
+phreshphish,iscx,r06,lr,0.001,0.2929885363902959,2929.8853639029594,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,292.98853639029585,True
+phreshphish,iscx,r06,lr,0.01,0.3297787256731538,3297.787256731538,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,32.97787256731538,True
+phreshphish,phiusiil,r06,lr,0.001,9.762526541869036e-05,0.9762526541869035,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,0.09762526541869036,False
+phreshphish,phiusiil,r06,lr,0.01,0.0068825812120176,68.8258121201767,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,0.68825812120176,False
+phreshphish,iscx,r06,rf,0.001,0.2683017861903492,2683.0178619034923,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,268.3017861903492,True
+phreshphish,iscx,r06,rf,0.01,0.2853105838443082,2853.1058384430817,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,28.531058384430818,True
+phreshphish,phiusiil,r06,rf,0.001,0.0004555845719538,4.555845719538883,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,0.4555845719538,False
+phreshphish,phiusiil,r06,rf,0.01,0.0198586060739185,198.586060739186,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,1.98586060739185,True
+phreshphish,iscx,r06,xgb,0.001,0.2799786723540389,2799.7867235403896,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,279.9786723540389,True
+phreshphish,iscx,r06,xgb,0.01,0.2997067448680351,2997.067448680352,28284,18755,9529,verified,secondary reciprocal-transfer diagnostic,29.97067448680351,True
+phreshphish,phiusiil,r06,xgb,0.001,6.508351027912691e-05,0.6508351027912691,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,0.06508351027912691,False
+phreshphish,phiusiil,r06,xgb,0.01,0.0057924324148422,57.92432414842294,192053,122919,69134,verified,secondary reciprocal-transfer diagnostic,0.57924324148422,False
+phreshphish,iscx,r07,lr,0.001,0.3124009204806954,3124.0092048069546,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,312.4009204806954,True
+phreshphish,iscx,r07,lr,0.01,0.3286627461007415,3286.6274610074147,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,32.86627461007415,True
+phreshphish,phiusiil,r07,lr,0.001,9.766340308128037e-05,0.9766340308128036,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,0.09766340308128037,False
+phreshphish,phiusiil,r07,lr,0.01,0.0008952478615784,8.952478615784035,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,0.08952478615784,False
+phreshphish,iscx,r07,rf,0.001,0.2844285349015597,2844.285349015597,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,284.4285349015597,True
+phreshphish,iscx,r07,rf,0.01,0.2934287905906417,2934.2879059064176,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,29.34287905906417,True
+phreshphish,phiusiil,r07,rf,0.001,0.0010905746677409,10.90574667740964,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,1.0905746677409,True
+phreshphish,phiusiil,r07,rf,0.01,0.0220149587779052,220.14958777905284,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,2.20149587779052,True
+phreshphish,iscx,r07,xgb,0.001,0.2901048325236512,2901.048325236512,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,290.1048325236512,True
+phreshphish,iscx,r07,xgb,0.01,0.3047302480184096,3047.302480184096,29038,19555,9483,verified,secondary reciprocal-transfer diagnostic,30.473024801840957,True
+phreshphish,phiusiil,r07,xgb,0.001,9.766340308128037e-05,0.9766340308128036,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,0.09766340308128037,False
+phreshphish,phiusiil,r07,xgb,0.01,0.0102546573235344,102.5465732353444,183888,122871,61017,verified,secondary reciprocal-transfer diagnostic,1.02546573235344,True
+phreshphish,iscx,r08,lr,0.001,0.3027300303336703,3027.300303336704,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,302.7300303336703,True
+phreshphish,iscx,r08,lr,0.01,0.319211324570273,3192.11324570273,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,31.9211324570273,True
+phreshphish,phiusiil,r08,lr,0.001,0.0001791414240114,1.791414240114651,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,0.1791414240114,False
+phreshphish,phiusiil,r08,lr,0.01,0.0016367011921047,16.36701192104749,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,0.16367011921046998,False
+phreshphish,iscx,r08,rf,0.001,0.279221435793731,2792.2143579373105,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,279.22143579373096,True
+phreshphish,iscx,r08,rf,0.01,0.2899393326592517,2899.393326592517,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,28.99393326592517,True
+phreshphish,phiusiil,r08,rf,0.001,0.000985277832063,9.852778320630575,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,0.985277832063,False
+phreshphish,phiusiil,r08,rf,0.01,0.0251286561136082,251.2865611360824,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,2.51286561136082,True
+phreshphish,iscx,r08,xgb,0.001,0.2790192113245702,2790.1921132457023,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,279.01921132457016,True
+phreshphish,iscx,r08,xgb,0.01,0.303437815975733,3034.37815975733,29264,19780,9484,verified,secondary reciprocal-transfer diagnostic,30.343781597573297,True
+phreshphish,phiusiil,r08,xgb,0.001,5.699954400364797e-05,0.5699954400364797,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,0.05699954400364797,False
+phreshphish,phiusiil,r08,xgb,0.01,0.0025486938961631,25.48693896163116,183806,122808,60998,verified,secondary reciprocal-transfer diagnostic,0.25486938961631,False
+phreshphish,iscx,r09,lr,0.001,0.2725729617258939,2725.729617258939,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,272.5729617258939,True
+phreshphish,iscx,r09,lr,0.01,0.3034550730986147,3034.550730986147,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,30.345507309861468,True
+phreshphish,phiusiil,r09,lr,0.001,0.0001790554013689,1.7905540136895994,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,0.1790554013689,False
+phreshphish,phiusiil,r09,lr,0.01,0.0052658565766235,52.65856576623504,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,0.52658565766235,False
+phreshphish,iscx,r09,rf,0.001,0.2511635547281388,2511.6355472813884,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,251.1635547281388,True
+phreshphish,iscx,r09,rf,0.01,0.2657285221486065,2657.285221486065,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,26.57285221486065,True
+phreshphish,phiusiil,r09,rf,0.001,0.0003906663302595,3.9066633025954896,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,0.3906663302595,False
+phreshphish,phiusiil,r09,rf,0.01,0.0197367885599876,197.36788559987627,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,1.97367885599876,True
+phreshphish,iscx,r09,xgb,0.001,0.2616766139188523,2616.766139188523,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,261.6766139188523,True
+phreshphish,iscx,r09,xgb,0.01,0.2798006899195094,2798.006899195094,27794,18263,9531,verified,secondary reciprocal-transfer diagnostic,27.98006899195094,True
+phreshphish,phiusiil,r09,xgb,0.001,6.511105504325815e-05,0.6511105504325815,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,0.06511105504325815,False
+phreshphish,phiusiil,r09,xgb,0.01,0.0015626653210381,15.626653210381958,191983,122867,69116,verified,secondary reciprocal-transfer diagnostic,0.15626653210381,False

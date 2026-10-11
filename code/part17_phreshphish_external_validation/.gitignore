@@ -1,0 +1,6 @@
+data/features/
+data/metadata/
+results/**/predictions/
+results/**/runs/
+*.tar.gz
+

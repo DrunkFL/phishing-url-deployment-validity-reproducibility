@@ -4,7 +4,7 @@
 
 - [x] Confirm that every included experiment script is author-created; third-party source data and the MPL-2.0 Public Suffix List are scoped separately.
 - [x] Add the MIT License for author-created code and CC BY 4.0 for the author-created documentation, protocols, and aggregate results defined in `LICENSE_SCOPE.md`.
-- [x] Re-run `python tools/validate_repository.py --smoke` and retain a `PASS` result; see `RELEASE_VALIDATION.md` (23 September 2026).
+- [x] Re-run `python tools/validate_repository.py --smoke` and retain a `PASS` result; see `RELEASE_VALIDATION.md` (11 October 2026).
 - [x] Confirm that raw URL strings, plaintext hosts/domains, source archives, credentials, personal paths, and author-private notes are absent.
 - [x] Review `DATA_AVAILABILITY.md` and keep the ISCX-URL2016 redistribution restriction explicit.
 - [x] Publish the repository under the corresponding author's GitHub account; the submission is not using an anonymous repository workflow.
@@ -16,6 +16,7 @@
 - [ ] Use a concise repository name, for example `phishing-url-deployment-validity`.
 - [x] Create the first Git tag, `v1.0.0`, for the exact manuscript-associated snapshot.
 - [x] Preserve `v1.0.0` and create `v1.0.1` for the finalized manuscript-associated snapshot.
+- [x] Preserve the prior tags and create `v1.1.0` for the PhreshPhish and six-edge-synthesis update.
 - [ ] Archive the tagged release with Zenodo or another long-term repository if a DOI is desired.
 - [x] Add the final public repository URL to the manuscript's Data and Code Availability statement.
 - [x] Re-run `python tools/generate_manifest.py` after the release changes, then validate again.
@@ -29,4 +30,4 @@
 - Software license: MIT for author-created code.
 - Documentation and aggregate-result license: CC BY 4.0 within `LICENSE_SCOPE.md`.
 - Public repository URL: https://github.com/DrunkFL/phishing-url-deployment-validity-reproducibility
-- Archived DOI: not assigned; the current release is identified by Git tag `v1.0.1`, with `v1.0.0` retained as the historical initial snapshot.
+- Archived DOI: not assigned; the current release is identified by Git tag `v1.1.0`, with `v1.0.0` and `v1.0.1` retained as historical snapshots.

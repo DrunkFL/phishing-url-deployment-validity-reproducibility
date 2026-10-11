@@ -1,68 +1,73 @@
-# Prespecified SHAP Stability Protocol
+# Supplementary Protocol S3. Prespecified SHAP Stability Protocol
 
-## Fixed inputs
+## S3.1 Fixed inputs for the original two-source analysis
 
-- Corpus: conflict-cleaned `master`
-- Features: the 35 frozen Part 2 offline URL features
-- Models: LR, RF, and XGBoost
-- Hyperparameters: the selected Part 4 r00 configuration for each dataset,
-  scenario, and model family
-- Stability cohort: 200 observations, 100 per class
-- LR background: 200 training observations, 100 per class
-- Sampling: deterministic SHA-256 ordering of sample IDs under a declared tag
+- Corpus view: conflict-cleaned `master`.
+- Features: the 35 frozen offline URL features listed in Supplementary Data S1.
+- Models: logistic regression (LR), random forest (RF), and XGBoost.
+- Hyperparameters: the selected Part 4 r00 configuration for each dataset, scenario, and model family.
+- Explanation cohort: 200 observations, with 100 observations per class.
+- LR background: 200 source-training observations, with 100 observations per class.
+- Sampling rule: deterministic SHA-256 ordering of sample identifiers under a declared tag.
 
-## Explainers
+## S3.2 Explainers and output scales
 
-- LR: `shap.LinearExplainer` on training-standardized features; raw log-odds scale
-- RF: exact `shap.TreeExplainer`, `tree_path_dependent`, positive-class output
-- XGB: exact `shap.TreeExplainer`, `tree_path_dependent`, raw-margin output
+- LR: `shap.LinearExplainer` on training-standardized features, reported on the raw log-odds scale.
+- RF: exact `shap.TreeExplainer` with `feature_perturbation="tree_path_dependent"`, using the positive-class output.
+- XGBoost: exact `shap.TreeExplainer` with `feature_perturbation="tree_path_dependent"`, using the raw-margin output.
 
-SHAP magnitudes are compared only within one model family. Cross-model analyses
-use rankings and set overlap because output scales differ.
+SHAP magnitudes are compared only within a model family. Cross-model analyses use feature rankings and set overlap because the model-output scales differ.
 
-## Stability estimands
+## S3.3 Original stability estimands
 
-### Seed
+### Seed stability
 
-S0 and S3 use the fixed r00 partition, background, and explanation cohort. Ten
-model seeds (`20261001-20261010`) are used while hyperparameters remain fixed.
-LR with `lbfgs` is deterministic and therefore acts as a zero-seed-variation
-control.
+S0 and S3 use the fixed r00 partition, background, and explanation cohort. Ten model seeds (`20261001`-`20261010`) are evaluated while hyperparameters remain fixed. LR with `lbfgs` is deterministic and acts as a zero-seed-variation control.
 
-### Partition
+### Partition stability
 
-S0-S3 use Part 3 r00-r09 assignments. The model seed is fixed at `20261001`, and
-the r00-selected hyperparameters remain fixed. Each test partition contributes a
-deterministic class-balanced cohort of equal size. Background and cohort are
-shared across model families within a dataset/scenario/repetition.
+S0-S3 use the Part 3 r00-r09 assignments. The model seed is fixed at `20261001`, and the r00-selected hyperparameters remain fixed. Each test partition contributes a deterministic class-balanced cohort of equal size. Background and cohort are shared across model families within a dataset, scenario, and repetition.
 
-### Regime
+### Regime stability
 
-Within each dataset, model, and repetition, rankings are compared for every pair
-among S0-S3. These comparisons describe regime sensitivity; they do not prove
-that one regime is universally more realistic or difficult.
+Within each dataset, model, and repetition, rankings are compared for every pair among S0-S3. These comparisons describe regime sensitivity; they do not establish that one regime is universally more realistic or more difficult.
 
-### Source
+### Source stability between the two primary corpora
 
-Each S3 partition model explains its internal cohort and a target cohort selected
-from the intersection of all ten Part 3 primary S4 target sets. The external
-cohort is fixed across repetitions and models within one transfer direction.
-Target labels are used only to balance the post hoc explanation cohort.
+Each S3 partition model explains its internal cohort and a target cohort selected from the intersection of all ten Part 3 primary S4 target sets. The external cohort is fixed across repetitions and models within one transfer direction. Target labels are used only to balance the post hoc explanation cohort.
 
-## Metrics
+## S3.4 PhreshPhish external explanation protocol (E2)
 
-- Top-10, Top-15, and Top-20 Jaccard similarity
-- Spearman correlation of all 35 feature ranks
-- Top-k selection count and frequency per feature
-- sign agreement of feature-value/SHAP-value Spearman correlations
-- exact SHAP setup and computation time
+E2 reuses the same 35-feature order, model-family-specific explainers, output scales, Top-k definitions, and ranking rules. It evaluates the 60 frozen S3 models generated by two source datasets, ten repetitions, and three model families. No PhreshPhish label is used to fit a model, select a feature, select a threshold, calibrate a score, or alter score orientation.
 
-Pairwise values are dependent. Part 5 reports distributions; run-aware bootstrap
-inference and multiple-comparison decisions remain in the later statistics part.
+For each source direction, the source explanation cohort contains 200 rows (100 benign and 100 phishing) selected deterministically by SHA-256 ordering. The LR background contains 200 source-training rows (100 per class). The target explanation cohort is selected once from the intersection of the ten source-specific primary domain-filtered PhreshPhish masks, is balanced to 100 rows per class, and is then held fixed across all repetitions and model families in that direction. Target labels are used only after prediction to balance this post hoc explanation cohort.
 
-## Scaling benchmark
+The fixed target-cohort identifiers are:
 
-Saved Part 4 r00 models for S0 and S3 are explained on nested class-balanced
-cohorts of 100, 500, and 1,000 observations. Exact SHAP is used at every size.
-The benchmark measures computation after explainer setup and records rank
-agreement with the 1,000-observation reference.
+| Source direction | Common-pool rows | Cohort rows | Cohort file SHA-256 | Ordered sample-ID SHA-256 |
+|---|---:|---:|---|---|
+| ISCX-URL2016 to PhreshPhish | 163,788 | 200 | `f773a4fed25819f09c1912e1fb8aa418819fd386c047202a1fa256787c0be4eb` | `383a279e31f4dce38eabebbc2d9723e5aa438275f7cb6ed1b22fb27967a4bdba` |
+| PhiUSIIL to PhreshPhish | 119,458 | 200 | `c59367427d613e11ace59bd1515e29d029b041425f87307be5feccc865ae1a6f` | `917b46c1c5d2668afa23f2c4156ffb6a70367f3aa0d509f1964415903eecb513` |
+
+The frozen PhreshPhish feature matrix has SHA-256 `5cd003999629e29ad31bd7a01a4f4fd9313b7caf1e44227fe5893d6ed19dc495` and is tied to dataset revision `eabec4b7a66324b79cc8a0ad856d1731dc26fe1a`. The execution environment used NumPy 1.26.4, pandas 2.2.3, scikit-learn 1.5.2, SHAP 0.46.0, and XGBoost 2.1.4 with 12 declared threads.
+
+## S3.5 Metrics
+
+- Top-10, Top-15, and Top-20 Jaccard similarity.
+- Spearman correlation over all 35 feature ranks.
+- Top-k selection count and frequency per feature.
+- Sign agreement of feature-value/SHAP-value Spearman correlations.
+- Exact SHAP setup and computation time.
+- For E2, descriptive associations between explanation agreement and predictive loss, threshold behavior, and false-positive rate.
+
+Pairwise values share fitted runs and are dependent. The original Part 5 analysis reports their distributions; run-aware bootstrap inference and multiple-comparison decisions are confined to the later statistical analysis. E2 associations are descriptive and are not interpreted as causal mechanisms.
+
+## S3.6 Scaling benchmark
+
+Saved Part 4 r00 models for S0 and S3 are explained on nested class-balanced cohorts of 100, 500, and 1,000 observations. Exact SHAP is used at every size. The benchmark measures computation after explainer setup and records rank agreement with the 1,000-observation reference.
+
+## S3.7 E2 validity guards and interpretation boundary
+
+Before interpretation, E2 required replay of source metrics within `2e-5`, archived feature order and class labels, unchanged stored thresholds, probability-vector agreement, stable target-feature and target-cohort hashes, 200 unique rows per cohort, and complete output counts. The completed run contained 60 source-target comparisons, 120 SHAP arrays, and 120 global summaries. The maximum source replay AUC difference was `1.1185e-08`, the maximum prediction-probability difference was `2.9802e-08`, and no stored threshold changed.
+
+Explanation stability measures agreement under a specified perturbation. It does not establish feature faithfulness, causal relevance, calibrated probabilities, threshold portability, or predictive transfer. Accordingly, a high source-to-PhreshPhish rank agreement is reported alongside, rather than as a substitute for, the external performance and false-positive-rate results.

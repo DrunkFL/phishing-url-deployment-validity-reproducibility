@@ -1,0 +1,114 @@
+# Directional Synthesis Audit
+
+**Status:** PASS
+
+This audit independently checks the derived synthesis outputs against frozen input hashes, design cardinalities, prespecified direction-model means, threshold-budget ranges, evidence-state boundaries, and the E2 association source. It does not fit models or reselect thresholds.
+
+## Passed checks
+
+- Manifest input exists: code/part11_dcss_innovation/results/main_external_metrics_all.csv
+- Manifest hash matches: code/part11_dcss_innovation/results/main_external_metrics_all.csv
+- Manifest input exists: code/part12_security_privacy_revision/results/low_fpr_operating_point_runs.csv
+- Manifest hash matches: code/part12_security_privacy_revision/results/low_fpr_operating_point_runs.csv
+- Manifest input exists: code/part17_phreshphish_external_validation/results/full_split/external_metrics.csv
+- Manifest hash matches: code/part17_phreshphish_external_validation/results/full_split/external_metrics.csv
+- Manifest input exists: code/part17_phreshphish_external_validation/results/reverse_transfer/server_full/external_metrics.csv
+- Manifest hash matches: code/part17_phreshphish_external_validation/results/reverse_transfer/server_full/external_metrics.csv
+- Manifest input exists: code/part17_phreshphish_external_validation/results/shap_external/comparison_metrics.csv
+- Manifest hash matches: code/part17_phreshphish_external_validation/results/shap_external/comparison_metrics.csv
+- Manifest input exists: code/part17_phreshphish_external_validation/results/shap_external/stability_performance_association.csv
+- Manifest hash matches: code/part17_phreshphish_external_validation/results/shap_external/stability_performance_association.csv
+- Macro-threshold synthesis has 180 run-level rows
+- Macro-threshold synthesis has 18 direction-model cells
+- Low-FPR synthesis has 360 run-level rows
+- Low-FPR synthesis has 36 direction-model-budget cells
+- Low-FPR synthesis has 12 direction-budget cells
+- Explanation synthesis has six source-model cells
+- All six directed source-target edges are present
+- Every directed edge-model cell has ten repetitions
+- Every directed edge-model-budget cell has ten repetitions
+- Known direction-model cell: ('iscx', 'phiusiil', 'lr')
+- Independent expected ROC-AUC matches for ('iscx', 'phiusiil', 'lr')
+- Known direction-model cell: ('iscx', 'phiusiil', 'rf')
+- Independent expected ROC-AUC matches for ('iscx', 'phiusiil', 'rf')
+- Known direction-model cell: ('iscx', 'phiusiil', 'xgb')
+- Independent expected ROC-AUC matches for ('iscx', 'phiusiil', 'xgb')
+- Known direction-model cell: ('iscx', 'phreshphish', 'lr')
+- Independent expected ROC-AUC matches for ('iscx', 'phreshphish', 'lr')
+- Known direction-model cell: ('iscx', 'phreshphish', 'rf')
+- Independent expected ROC-AUC matches for ('iscx', 'phreshphish', 'rf')
+- Known direction-model cell: ('iscx', 'phreshphish', 'xgb')
+- Independent expected ROC-AUC matches for ('iscx', 'phreshphish', 'xgb')
+- Known direction-model cell: ('phiusiil', 'iscx', 'lr')
+- Independent expected ROC-AUC matches for ('phiusiil', 'iscx', 'lr')
+- Known direction-model cell: ('phiusiil', 'iscx', 'rf')
+- Independent expected ROC-AUC matches for ('phiusiil', 'iscx', 'rf')
+- Known direction-model cell: ('phiusiil', 'iscx', 'xgb')
+- Independent expected ROC-AUC matches for ('phiusiil', 'iscx', 'xgb')
+- Known direction-model cell: ('phiusiil', 'phreshphish', 'lr')
+- Independent expected ROC-AUC matches for ('phiusiil', 'phreshphish', 'lr')
+- Known direction-model cell: ('phiusiil', 'phreshphish', 'rf')
+- Independent expected ROC-AUC matches for ('phiusiil', 'phreshphish', 'rf')
+- Known direction-model cell: ('phiusiil', 'phreshphish', 'xgb')
+- Independent expected ROC-AUC matches for ('phiusiil', 'phreshphish', 'xgb')
+- Known direction-model cell: ('phreshphish', 'iscx', 'lr')
+- Independent expected ROC-AUC matches for ('phreshphish', 'iscx', 'lr')
+- Known direction-model cell: ('phreshphish', 'iscx', 'rf')
+- Independent expected ROC-AUC matches for ('phreshphish', 'iscx', 'rf')
+- Known direction-model cell: ('phreshphish', 'iscx', 'xgb')
+- Independent expected ROC-AUC matches for ('phreshphish', 'iscx', 'xgb')
+- Known direction-model cell: ('phreshphish', 'phiusiil', 'lr')
+- Independent expected ROC-AUC matches for ('phreshphish', 'phiusiil', 'lr')
+- Known direction-model cell: ('phreshphish', 'phiusiil', 'rf')
+- Independent expected ROC-AUC matches for ('phreshphish', 'phiusiil', 'rf')
+- Known direction-model cell: ('phreshphish', 'phiusiil', 'xgb')
+- Independent expected ROC-AUC matches for ('phreshphish', 'phiusiil', 'xgb')
+- Known direction-budget cell: ('iscx', 'phiusiil', '0.001')
+- Budget-ratio minimum matches for ('iscx', 'phiusiil', '0.001')
+- Budget-ratio maximum matches for ('iscx', 'phiusiil', '0.001')
+- Known direction-budget cell: ('iscx', 'phiusiil', '0.01')
+- Budget-ratio minimum matches for ('iscx', 'phiusiil', '0.01')
+- Budget-ratio maximum matches for ('iscx', 'phiusiil', '0.01')
+- Known direction-budget cell: ('iscx', 'phreshphish', '0.001')
+- Budget-ratio minimum matches for ('iscx', 'phreshphish', '0.001')
+- Budget-ratio maximum matches for ('iscx', 'phreshphish', '0.001')
+- Known direction-budget cell: ('iscx', 'phreshphish', '0.01')
+- Budget-ratio minimum matches for ('iscx', 'phreshphish', '0.01')
+- Budget-ratio maximum matches for ('iscx', 'phreshphish', '0.01')
+- Known direction-budget cell: ('phiusiil', 'iscx', '0.001')
+- Budget-ratio minimum matches for ('phiusiil', 'iscx', '0.001')
+- Budget-ratio maximum matches for ('phiusiil', 'iscx', '0.001')
+- Known direction-budget cell: ('phiusiil', 'iscx', '0.01')
+- Budget-ratio minimum matches for ('phiusiil', 'iscx', '0.01')
+- Budget-ratio maximum matches for ('phiusiil', 'iscx', '0.01')
+- Known direction-budget cell: ('phiusiil', 'phreshphish', '0.001')
+- Budget-ratio minimum matches for ('phiusiil', 'phreshphish', '0.001')
+- Budget-ratio maximum matches for ('phiusiil', 'phreshphish', '0.001')
+- Known direction-budget cell: ('phiusiil', 'phreshphish', '0.01')
+- Budget-ratio minimum matches for ('phiusiil', 'phreshphish', '0.01')
+- Budget-ratio maximum matches for ('phiusiil', 'phreshphish', '0.01')
+- Known direction-budget cell: ('phreshphish', 'iscx', '0.001')
+- Budget-ratio minimum matches for ('phreshphish', 'iscx', '0.001')
+- Budget-ratio maximum matches for ('phreshphish', 'iscx', '0.001')
+- Known direction-budget cell: ('phreshphish', 'iscx', '0.01')
+- Budget-ratio minimum matches for ('phreshphish', 'iscx', '0.01')
+- Budget-ratio maximum matches for ('phreshphish', 'iscx', '0.01')
+- Known direction-budget cell: ('phreshphish', 'phiusiil', '0.001')
+- Budget-ratio minimum matches for ('phreshphish', 'phiusiil', '0.001')
+- Budget-ratio maximum matches for ('phreshphish', 'phiusiil', '0.001')
+- Known direction-budget cell: ('phreshphish', 'phiusiil', '0.01')
+- Budget-ratio minimum matches for ('phreshphish', 'phiusiil', '0.01')
+- Budget-ratio maximum matches for ('phreshphish', 'phiusiil', '0.01')
+- Original two-source edges remain user-authoritative
+- E1 and E3 edges retain verified status
+- E2 association source has one pooled Top-15-Jaccard/ROC-AUC-loss row
+- E2 association row exposes a correlation field
+- Pooled descriptive Spearman rho rounds to 0.140
+
+## Interpretation boundary
+
+- The six-edge graph is complete only for the three evaluated public sources.
+- The two original ISCX/PhiUSIIL directions remain user-authoritative because they were not regenerated from raw experiment artifacts in this revision.
+- PhreshPhish-to-ISCX/PhiUSIIL is a secondary reciprocal diagnostic, not another independent external validation.
+- Budget exceedance uses the nominal source-validation FPR budget as the denominator; it is not a ratio to an estimated population FPR.
+- The SHAP-performance association is descriptive and non-causal.

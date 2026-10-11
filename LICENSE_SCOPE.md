@@ -9,6 +9,8 @@ third-party material.
 `LICENSE-CODE` applies to author-created source code and build utilities in:
 
 - `code/**/scripts/`
+- `code/**/src/`
+- `code/**/tests/`
 - `tools/`
 - `manuscript/build_submission.py`
 

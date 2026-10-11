@@ -13,16 +13,27 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "MANIFEST.csv"
 GITHUB_HARD_LIMIT = 100 * 1024 * 1024
-EXCLUDED_PARTS = {".git", ".venv", "__pycache__"}
+EXCLUDED_PARTS = {".git", ".venv", "__pycache__", ".tldextract_cache"}
+EXCLUDED_PREFIXES = (
+    Path("code/part17_phreshphish_external_validation/data/metadata"),
+)
 TEXT_SUFFIXES = {".csv", ".json", ".md", ".py", ".tex", ".txt", ".yaml", ".yml"}
 TEXT_NAMES = {"LICENSE-CODE", "LICENSE-DOCUMENTATION"}
-LOCAL_PATHS = ("C:" + "\\Users\\FL", "C:" + "/Users/FL")
+LOCAL_PATHS = (
+    "C:" + "\\Users\\FL",
+    "C:" + "/Users/FL",
+    "E:" + "\\JISA_Phishing_Paper_Revision_20261006",
+    "/home/" + "ubuntu/jisa_revision",
+)
 BANNED_IDENTIFIER_COLUMNS = {"raw_url", "url", "host", "registrable_domain", "source_file"}
 SMOKE_TESTS = (
     "code/part4_baseline_models/scripts/train_baselines.py",
     "code/part11_dcss_innovation/scripts/train_dcss_main_comparison.py",
     "code/part14_low_fpr_uncertainty/scripts/run_part14_low_fpr_uncertainty.py",
     "code/part15_statistical_inference_robustness/scripts/run_part15_robust_inference.py",
+    "code/part17_phreshphish_external_validation/src/prepare_dataset.py",
+    "code/part17_phreshphish_external_validation/src/run_shap_external.py",
+    "code/part17_phreshphish_external_validation/src/run_reverse_transfer.py",
 )
 
 
@@ -45,6 +56,8 @@ def repository_files() -> list[Path]:
             continue
         relative = path.relative_to(ROOT)
         if EXCLUDED_PARTS.intersection(relative.parts):
+            continue
+        if any(relative.is_relative_to(prefix) for prefix in EXCLUDED_PREFIXES):
             continue
         files.append(path)
     return sorted(files)
@@ -112,11 +125,16 @@ def main() -> None:
         ROOT / "features" / "FEATURE_DEFINITIONS.md",
         ROOT / "protocols" / "split_protocol.md",
         ROOT / "REPRODUCE.md",
+        ROOT / "code" / "part17_phreshphish_external_validation" / "EXPERIMENT_PROTOCOL.md",
+        ROOT / "code" / "part18_directional_synthesis" / "results" / "AUDIT_REPORT.md",
     ]
     for path in required:
         require(path.is_file(), f"Missing required file: {path.relative_to(ROOT)}")
     for number in range(1, 8):
         figure = ROOT / "manuscript" / "figures" / f"Figure_{number}.pdf"
+        require(figure.is_file(), f"Missing manuscript figure: {figure.relative_to(ROOT)}")
+    for number in range(8, 11):
+        figure = ROOT / "manuscript" / "figures" / f"Figure_{number}.png"
         require(figure.is_file(), f"Missing manuscript figure: {figure.relative_to(ROOT)}")
 
     with MANIFEST.open("r", encoding="utf-8", newline="") as handle:

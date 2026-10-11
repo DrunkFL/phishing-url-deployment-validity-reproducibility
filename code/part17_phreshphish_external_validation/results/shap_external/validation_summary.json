@@ -1,0 +1,29 @@
+{
+  "aggregate_summary_sha256": "02279bd3e045171cd19633642952c3286ddba24da09f68ba4dabbd6699cdb08d",
+  "association_sha256": "f6f8e04ac85d3f1270319c203fd691969bbf982adcb831004774df3f10b92637",
+  "comparison_metrics_sha256": "9acbd3806126dc3b819205b53e42ccc22e86d4d869e946e5e1ed5a1f4594fe90",
+  "comparison_missing_values": 0,
+  "comparison_rows": 60,
+  "direction_conflicts_sha256": "f496259861f3e979f565f33e84645f0adc3feaad4bc58ff57b295e2343756e6e",
+  "expected_runs": 60,
+  "feature_conflict_summary_sha256": "ca1af2cbd4a5c97a1c287b9e1869ef81166a4da9c86c99f27af9cd318d39c2e9",
+  "global_summary_files": 120,
+  "max_abs_source_replay_auc_delta": 1.118516501641409e-08,
+  "max_abs_source_replay_macro_f1_delta": 0.0,
+  "max_source_probability_delta_archived_float32": 2.980204905078665e-08,
+  "run_keys_exact": true,
+  "scope": "full",
+  "shap_value_files": 120,
+  "shap_value_row_counts": [
+    200
+  ],
+  "source_archived_threshold_inconsistencies_total": 0,
+  "source_float32_probability_vector_exact_all": true,
+  "source_threshold_class_changes_total": 0,
+  "status": "PASS",
+  "target_cohort_hashes_per_source": {
+    "iscx_url2016_binary": 1,
+    "phiusiil": 1
+  },
+  "warning_count": 0
+}

@@ -1,0 +1,158 @@
+{
+  "arguments": {
+    "background_size": 200,
+    "cohort_size": 200,
+    "force": false,
+    "models": [
+      "lr",
+      "rf",
+      "xgb"
+    ],
+    "n_jobs": 4,
+    "output_root": "results/shap_external",
+    "prediction_replay_tolerance": 1e-07,
+    "repetitions": [
+      "r00",
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05",
+      "r06",
+      "r07",
+      "r08",
+      "r09"
+    ],
+    "replay_tolerance": 2e-05,
+    "scope": "full",
+    "sources": [
+      "phiusiil",
+      "iscx_url2016_binary"
+    ],
+    "target_features": "data/features/server_full/phreshphish_test.parquet"
+  },
+  "completed_utc": "2026-10-07T06:50:12.882908+00:00",
+  "elapsed_seconds": 1059.9673993000001,
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "fragment_length",
+    "digit_count",
+    "letter_count",
+    "special_char_count",
+    "digit_ratio",
+    "letter_ratio",
+    "special_char_ratio",
+    "dot_count",
+    "hyphen_count",
+    "underscore_count",
+    "slash_count",
+    "question_mark_count",
+    "equals_sign_count",
+    "percent_sign_count",
+    "at_sign_count",
+    "subdomain_depth",
+    "path_segment_count",
+    "query_parameter_count",
+    "has_port",
+    "has_userinfo",
+    "host_is_ip",
+    "tld_length",
+    "registrable_domain_length",
+    "domain_digit_ratio",
+    "domain_hyphen_ratio",
+    "url_char_entropy",
+    "longest_repeated_char_run",
+    "char_type_transition_count",
+    "token_count",
+    "token_mean_length",
+    "token_max_length"
+  ],
+  "numerical_replay": {
+    "environment_before_override": {
+      "MKL_NUM_THREADS": "12",
+      "OMP_NUM_THREADS": "12",
+      "OPENBLAS_NUM_THREADS": "12"
+    },
+    "environment_effective": {
+      "MKL_NUM_THREADS": "12",
+      "OMP_NUM_THREADS": "12",
+      "OPENBLAS_NUM_THREADS": "12"
+    },
+    "expected_threads": 12,
+    "prediction_replay_tolerance": 1e-07,
+    "threadpools": [
+      {
+        "architecture": "Zen",
+        "internal_api": "openblas",
+        "num_threads": 12,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      },
+      {
+        "architecture": "Zen",
+        "internal_api": "openblas",
+        "num_threads": 12,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.27"
+      },
+      {
+        "internal_api": "openmp",
+        "num_threads": 12,
+        "prefix": "vcomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ]
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "scope": "full",
+  "started_utc": "2026-10-07T06:32:32.886472+00:00",
+  "status": "FULL_RUN_PASS",
+  "target_features": "data/features/server_full/phreshphish_test.parquet",
+  "target_features_sha256": "5cd003999629e29ad31bd7a01a4f4fd9313b7caf1e44227fe5893d6ed19dc495",
+  "target_revision": "eabec4b7a66324b79cc8a0ad856d1731dc26fe1a",
+  "validation": {
+    "aggregate_summary_sha256": "02279bd3e045171cd19633642952c3286ddba24da09f68ba4dabbd6699cdb08d",
+    "association_sha256": "f6f8e04ac85d3f1270319c203fd691969bbf982adcb831004774df3f10b92637",
+    "comparison_metrics_sha256": "9acbd3806126dc3b819205b53e42ccc22e86d4d869e946e5e1ed5a1f4594fe90",
+    "comparison_missing_values": 0,
+    "comparison_rows": 60,
+    "direction_conflicts_sha256": "f496259861f3e979f565f33e84645f0adc3feaad4bc58ff57b295e2343756e6e",
+    "expected_runs": 60,
+    "feature_conflict_summary_sha256": "ca1af2cbd4a5c97a1c287b9e1869ef81166a4da9c86c99f27af9cd318d39c2e9",
+    "global_summary_files": 120,
+    "max_abs_source_replay_auc_delta": 1.118516501641409e-08,
+    "max_abs_source_replay_macro_f1_delta": 0.0,
+    "max_source_probability_delta_archived_float32": 2.980204905078665e-08,
+    "run_keys_exact": true,
+    "scope": "full",
+    "shap_value_files": 120,
+    "shap_value_row_counts": [
+      200
+    ],
+    "source_archived_threshold_inconsistencies_total": 0,
+    "source_float32_probability_vector_exact_all": true,
+    "source_threshold_class_changes_total": 0,
+    "status": "PASS",
+    "target_cohort_hashes_per_source": {
+      "iscx_url2016_binary": 1,
+      "phiusiil": 1
+    },
+    "warning_count": 0
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.5.2",
+    "shap": "0.46.0",
+    "xgboost": "2.1.4"
+  }
+}

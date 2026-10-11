@@ -4,8 +4,8 @@ This repository-ready package accompanies the manuscript on entity-aligned evalu
 
 ## Repository contents
 
-- `manuscript/`: the current manuscript PDF, Markdown source, generated LaTeX, build script, and the seven figures used by the paper.
-- `code/`: exact experiment code snapshots for Parts 2-15. Each part keeps executable files under `scripts/` and compact result tables under `results/`.
+- `manuscript/`: the current manuscript PDF, Markdown source, generated LaTeX, build script, and the ten figures used by the paper.
+- `code/`: experiment code snapshots for Parts 2-15, the PhreshPhish validation in Part 17, and the six-edge synthesis in Part 18. Executable files are stored under each part's `scripts/` or `src/` directory, with compact result tables under `results/`.
 - `configs/`: model candidates, outer seeds, and SHAP configuration.
 - `features/`: the 35 feature definitions and extraction metadata.
 - `splits/`: hashed S3 and S4 audit assignments; no plaintext URLs, hosts, or registrable domains.
@@ -23,7 +23,7 @@ This repository-ready package accompanies the manuscript on entity-aligned evalu
 
 ## Data boundary
 
-Raw URL lists and original dataset archives are intentionally excluded. PhiUSIIL and URL-Phish v1 are available from their cited official sources under their stated terms. The ISCX-URL2016 preserved copy used in the experiments is identified by source, commit, filename, byte size, and SHA-256, but it is not redistributed because its redistribution terms and byte identity with the official archive were not established. See `DATA_AVAILABILITY.md` and `data_metadata/source_notes.md`.
+Raw URL lists and original dataset archives are intentionally excluded. PhiUSIIL, URL-Phish v1, and PhreshPhish v1.0.1 are available from their cited public sources under their stated terms. The ISCX-URL2016 preserved copy used in the experiments is identified by source, commit, filename, byte size, and SHA-256, but it is not redistributed because its redistribution terms and byte identity with the official archive were not established. The large PhreshPhish-derived feature tables and row-level predictions are also excluded; their hashes and reconstruction scripts are retained. See `DATA_AVAILABILITY.md` and `data_metadata/source_notes.md`.
 
 The included Parquet files contain sanitized numerical features, labels, hashed identifiers, or frozen role assignments. They do not contain plaintext URLs, hosts, or registrable domains.
 
@@ -61,7 +61,7 @@ The lock file records the original Windows environment. Rebuilding on a differen
 2. Verify source filenames, sizes, and hashes against `data_metadata/original_input_manifest.csv` where the files are available.
 3. Use the scripts under `code/part2_url_normalization_leakage_audit/scripts/` for normalization and feature extraction, or begin with the sanitized feature tables already present under that part's `data/` directory.
 4. Follow `protocols/split_protocol.md` and the frozen assignments under `code/part3_s0_s4_data_splits/data/assignments/`.
-5. Follow `REPRODUCE.md`. Run experiment parts in numerical order from Parts 4 through 15, using each part's `scripts/` directory, the frozen configurations, and the retained reference tables and validation summaries.
+5. Follow `REPRODUCE.md`. Run experiment parts in numerical order from Parts 4 through 15, then Part 17 for the third-source analyses and Part 18 for the derived six-edge synthesis. Use the frozen configurations and retained reference tables and validation summaries.
 6. Run `python tools/validate_repository.py` after any public-release change and regenerate `MANIFEST.csv` with `python tools/generate_manifest.py`.
 
 The package records the completed experiment, but it does not claim that the source-validation low-FPR budget is a population guarantee. The low-FPR analysis is a threshold-transfer failure diagnostic.
@@ -87,8 +87,8 @@ frozen Public Suffix List retains its embedded MPL-2.0 notice.
 
 ## Versioned release
 
-The current manuscript-associated public snapshot is tagged `v1.0.1`.
-Historical release `v1.0.0` remains immutable. Run the checks in
+The current manuscript-associated public snapshot is tagged `v1.1.0`.
+Historical releases `v1.0.0` and `v1.0.1` remain immutable. Run the checks in
 `PUBLIC_UPLOAD_CHECKLIST.md` and `RELEASE_VALIDATION.md` before any later
 release. The manuscript includes the confirmed author metadata and CRediT
 statement.

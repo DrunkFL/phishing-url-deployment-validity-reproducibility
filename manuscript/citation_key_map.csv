@@ -1,0 +1,33 @@
+reference_number,bibtex_key,doi,normalized_title,match_method,status
+1,Zieni2023,10.1109/access.2023.3247135,phishing or not phishing a survey on the detection of phishing websites,DOI,EXACT
+2,Mamun2016,10.1007/978-3-319-46298-1_30,detecting malicious urls using lexical analysis,DOI,EXACT
+3,Prasad2024,10.1016/j.cose.2023.103545,phiusiil a diverse security profile empowered phishing url detection framework based on similarity index and incremental learning,DOI,EXACT
+4,Opara2024,10.1016/j.eswa.2023.121183,look before you leap detecting phishing web pages by exploiting raw url and html characteristics,DOI,EXACT
+5,Le2018URLNet,,urlnet learning a url representation with deep learning for malicious url detection,TITLE,EXACT
+6,Mahesh2026,10.1016/j.procs.2026.06.236,an explainable machine learning and deep learning framework for malicious url detection,DOI,EXACT
+7,Rashid2024,10.1016/j.comnet.2024.110398,phishing url detection generalisation using unsupervised domain adaptation,DOI,EXACT
+8,Yi2026,10.1002/spy2.70175,phishing url detection and interpretability with machine learning a cross dataset approach,DOI,EXACT
+9,Mia2024,10.1145/3704522.3704532,can features for phishing url detection be trusted across diverse datasets a case study with explainable ai,DOI,EXACT
+10,Ahamed2026,10.3389/fcomp.2026.1834407,an integrated evaluation protocol for adversarial robustness generalization and explanation stability in url based phishing detection,DOI,EXACT
+11,Dalton2025,10.48550/arxiv.2507.10854,phreshphish a real world high quality large scale phishing website dataset and benchmark,TITLE,EXACT
+12,Kaufman2012,10.1145/2382577.2382579,leakage in data mining formulation detection and avoidance,DOI,EXACT
+13,Kapoor2023,10.1016/j.patter.2023.100804,leakage and the reproducibility crisis in machine learning based science,DOI,EXACT
+14,Arp2022,,dos and don ts of machine learning in computer security,TITLE,EXACT
+15,Pendlebury2019,,tesseract eliminating experimental bias in malware classification across space and time,TITLE,EXACT
+16,Lundberg2017,,a unified approach to interpreting model predictions,TITLE,EXACT
+17,Lundberg2020,10.1038/s42256-019-0138-9,from local explanations to global understanding with explainable ai for trees,DOI,EXACT
+18,AlvarezMelis2018,10.48550/arxiv.1806.08049,on the robustness of interpretability methods,TITLE,EXACT
+19,Ghorbani2019,10.1609/aaai.v33i01.33013681,interpretation of neural networks is fragile,DOI,EXACT
+20,Warnecke2020,10.1109/eurosp48549.2020.00018,evaluating explanation methods for deep learning in security,DOI,EXACT
+21,Tolay2026,10.48550/arxiv.2608.10349,beyond detection accuracy measuring explanation cost stability and utility for resource aware iot intrusion detection,TITLE,EXACT
+22,Shafin2025,10.1016/j.dsm.2024.08.004,an explainable feature selection framework for web phishing detection with machine learning,DOI,EXACT
+23,Calzarossa2025Robust,10.1016/j.neucom.2025.129686,how robust are ensemble machine learning explanations,DOI,EXACT
+24,Calzarossa2025Framework,10.1007/s10462-025-11141-w,an assessment framework for explainable ai with applications to cybersecurity,DOI,EXACT
+25,Kehkashan2025,10.1038/s41598-025-27984-w,explainable phishing website detection for secure and sustainable cyber infrastructure,DOI,EXACT
+26,PublicSuffixList2026,,public suffix list,TITLE,EXACT
+27,Linh2025,10.1016/j.dib.2025.112162;10.17632/65z9twcx3r.1,a feature engineered dataset of benign and phishing urls for machine learning and large language models evaluation,DOI,EXACT
+28,EscuderoGarcia2025JISA,10.1016/j.jisa.2025.104120,conformal prediction for labelling and updating online models in the presence of concept drift in cybersecurity,DOI,EXACT
+29,Rustam2025JISA,10.1016/j.jisa.2025.104219,adaptive security framework for multi environment networks using ensemble data drift detection and incremental deep learning,DOI,EXACT
+30,Najibi2025JISA,10.1016/j.jisa.2025.104191,towards a robust android malware detection model using explainable deep learning,DOI,EXACT
+31,Huang2025JISA,10.1016/j.jisa.2025.104214,a novel approach for malicious url detection using roberta and sparse autoencoder,DOI,EXACT
+32,LoRe2026JISA,10.1016/j.jisa.2026.104486,adversarial attacks on phishing webpage detectors via heuristic search techniques,DOI,EXACT

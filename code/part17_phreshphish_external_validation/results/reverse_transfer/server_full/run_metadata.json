@@ -1,0 +1,50 @@
+{
+  "assignment_sha256": "94b9848f4ff1e3b46aa8a23b83d11c20e88617875e6f58666b1cb455b3c70ab8",
+  "completed_runs": 30,
+  "created_utc": "2026-10-07T10:44:52.550768+00:00",
+  "elapsed_seconds_this_invocation": 2096.279036941003,
+  "external_metric_rows": 1440,
+  "external_metrics_sha256": "b566d75aa7dc1343379dc90a6544283a11f58dcf6c3884e8c568ebf41b3b6fd5",
+  "feature_count": 35,
+  "internal_metric_rows": 180,
+  "internal_metrics_sha256": "a2fc7acf613daabaaacf12fbf59e131dbd19698b31a32a9d1e544d1ac28ee91b",
+  "interpretation_boundary": "Reciprocal-transfer diagnostic; ISCX and PhiUSIIL are prior-study corpora, not new independent validation.",
+  "max_auc_complement_identity_error": 3.686786834711242e-07,
+  "max_auc_negation_identity_error": 2.220446049250313e-16,
+  "models": [
+    "lr",
+    "rf",
+    "xgb"
+  ],
+  "n_jobs": 6,
+  "prediction_files": 150,
+  "repetitions": [
+    "r00",
+    "r01",
+    "r02",
+    "r03",
+    "r04",
+    "r05",
+    "r06",
+    "r07",
+    "r08",
+    "r09"
+  ],
+  "schema_version": "1.0",
+  "source_features": "data/features/phreshphish_train.parquet",
+  "source_features_sha256": "a3de94991600eb6eff16a26ca809b192ae763650cc91cfef198c068e5aefeeba",
+  "source_metadata_sha256": "5a93d9f06d64d02e11e56e634b9102e3762df94e480db2d11c8bd5a593f4338c",
+  "source_rows": 498255,
+  "split_audit_sha256": "b170c80eb8a6da85b572fd7ad3deb1a420bf828a62a927dc052c2d5554df2f2b",
+  "status": "FULL_RUN_PASS",
+  "target_limit": null,
+  "targets": [
+    "iscx_master",
+    "iscx_deduplicated",
+    "phiusiil_master",
+    "phiusiil_deduplicated"
+  ],
+  "tuning_results_sha256": "744a29f414855b531bd0c88d7d64434a5520671ba89ea4203b2264e6d99dddab",
+  "tuning_rows": 90,
+  "warning_count": 0
+}

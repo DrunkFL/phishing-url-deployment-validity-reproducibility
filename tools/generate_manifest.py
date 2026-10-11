@@ -7,7 +7,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "MANIFEST.csv"
-EXCLUDED_PARTS = {".git", ".venv", "__pycache__"}
+EXCLUDED_PARTS = {".git", ".venv", "__pycache__", ".tldextract_cache"}
+EXCLUDED_PREFIXES = (
+    Path("code/part17_phreshphish_external_validation/data/metadata"),
+)
 TEXT_SUFFIXES = {".csv", ".json", ".md", ".py", ".tex", ".txt", ".yaml", ".yml"}
 TEXT_NAMES = {"LICENSE-CODE", "LICENSE-DOCUMENTATION"}
 
@@ -21,7 +24,11 @@ def canonical_bytes(path: Path) -> bytes:
 
 def included(path: Path) -> bool:
     relative = path.relative_to(ROOT)
-    return path != OUTPUT and not EXCLUDED_PARTS.intersection(relative.parts)
+    return (
+        path != OUTPUT
+        and not EXCLUDED_PARTS.intersection(relative.parts)
+        and not any(relative.is_relative_to(prefix) for prefix in EXCLUDED_PREFIXES)
+    )
 
 
 def main() -> None:
