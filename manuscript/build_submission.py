@@ -120,12 +120,23 @@ def main() -> None:
         r"\usepackage[]{natbib}",
         r"\usepackage[super,sort&compress]{natbib}",
     )
-    latex = latex.replace(
-        r"\usepackage[super,sort&compress]{natbib}",
-        "\\usepackage[super,sort&compress]{natbib}\n\\usepackage[switch]{lineno}",
-    )
-    latex = latex.replace(r"\maketitle", "\\maketitle\n\\linenumbers", 1)
     latex = latex.replace(r"\bibliographystyle{plainnat}", r"\bibliographystyle{unsrtnat}")
+
+    # These two full-width figures should lead a text page rather than become
+    # vertically centred float-only pages.
+    for figure_name in ("Figure_8.png", "Figure_9.png"):
+        figure_start = (
+            "\\begin{figure}\n"
+            "\\centering\n"
+            f"\\pandocbounded{{\\includegraphics[keepaspectratio]{{figures/{figure_name}}}}}"
+        )
+        if figure_start not in latex:
+            raise AssertionError(f"Expected {figure_name} block was not generated")
+        latex = latex.replace(
+            figure_start,
+            figure_start.replace("\\begin{figure}", "\\begin{figure}[!t]"),
+            1,
+        )
 
     # Markdown captions already contain their figure number.  The LaTeX
     # figure counter supplies it again, so remove only the duplicated prefix.

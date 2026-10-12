@@ -1,6 +1,6 @@
 # Release Validation Record
 
-Validation date: 11 October 2026
+Validation date: 12 October 2026
 
 ## Repository checks
 
@@ -30,6 +30,13 @@ Raw URLs, large derived feature tables, fitted models, and row-level
 predictions remain excluded. The representative training rerun below is
 retained from the initial release validation and remains applicable to the
 unchanged original experiment parts.
+
+The final tag rewrite synchronizes the submission-facing manuscript after its
+layout audit: line numbers and two forced page breaks were removed, Figures 8
+and 9 use top-float placement, and the captions of Figures 3--5 now state the
+boxplot and truncated-axis semantics explicitly. These are presentation and
+caption-transparency changes; experimental inputs, figures, numerical results,
+citations, and scientific conclusions are unchanged.
 
 ## Representative training rerun
 

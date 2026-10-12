@@ -402,8 +402,6 @@ RQ2 separates controlled sources of explanation variation and then tests whether
 
 Figure 2 and Table 5 separate four sources of variation. Model-seed changes produced the greatest agreement. LR was deterministic under the fixed split and cohort (Top-15 Jaccard and rank Spearman both 1.000); tree-model seed Jaccard remained 0.876-0.939. Partition changes reduced Top-15 Jaccard to 0.798-0.920, although full-ranking Spearman correlations remained 0.951-0.989.
 
-\clearpage
-
 ![Figure 2. Top-15 Jaccard and full-ranking Spearman agreement for SHapley Additive exPlanations (SHAP) under seed, partition, deployment-regime, and explanation-source variation. For each model and estimand, boxes pool the declared pairwise comparisons from both corpora; boxes show the median and interquartile range, whiskers extend to 1.5 times the interquartile range, and outliers are omitted from display.](figures/Figure_2.pdf)
 
 Regime and source changes produced larger set-level differences. Regime Top-15 agreement ranged from 0.704 to 0.897, while source agreement ranged from 0.623 to 0.788 for RF/XGBoost and from 0.719 to 0.730 for LR. Source rank correlations ranged from 0.810 to 0.941. A reproducible ranking under reseeding is therefore weak evidence that the same leading features describe a different deployment regime or source.
@@ -423,7 +421,7 @@ Table: Range of SHAP agreement across datasets and models
 
 F-Stable retained 12.3-13.5 of 35 features on ISCX and 13.8-14.3 on PhiUSIIL, a reduction of 59.1%-64.9% (Figure 3 and Supplementary Table S4). Compactness did not imply universal predictive improvement. On PhiUSIIL, F-Stable differed from F-All by -0.0087 for LR, +0.0002 for RF, and -0.0002 for XGBoost. On ISCX, the differences were -0.0445, -0.0311, and +0.0340, with substantial repetition-level dispersion.
 
-![Figure 3. Feature-set size and internal registrable-domain-disjoint macro-averaged F1 score (Macro-F1) relative to the full 35-feature model (F-All). Bars show mean retained features. Boxes pool paired differences over three models and ten outer repetitions within each corpus; the dashed line marks no change from F-All.](figures/Figure_3.pdf)
+![Figure 3. Feature-set size and internal registrable-domain-disjoint macro-averaged F1 score (Macro-F1) relative to the full 35-feature model (F-All). Bars show mean retained features. Boxes pool paired differences over three models and ten outer repetitions within each corpus; boxes show the median and interquartile range, whiskers extend to 1.5 times the interquartile range, and outliers are omitted from display. The dashed line marks no change from F-All.](figures/Figure_3.pdf)
 
 The conventional controls qualify the feature-selection claim. Across 60 dataset-model-repetition comparisons, F-MI was below F-All in 52 cases. F-Permutation was below F-All in 37, above it in 21, and tied in two. F-Stable exceeded F-MI in 48 of 60 internal comparisons but exceeded F-Permutation in only 26 and was lower in 34. On PhiUSIIL, the F-Stable advantage over F-MI was clearest for RF and XGBoost (mean differences 0.0204 and 0.0137; two-sided Wilcoxon signed-rank p=0.0074 for both after BH adjustment across all 144 internal dataset-model-comparison-metric tests). These exploratory paired results support the observed contrast within the evaluated repetitions; F-Stable delivered compact models and outperformed model-independent MI more often in these settings, while model-specific permutation selection remained competitive.
 
@@ -435,7 +433,7 @@ For the operational part of RQ1, we freeze the source-side pipeline before chang
 
 All five feature schemes failed severely under zero-target-feedback transfer (Figure 4 and Supplementary Table S5). From ISCX to the domain-filtered PhiUSIIL cohort, mean Macro-F1 across models and repetitions ranged from 0.2908 to 0.2922. In the reverse direction, it ranged from 0.1703 to 0.1937. Mean row-level false-positive rates were approximately 1.000 and 0.978-1.000, respectively. For F-All, the external-minus-internal Macro-F1 gaps were -0.6150 and -0.7985.
 
-![Figure 4. Zero-target-feedback transfer performance for five source-selected feature schemes. Points are descriptive means over three models and ten outer repetitions, and error bars are bootstrap 95% intervals over those model-repetition values. Blue and red circles denote transfer from the ISCX-URL2016 corpus to the PhiUSIIL corpus and the reverse direction, respectively.](figures/Figure_4.pdf)
+![Figure 4. Zero-target-feedback transfer performance for five source-selected feature schemes. Points are descriptive means over three models and ten outer repetitions, and error bars are bootstrap 95% intervals over those model-repetition values. Blue and red circles denote transfer from the ISCX-URL2016 corpus to the PhiUSIIL corpus and the reverse direction, respectively. Both vertical axes are truncated to resolve differences within the observed ranges.](figures/Figure_4.pdf)
 
 Feature selection did not resolve the failure. F-Stable exceeded F-MI in 50 of 60 external comparisons but exceeded F-Permutation in only 27 and was lower in 31. F-MI was lower than F-All in 54 of 60 comparisons. The association between outer-split feature-set stability and external Macro-F1 was also not positive: Spearman rho was 0.19 (nominal unadjusted p=0.554) for ISCX-trained models and -0.37 (nominal unadjusted p=0.241) for PhiUSIIL-trained models. These 12-point source analyses are descriptive and underpowered, and they provide no evidence that repeatability predicts transfer.
 
@@ -466,7 +464,7 @@ Row-level and domain-equal metrics answer different deployment questions. Under 
 
 Calibration results further separate threshold mismatch from transferable discrimination (Figure 5 and Supplementary Figure S1). Across the five methods, mean 15-bin ECE was 0.581-0.592 from ISCX to PhiUSIIL and 0.747-0.794 in the reverse direction. Mean Brier scores were 0.580-0.587 and 0.745-0.794. The complete reliability diagrams show that predicted probabilities cluster at extreme values rather than following the identity line. Exact post hoc target-oracle thresholds improved Macro-F1 by 0.074-0.292 and 0.202-0.333, respectively, but most selected thresholds were at or near 1.0 and often reduced to an almost all-negative decision. The oracle therefore demonstrates severe source-threshold incompatibility, not a deployable correction; substantial ranking failure remained for most configurations.
 
-![Figure 5. Difference between the macro-averaged F1 score (Macro-F1) obtained by a post hoc target-oracle threshold and the Macro-F1 obtained by the frozen source-selected threshold. Boxes summarize ten outer repetitions; the oracle is diagnostic only and is never used for model fitting or a deployment claim.](figures/Figure_5.pdf)
+![Figure 5. Difference between the macro-averaged F1 score (Macro-F1) obtained by a post hoc target-oracle threshold and the Macro-F1 obtained by the frozen source-selected threshold. Boxes summarize ten outer repetitions; boxes show the median and interquartile range, whiskers extend to 1.5 times the interquartile range, and outliers are omitted from display. The oracle is diagnostic only and is never used for model fitting or a deployment claim.](figures/Figure_5.pdf)
 
 **Frozen-threshold transfer failure.**
 
@@ -517,8 +515,6 @@ Table: Frozen source models on the primary domain-filtered PhreshPhish cohort
 | PhiUSIIL | XGBoost | 0.346 ± 0.005 | 0.301 ± 0.004 | 0.300 ± 0.001 | 0.892 ± 0.002 | 0.953 ± 0.000 |
 
 *Note.* Values are mean ± standard deviation across ten source-split repetitions under the source-selected Macro-F1 threshold and row weighting. ROC-AUC, area under the receiver operating characteristic curve; PR-AUC, area under the precision-recall curve; Macro-F1, macro-averaged F1 score; FPR, false-positive rate; LR, logistic regression; RF, random forest.
-
-\clearpage
 
 ![Figure 8. External performance of six source-dataset-model combinations on the prespecified primary domain-filtered PhreshPhish cohort. Points show means and whiskers show standard deviations across ten source-split repetitions, using the source-selected Macro-F1 threshold and row weighting. PhiUSIIL-derived models yielded target ROC-AUC values below 0.5, while all combinations produced high false-positive rates (0.781-0.963). Whiskers are descriptive standard deviations, not confidence intervals.](figures/Figure_8.png)
 

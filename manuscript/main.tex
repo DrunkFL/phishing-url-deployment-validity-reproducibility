@@ -67,7 +67,6 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage[super,sort&compress]{natbib}
-\usepackage[switch]{lineno}
 \bibliographystyle{unsrtnat}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -85,7 +84,6 @@ Cross-Source Shift}
 
 \begin{document}
 \maketitle
-\linenumbers
 
 \textbf{Short title:} Deployment Validity of Phishing URL Detection
 
@@ -1530,8 +1528,6 @@ tree-model seed Jaccard remained 0.876-0.939. Partition changes reduced
 Top-15 Jaccard to 0.798-0.920, although full-ranking Spearman
 correlations remained 0.951-0.989.
 
-\clearpage
-
 \begin{figure}
 \centering
 \pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_2.pdf}}
@@ -1612,7 +1608,9 @@ RF, and -0.0002 for XGBoost. On ISCX, the differences were -0.0445,
 registrable-domain-disjoint macro-averaged F1 score (Macro-F1) relative
 to the full 35-feature model (F-All). Bars show mean retained features.
 Boxes pool paired differences over three models and ten outer
-repetitions within each corpus; the dashed line marks no change from
+repetitions within each corpus; boxes show the median and interquartile
+range, whiskers extend to 1.5 times the interquartile range, and
+outliers are omitted from display. The dashed line marks no change from
 F-All.}
 \end{figure}
 
@@ -1656,7 +1654,8 @@ source-selected feature schemes. Points are descriptive means over three
 models and ten outer repetitions, and error bars are bootstrap 95\%
 intervals over those model-repetition values. Blue and red circles
 denote transfer from the ISCX-URL2016 corpus to the PhiUSIIL corpus and
-the reverse direction, respectively.}
+the reverse direction, respectively. Both vertical axes are truncated to
+resolve differences within the observed ranges.}
 \end{figure}
 
 Feature selection did not resolve the failure. F-Stable exceeded F-MI in
@@ -1774,7 +1773,9 @@ substantial ranking failure remained for most configurations.
 \caption{Difference between the macro-averaged F1 score
 (Macro-F1) obtained by a post hoc target-oracle threshold and the
 Macro-F1 obtained by the frozen source-selected threshold. Boxes
-summarize ten outer repetitions; the oracle is diagnostic only and is
+summarize ten outer repetitions; boxes show the median and interquartile
+range, whiskers extend to 1.5 times the interquartile range, and
+outliers are omitted from display. The oracle is diagnostic only and is
 never used for model fitting or a deployment claim.}
 \end{figure}
 
@@ -2018,9 +2019,7 @@ characteristic curve; PR-AUC, area under the precision-recall curve;
 Macro-F1, macro-averaged F1 score; FPR, false-positive rate; LR,
 logistic regression; RF, random forest.
 
-\clearpage
-
-\begin{figure}
+\begin{figure}[!t]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_8.png}}
 \caption{External performance of six source-dataset-model
@@ -2137,7 +2136,7 @@ agreement is calculated over the union of source and target Top-20
 features. SHAP, SHapley Additive exPlanations; FPR, false-positive rate;
 LR, logistic regression; RF, random forest.
 
-\begin{figure}
+\begin{figure}[!t]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio]{figures/Figure_9.png}}
 \caption{Transportability of global SHAP summaries from each
